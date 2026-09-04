@@ -35,12 +35,8 @@ python scripts/generate_release_manifest.py
 Then rerun all validation commands. Do not manually edit
 `manifests/checksums.sha256` or `manifests/public_release_manifest_v1.json`.
 
-## Required author or institutional decisions before public release
+## Remaining archival and provenance actions
 
-- approve software and aggregate-data licences and add the resulting licence
-  files; do not infer a licence from this package;
-- make the current private repository public only after the software and
-  aggregate-data licences have been approved;
 - after archiving a tagged release, add the assigned DOI rather than a
   placeholder DOI;
 - complete the missing IVS and SRAG source URLs/access dates in the acquisition

@@ -23,8 +23,6 @@ Date: 2026-09-03
 
 ## Author/institution decisions still required
 
-- select and approve code and aggregate-data licences;
-- make the private GitHub repository public after the relevant licences are approved;
 - archive a tagged release in a DOI-bearing repository and add the DOI;
 - complete missing IVS/SRAG source URLs and access dates;
 - capture a clean full environment lock (`pip freeze`, R `sessionInfo()`, Java/GraphHopper versions) during a clean rerun.

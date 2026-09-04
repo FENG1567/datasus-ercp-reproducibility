@@ -75,7 +75,7 @@ Figures 2, 5, and Supplementary Figure 1 are unchanged frozen renderings and are
 
 ## Licence and archival identifier
 
-This package is deposited in a private GitHub repository at https://github.com/FENG1567/datasus-ercp-reproducibility. No software or aggregate-data licence has yet been authorised, and no archival DOI has been assigned. Do not add a licence by inference. Before making the repository public, the authors/institution must choose compatible code and aggregate-data licences and archive a tagged release in a DOI-bearing repository. See `LICENSE_SELECTION_REQUIRED.md` and `docs/CODE_AVAILABILITY.md`.
+This package is publicly available at https://github.com/FENG1567/datasus-ercp-reproducibility. Original software in the repository is released under the MIT License. Third-party data and external resources retain their original terms; see `LICENSE_SCOPE.md`. No archival DOI has yet been assigned. See `docs/CODE_AVAILABILITY.md` for the statement used in the manuscript.
 
 ## Citation
 

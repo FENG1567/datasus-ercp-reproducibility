@@ -3,6 +3,7 @@ message: "If you use this code or aggregate source-data package, please cite the
 title: "DATASUS ERCP study reproducibility package"
 type: software
 version: "0.1.0-predeposit"
+license: MIT
 repository-code: "https://github.com/FENG1567/datasus-ercp-reproducibility"
 url: "https://github.com/FENG1567/datasus-ercp-reproducibility"
 authors:

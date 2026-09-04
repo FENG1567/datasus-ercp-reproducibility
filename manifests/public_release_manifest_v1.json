@@ -2,12 +2,13 @@
   "schema_version": "datasus_ercp_public_release_manifest_v1",
   "generated_date": "2026-09-05",
   "release_status": "LOCAL_GITHUB_UPLOAD_CANDIDATE",
-  "licence_status": "SELECTION_REQUIRED",
-  "repository_url_status": "NOT_ASSIGNED",
+  "licence_status": "MIT_FOR_ORIGINAL_SOFTWARE",
+  "data_rights_status": "THIRD_PARTY_SOURCE_TERMS_APPLY",
+  "repository_url_status": "PUBLIC_GITHUB",
   "doi_status": "NOT_ASSIGNED",
   "scientific_release": "frozen analysis outputs and final editor package",
-  "file_count_excluding_manifest_and_checksum_list": 205,
-  "total_bytes_excluding_manifest_and_checksum_list": 54300086,
+  "file_count_excluding_manifest_and_checksum_list": 206,
+  "total_bytes_excluding_manifest_and_checksum_list": 54299090,
   "files": [
     {
       "path": ".gitattributes",
@@ -26,23 +27,28 @@
     },
     {
       "path": "CITATION.cff",
-      "bytes": 1042,
-      "sha256": "3190381020606bd6060034969a6817cd208240d6dc61c9f97e342ab80eaaddbc"
+      "bytes": 1055,
+      "sha256": "926b35ebc4f97d9d1ca52f13eac5f2899b26086b303cc2aa1f2c8824eee1dac3"
     },
     {
       "path": "GITHUB_UPLOAD_CHECKLIST.md",
-      "bytes": 2748,
-      "sha256": "70fd374f3da0f832a09a3cef5bc320a590bb18cc647d01ec90035affaf3eb983"
+      "bytes": 2478,
+      "sha256": "ce8006764e4dbb84cfb9dd3fb555ad06da7ef840feda966fcc2ad5301f6d9d61"
     },
     {
-      "path": "LICENSE_SELECTION_REQUIRED.md",
-      "bytes": 822,
-      "sha256": "4cd2b4007e1bc8ee56dd3ff1890c664a926ca92e5dc6e6e27b00d9d6521c6cd3"
+      "path": "LICENSE",
+      "bytes": 1083,
+      "sha256": "e64b49d02f04a223d2cc72b42043c0aead19adc50f5d183d01f22da3f063699e"
+    },
+    {
+      "path": "LICENSE_SCOPE.md",
+      "bytes": 531,
+      "sha256": "18ae0f4226833d54da6fd4b026f31898bb71f2257643e7f14af859bb7c068f1d"
     },
     {
       "path": "README.md",
-      "bytes": 5522,
-      "sha256": "f52d1728579ff09372283c55fe93bf00617e3276a58d1034ecbcde3e9bf3ebfc"
+      "bytes": 5396,
+      "sha256": "9cbfb85c33b2673d117e6621cb03e5301398ece64748b206b1c327c25d97257c"
     },
     {
       "path": "SECURITY.md",
@@ -281,13 +287,13 @@
     },
     {
       "path": "docs/CODE_AVAILABILITY.md",
-      "bytes": 2425,
-      "sha256": "5a5831af4009ed532dd3b6322b5d468e55f2185354a2c707cd33a4a81ee2cdf4"
+      "bytes": 1068,
+      "sha256": "b1df19ab0b1aff069ea5081ea4a6d4300f035d448a814318542b5cbfb559b808"
     },
     {
       "path": "docs/DATA_AVAILABILITY.md",
-      "bytes": 1056,
-      "sha256": "569a3d108dcd0b678faf648b1a184eb450877dbb3861df561105035db71fd4ae"
+      "bytes": 989,
+      "sha256": "5f82a592663d7ff1c9df39f6e82b32a31f1df00d42b4a25c94a6d36bac5046b6"
     },
     {
       "path": "docs/DATA_SOURCES.md",
@@ -301,8 +307,8 @@
     },
     {
       "path": "docs/KNOWN_LIMITATIONS.md",
-      "bytes": 1082,
-      "sha256": "946ffe479b9738e2ead87c662b2bda93d7a478db66c9d76d4f99fe3eae7ad34f"
+      "bytes": 1157,
+      "sha256": "5caeeacdbdd740edbb1cde48c7f19bb69d6c37d14aa460bead6f8ba0ace63b37"
     },
     {
       "path": "docs/REPRODUCIBILITY.md",
@@ -346,8 +352,8 @@
     },
     {
       "path": "manifests/PACKAGE_VERIFICATION.md",
-      "bytes": 2210,
-      "sha256": "5043f7b3f91abd70d40f112257e82bb7946c1973bbef844ab0ab39f2268f20ab"
+      "bytes": 2069,
+      "sha256": "668265504b8e0f236169edb99ea75c2c939dc584513b40a0957d0d16ad807ecc"
     },
     {
       "path": "manifests/stage07_render_audit.txt",
@@ -611,8 +617,8 @@
     },
     {
       "path": "scripts/generate_release_manifest.py",
-      "bytes": 2552,
-      "sha256": "df47a42fa820dd4f0f90bc6bdb8429f3caa4bd20f4538fb8d364f0afa9356e27"
+      "bytes": 2624,
+      "sha256": "9fd27ee2ad05b6520f0164e36300fb0094f38293f56db2a9b75ec76dfae57572"
     },
     {
       "path": "scripts/make_data_dictionary.py",
@@ -636,8 +642,8 @@
     },
     {
       "path": "scripts/validate_release.py",
-      "bytes": 3806,
-      "sha256": "da3d45050c4a2bfc967f68d999a515b7c97ffb26ea509e95b2f03fc6e595bf71"
+      "bytes": 3819,
+      "sha256": "042acb2275977edd0d838fa331df9870a6c2aa2034a2b8b06b0832a76e3c7468"
     },
     {
       "path": "scripts/verify_checksums.py",

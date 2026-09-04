@@ -41,7 +41,8 @@ def main() -> int:
     required = [
         ROOT / "README.md",
         ROOT / "CITATION.cff",
-        ROOT / "LICENSE_SELECTION_REQUIRED.md",
+        ROOT / "LICENSE",
+        ROOT / "LICENSE_SCOPE.md",
         SOURCE / "source_data_manifest.json",
         SOURCE / "source_data_audit.json",
         ROOT / "docs" / "REPRODUCIBILITY.md",
