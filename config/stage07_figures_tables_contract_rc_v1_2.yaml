@@ -8,7 +8,7 @@ release_decision:
   approval: "Apply the single consolidated post-review release repair while preserving registry permissions and scientific boundaries."
 inherits:
   source_contract: config/stage07_figures_tables_contract_rc_v1_1.yaml
-  source_contract_sha256: 14350dde33c0575dc9de111f55aaaba1fc5f44713768cb74e52fb907d0a01b46
+  source_contract_sha256: 57af61772c228465cc0d4504c350a74d8bc38f033d9ffc0e5c93bd1f298a0cf7
   registry_spec: config/stage07_result_registry_spec_rc_v1.json
   registry_immutable: true
 governance_revision:

@@ -31,7 +31,7 @@ spec.loader.exec_module(module)
 
 
 def test_frozen_bindings_and_public_contract_are_unchanged() -> None:
-    assert _sha(OLD_CONTRACT) == "485bbd56029b71eac618f39c5ef94fe5ee20d8a46c62aaa5a81f279ee6667991"
+    assert _sha(OLD_CONTRACT) == "77083a7c952c041620f95e77378f22e7e9466ede18b5f7c9e4d0b07fd21de7a3"
     assert _sha(CONTRACT) == module.FROZEN_CONTRACT_SHA256
     module._configure_base()
 

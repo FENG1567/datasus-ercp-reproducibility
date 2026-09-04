@@ -8,7 +8,7 @@ release_decision:
   approval: "Create a newly versioned figure/table contract while preserving registry permissions."
 inherits:
   source_contract: config/stage07_figures_tables_contract_rc_v1.yaml
-  source_contract_sha256: 485bbd56029b71eac618f39c5ef94fe5ee20d8a46c62aaa5a81f279ee6667991
+  source_contract_sha256: 77083a7c952c041620f95e77378f22e7e9466ede18b5f7c9e4d0b07fd21de7a3
   registry_spec: config/stage07_result_registry_spec_rc_v1.json
   registry_immutable: true
 governance_revision:

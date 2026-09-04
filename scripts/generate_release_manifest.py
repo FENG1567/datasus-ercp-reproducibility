@@ -63,11 +63,16 @@ def main() -> int:
         "total_bytes_excluding_manifest_and_checksum_list": sum(r["bytes"] for r in records),
         "files": records,
     }
-    MANIFEST.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    MANIFEST.write_text(
+        json.dumps(payload, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+        newline="\n",
+    )
     all_files = listed_files({CHECKSUMS})
     CHECKSUMS.write_text(
         "".join(f"{digest(path)}  {path.relative_to(ROOT).as_posix()}\n" for path in all_files),
         encoding="utf-8",
+        newline="\n",
     )
     print(f"MANIFEST_PASS files={len(all_files)}")
     return 0

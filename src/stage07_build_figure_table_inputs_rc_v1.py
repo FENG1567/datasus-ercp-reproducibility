@@ -32,7 +32,7 @@ REGISTRY_SCHEMA = "stage07_result_registry_v1"
 MANIFEST_SCHEMA = "stage07_figure_table_source_data_manifest_rc_v1"
 AUDIT_SCHEMA = "stage07_figure_table_source_data_audit_rc_v1"
 EXPECTED_OUTPUT_COUNT = 22
-FROZEN_CONTRACT_SHA256 = "485bbd56029b71eac618f39c5ef94fe5ee20d8a46c62aaa5a81f279ee6667991"
+FROZEN_CONTRACT_SHA256 = "77083a7c952c041620f95e77378f22e7e9466ede18b5f7c9e4d0b07fd21de7a3"
 SENSITIVE_COUNT_COLUMN = re.compile(
     r"(^n_aih($|_)|^n_aih($|_)|^n_(patient|admission|death|event)s?($|_)|"
     r"(^|_)(patient|admission|death|event)s?(_|$)|^in_strength$)", re.I)

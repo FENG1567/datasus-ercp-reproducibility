@@ -22,8 +22,8 @@ import stage07_build_figure_table_inputs_rc_v1 as base
 CONTRACT_SCHEMA = "stage07_figures_tables_contract_rc_v1_2"
 MANIFEST_SCHEMA = "stage07_figure_table_source_data_manifest_rc_v1_2"
 AUDIT_SCHEMA = "stage07_figure_table_source_data_audit_rc_v1_2"
-FROZEN_CONTRACT_SHA256 = "c75679f60b4a806f570c949b6660b81beedca750f3d78953a6cb93609ea7e361"
-BASE_BUILDER_SHA256 = "ef86d71d0e8db9291f9d53ad3ca14618c4f7fa8d21674c118e0540629f1f6063"
+FROZEN_CONTRACT_SHA256 = "13f1988ea9067a04392ea9b02184e31600000c113dfe112883aa33540b7f7239"
+BASE_BUILDER_SHA256 = "62c68f0dae738180c0ccfce30457542a0d96da902ffaef4fed93536738d1c492"
 
 BuilderError = base.BuilderError
 sha256_file = base.sha256_file
