@@ -1,0 +1,160 @@
+schema_version: "1.0"
+source: "Observed from official SIH DBC files 2021-01 (AC): SPAC2101.dbc, RDAC2101.dbc, parsed with pyreaddbc + dbfread (latin-1)"
+dataset: "SIH-SUS"
+
+tables:
+  rd:
+    description: "Reduced (resumo) SIH AIH record"
+    partition: "competence_month (ANO_CMPT-MES_CMPT) x UF; one DBC per state-month"
+    key_fields:
+      - name: competence_month
+        type: str
+        length: 6
+        format: "YYYYMM"
+        derived_from: ["ANO_CMPT", "MES_CMPT"]
+      - name: CNES
+        type: str
+        length: 7
+        normalize: "strip, zfill(7)"
+      - name: N_AIH
+        type: str
+        length: 13
+        normalize: "strip"
+    required:
+      - {name: ANO_CMPT, type: str, length: 4, valid: "YYYY in 2021..2025"}
+      - {name: MES_CMPT, type: str, length: 2, valid: "01..12"}
+      - {name: N_AIH, type: str, length: 13}
+      - {name: CNES, type: str, length: 7}
+      - {name: DIAG_PRINC, type: str, length: 4, valid: "uppercase ICD-10 alphanumeric; 0000 invalid"}
+      - {name: DT_INTER, type: str, length: 8, format: "YYYYMMDD"}
+      - {name: DT_SAIDA, type: str, length: 8, format: "YYYYMMDD"}
+      - {name: MORTE, type: int, length: 1, valid: "0/1; empty treated as missing"}
+    optional:
+      - {name: DIAG_SECUN, type: str, length: 4}
+      - {name: DIAGSEC1..DIAGSEC9, type: str, length: 4, note: "DIAGSEC9 observed length 1 in some files - schema check required"}
+      - {name: TPDISEC1..TPDISEC9, type: str, length: 1}
+      - {name: RACA_COR, type: str, length: 2, valid: "01..06, 99, empty"}
+      - {name: INSTRU, type: str, length: 1}
+      - {name: ETNIA, type: str, length: 4}
+      - {name: SEXO, type: str, length: 1}
+      - {name: IDADE, type: int, length: 2}
+      - {name: COD_IDADE, type: str, length: 1, note: "age unit: 0=dias 1=meses 2=anos 3=horas 4=minutos 5=nao informado 6=ignorado"}
+      - {name: MUNIC_RES, type: str, length: 6, valid: "6-digit IBGE"}
+      - {name: MUNIC_MOV, type: str, length: 6}
+      - {name: UTI_MES_IN/AN/AL/TO, type: int, note: "length 2/2/2/3 observed"}
+      - {name: UTI_INT_IN/AN/AL/TO, type: int, length: "2/2/2/3"}
+      - {name: MARCA_UTI, type: str, length: 2}
+      - {name: NATUREZA, type: str, length: 2}
+      - {name: CAR_INT, type: str, length: 2}
+      - {name: COMPLEX, type: str, length: 2}
+      - {name: FINANC, type: str, length: 2}
+      - {name: IDENT, type: str, length: 1, note: "1=normal 2=reapresentada 3=longa permanencia 5=continuacao"}
+      - {name: VAL_TOT, type: int}
+      - {name: CID_MORTE, type: str, length: 4}
+      - {name: CID_ASSO, type: str, length: 4}
+      - {name: SEQ_AIH5, type: str, length: 3}
+      - {name: DIAS_PERM, type: int}
+      - {name: NUM_PROC, type: str, length: 4}
+      - {name: SEQUENCIA, type: int}
+      - {name: REMESSA, type: str, length: 21}
+    structural_missing:
+      - "2025-12 has provisional files? verify completeness of 2025 months before freezing"
+
+  sp:
+    description: "Professionals (detalhe) SIH row: one row per professional act performed"
+    partition: "competence_month (SP_AA-SP_MM) x UF; one DBC per state-month"
+    key_fields:
+      - name: competence_month
+        type: str
+        length: 6
+        format: "YYYYMM"
+        derived_from: ["SP_AA", "SP_MM"]
+      - name: SP_CNES
+        type: str
+        length: 7
+        normalize: "strip, zfill(7)"
+      - name: SP_NAIH
+        type: str
+        length: 13
+        normalize: "strip"
+    required:
+      - {name: SP_AA, type: str, length: 4, valid: "2021..2025"}
+      - {name: SP_MM, type: str, length: 2, valid: "01..12"}
+      - {name: SP_NAIH, type: str, length: 13}
+      - {name: SP_CNES, type: str, length: 7}
+      - {name: SP_PROCREA, type: str, length: 10, valid: "normalized procedure code (digits, left-padded 10)"}
+      - {name: SP_QTD_ATO, type: int, length: 4, note: "quantity of acts; NOT a case count"}
+      - {name: SP_DTINTER, type: str, length: 8}
+      - {name: SP_DTSAIDA, type: str, length: 8}
+    optional:
+      - {name: SP_CIDPRI, type: str, length: 4}
+      - {name: SP_CIDSEC, type: str, length: 4}
+      - {name: SP_ATOPROF, type: str, length: 10}
+      - {name: SP_TP_ATO, type: str, length: 2}
+      - {name: SP_PF_CBO, type: str, length: 6, note: "profissional CBO"}
+      - {name: SP_PF_DOC, type: str}
+      - {name: SP_CPFCGC, type: str, length: 14}
+      - {name: SP_NUM_PR, type: str, length: 8}
+      - {name: SP_TIPO, type: str, length: 2}
+      - {name: SP_UF, type: str, length: 2}
+      - {name: SP_GESTOR, type: str, length: 6}
+      - {name: SP_VALATO, type: int}
+    counting_rule: "case count = unique (competence_month, SP_CNES, SP_NAIH) after collapsing matching SP detail rows; SP row count, SP_QTD_ATO sum and SP_VALATO never count as cases"
+
+  cnes_st:
+    description: "CNES establishment (hospital) monthly"
+    partition: "competence month x UF"
+    key_fields: ["COMPETENCIA", "CNES"]
+    required: ["CNES", "COMPETENCIA", "COD_UF", "MUNICIPIO"]
+    optional:
+      - "NATUREZA"
+      - "GESTAO"
+      - "TP_UNID"
+      - "NIV_HIER"
+      - "ESFERA_ADM"
+      - "ATIVIDADE"
+      - "COD_CEP"
+      - "TP_PFR"
+      - "SERAP01..SERAP99 (service presence flags)"
+      - "LEIT03, LEIT05 (beds)"
+    note: "schema must be confirmed by reading actual CNES DBC files; lengths vary by module/year"
+
+  cnes_pf:
+    description: "CNES professionals monthly (CBO, links, hours)"
+    partition: "competence month x UF"
+    key_fields: ["COMPETENCIA", "CNES", "CBO", "CPF_PROF"]
+    required: ["COMPETENCIA", "CNES", "CBO", "CPF_PROF", "DT_NASC", "CONSELHO"]
+    optional:
+      - "COD_PROF"
+      - "COD_UNID"
+      - "NOME_PROF"
+      - "SIGLA_CONS"
+      - "NUM_CONS"
+      - "DT_ENTR"
+      - "DT_SAIDA"
+      - "TOT_VINCULOS"
+      - "VINCULADO"
+      - "VINC_SUS"
+      - "HORA_OUTROS"
+      - "HORA_HOSP"
+      - "HORA_AMB"
+    dedup_rule: "unique (competence_month, CNES, CBO, CPF_PROF); links across multiple establishments are kept per establishment; hours per link"
+
+  sigtap:
+    description: "SIGTAP unified monthly reference (local archives)"
+    key_fields: ["CO_PROCEDIMENTO"]
+    required: ["CO_PROCEDIMENTO", "NO_PROCEDIMENTO", "DT_COMPETENCIA"]
+    optional: ["TP_COMPLEXIDADE", "VL_SH", "VL_SA", "VL_SP", "CO_FINANCIAMENTO"]
+
+frozen_reference_codes:
+  ercp_therapeutic: "0407030255"
+  ercp_general: "0209010010"
+
+gates:
+  unique_key_violation_rate_max: 0.0
+  linkage_overall_min: 0.98
+  linkage_each_state_month_min: 0.95
+  valid_ibge_join_min: 0.99
+  partition_hash_required: true
+  conversion_failure_exit_nonzero: true
+  structural_missing_action: "record and quarantine; never silently fill"

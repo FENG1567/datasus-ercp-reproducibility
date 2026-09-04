@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use this code or aggregate source-data package, please cite the associated article and the archived software release once identifiers are assigned."
+title: "DATASUS ERCP study reproducibility package"
+type: software
+version: "0.1.0-predeposit"
+repository-code: "https://github.com/FENG1567/datasus-ercp-reproducibility"
+url: "https://github.com/FENG1567/datasus-ercp-reproducibility"
+authors:
+  - family-names: Feng
+    given-names: Shuo
+  - family-names: Shi
+    given-names: Chao
+  - family-names: Liu
+    given-names: Tianming
+  - family-names: Ding
+    given-names: Haoran
+  - family-names: Hang
+    given-names: Fenghe
+  - family-names: Huang
+    given-names: Zhenghao
+  - family-names: Meng
+    given-names: Xianzhi
+    email: mengxianzhi@hrbmu.edu.cn
+    affiliation: "Provincial Key Laboratory of Hepatosplenic Surgery, The First Affiliated Hospital of Harbin Medical University"
+keywords:
+  - ERCP
+  - DATASUS
+  - Brazil
+  - health services research
+  - patient-flow network
+  - geographic access

@@ -1,0 +1,158 @@
+schema_version: "stage07_release_blueprint_v1"
+status: "FROZEN_STRUCTURE_NUMBERS_PENDING"
+governance_marker: "prespecified reporting controls"
+study_title: "Coverage Is Not Access: National Diffusion, Referral Networks, and Equity of Therapeutic ERCP for Choledocholithiasis in Brazil's Unified Health System, 2021–2025"
+evidence_vocabulary:
+  allowed: ["descriptive", "associational"]
+  prohibited: ["causal-eligible", "causal", "policy effect"]
+terminology:
+  adoption: "first observed coded use"
+  diffusion: "observed uptake"
+  network: "patient-flow network"
+  payment: "SUS reimbursement in December-2025 BRL; not cost"
+
+release_contract:
+  unique_numeric_source: "immutable result_registry.json built from hash-locked analysis/verification artifacts"
+  candidate_version: "rc_v1"
+  immutable_inputs:
+    - "data_analytic"
+    - "fitted model objects"
+    - "table and figure input datasets"
+    - "config and SAP amendments"
+  invalidation_rule: "Any candidate data, source, code, config, model, or locator change invalidates affected QA and requires a new release directory."
+  privacy_rule: "No unsuppressed cell count below 5; maps and network displays must use pre-specified aggregation/suppression."
+  figure_rule: "Figures consume registry-linked frozen input tables only; plotting code may not redefine cohorts, filters, or estimands."
+  table_rule: "Tables consume registry-linked frozen input tables only and must expose denominator, unit, adjustment set, missingness, suppression, window, and evidence level."
+
+main_figures:
+  - id: "Figure_1"
+    title: "Policy, coding, cohort, and observation-window timeline"
+    role: "Prevents interpreting the 2021 observation boundary as a true national implementation start."
+    panels:
+      - "policy and SIGTAP/CID evidence timeline"
+      - "2021-2025 source-data window and left-censoring at January 2021"
+      - "Cohort A and Cohort B construction with unique-AIH unit"
+    evidence_level: "descriptive"
+  - id: "Figure_2"
+    title: "National observed uptake, diffusion, and service maintenance"
+    role: "Shows whether policy inclusion translated into sustained coded provision rather than one-off billing."
+    panels:
+      - "monthly AIH volume and population-standardised rate with confidence intervals"
+      - "first observed coded use by hospital and municipality"
+      - "maintenance states among eligible hospitals with risk-set denominator"
+    evidence_level: "descriptive"
+  - id: "Figure_3"
+    title: "Equity gradients and realised travel burden"
+    role: "Separates geographic coverage from realised patient travel."
+    panels:
+      - "directly standardised municipal rates by IVS and supplementary-insurance strata"
+      - "SII/RII or frozen primary equity contrasts with confidence intervals"
+      - "flow-weighted travel-time distribution and thresholds"
+    evidence_level: "descriptive"
+  - id: "Figure_4"
+    title: "Potential population access within 120 and 180 minutes"
+    role: "Quantifies modelled road-network reach while preserving the distinction from realised access."
+    panels:
+      - "adult population coverage maps using paired annual service municipalities"
+      - "national and regional population-weighted coverage with confidence/uncertainty annotation where applicable"
+      - "coverage gap by vulnerability stratum"
+    evidence_level: "descriptive"
+  - id: "Figure_5"
+    title: "Intermunicipal patient-flow network and referral communities"
+    role: "Identifies concentration, referral structure, and cross-boundary flows without equating cross-municipal travel with poor access."
+    panels:
+      - "suppressed national flow network"
+      - "community or service-area structure"
+      - "hub concentration and centrality distribution"
+    evidence_level: "descriptive"
+  - id: "Figure_6"
+    title: "Hospital volume, maturity, centrality, and in-hospital outcomes"
+    role: "Reports adjusted associations only; separation-aware brglm2 inference and bootstrap uncertainty are mandatory."
+    panels:
+      - "primary adjusted contrasts with bootstrap 95% confidence intervals"
+      - "AS_mean versus MPL_Jeffreys method-concordance display"
+      - "pre-specified sensitivity or heterogeneity display if estimable"
+    evidence_level: "associational"
+  - id: "Figure_7"
+    title: "Network resilience under observed hub removal versus random removal"
+    role: "Stress-tests structural dependence; it is a simulation benchmark, not a real-world counterfactual."
+    panels:
+      - "targeted sequential hub removal"
+      - "1,000 random-removal benchmark envelope"
+      - "population losing potential access and connectivity changes"
+    evidence_level: "descriptive"
+
+main_tables:
+  - id: "Table_1"
+    title: "Cohort, hospital, municipality, and regional characteristics"
+    required_footnotes: ["Cohort A/B", "unique AIH", "provider versus residence municipality", "missingness", "suppression", "2021-2025 window"]
+  - id: "Table_2"
+    title: "Observed uptake and maintenance of therapeutic ERCP"
+    required_footnotes: ["eligible-hospital risk set", "first observed coded use", "left-censoring", "adjustment set", "descriptive/associational label"]
+  - id: "Table_3"
+    title: "Equity, travel time, potential access, and patient-flow concentration"
+    required_footnotes: ["denominators", "adult population", "flow weighting", "coverage model assumptions", "IVS ecological exposure", "privacy suppression"]
+  - id: "Table_4"
+    title: "Adjusted hospital-level attributes and in-hospital outcome associations"
+    required_footnotes: ["Cohort B", "complete-context sample", "outcome events", "provider-UF adjustment", "brglm2 method", "cluster bootstrap", "associational evidence"]
+
+validation_domains:
+  data_integrity:
+    - "SP source rows to unique AIH"
+    - "unique AIH to RD linkage"
+    - "RD provider CNES and provider municipality"
+    - "residence municipality to external municipal data"
+    - "independent SQL versus Python reconciliation of key totals"
+  statistical:
+    - "effect sizes and 95% confidence intervals"
+    - "overdispersion and fit diagnostics"
+    - "spatial residual dependence"
+    - "nonlinearity"
+    - "clustering and effective event counts"
+    - "multiplicity and pre-specified Holm correction"
+    - "separation, AS_mean/MPL_Jeffreys concordance, and bootstrap validity"
+  reporting:
+    - "RECORD"
+    - "STROBE"
+    - "spatial-analysis reporting"
+    - "network-analysis reporting"
+    - "routine-health-data provenance and reproducibility"
+  disciplinary_perspectives:
+    - "clinical endoscopy"
+    - "health services and equity"
+    - "causal inference"
+    - "spatial and network methods"
+    - "data engineering and reproducibility"
+    - "publication reporting"
+
+precommitted_interpretation_risks:
+  - issue: "Procedure code is not exclusive to choledocholithiasis."
+    reporting_requirement: "Retain dual-cohort phenotype, report code validation sources, and avoid disease-exclusive wording for Cohort A."
+  - issue: "The 2021 boundary is a measurement discontinuity and left-censoring point."
+    reporting_requirement: "Use first observed coded use and observed uptake; identify prevalent users at window start."
+  - issue: "SP procedure rows are billing records, not automatically unique cases."
+    reporting_requirement: "Count unique AIH under the frozen deduplication contract and verify partition-to-AIH reconciliation."
+  - issue: "Cross-municipal flow does not itself prove poor access."
+    reporting_requirement: "Interpret jointly with travel time, potential access, vulnerability, and referral structure."
+  - issue: "COVID-era disruption can confound temporal patterns."
+    reporting_requirement: "Use pre-specified temporal controls/sensitivity analyses and keep claims descriptive or associational."
+  - issue: "IVS is an ecological exposure."
+    reporting_requirement: "Do not infer individual socioeconomic effects; report ecological limitation prominently."
+  - issue: "SUS reimbursement is not provider cost."
+    reporting_requirement: "Report inflation-adjusted reimbursement only and prohibit cost-effectiveness language."
+  - issue: "Volume-outcome associations remain susceptible to residual confounding and referral selection."
+    reporting_requirement: "Use separation-aware modelling, bootstrap uncertainty, sensitivity analyses, and associational wording only."
+  - issue: "Machine learning is outside the frozen estimand and adds no release value."
+    reporting_requirement: "Do not add ML models or prediction claims."
+  - issue: "Hub removal is not a real-world intervention counterfactual."
+    reporting_requirement: "Label it as structural stress-test simulation and benchmark against 1,000 random removals."
+
+acceptance:
+  p0_required: 0
+  p1_policy: "Fix when possible in the single repair round; otherwise lower the claim and record the limitation."
+  p2_policy: "Record; does not block release."
+  all_primary_numbers_traceable: true
+  table_figure_text_consistency: true
+  key_totals_dual_implementation_match: true
+  citations_verifiable: true
+  privacy_pass: true

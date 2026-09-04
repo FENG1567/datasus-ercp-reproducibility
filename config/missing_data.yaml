@@ -1,0 +1,24 @@
+schema_version: "1.0"
+principles:
+  - "Never impute identifiers, procedure presence, adoption month, primary outcome, or linkage keys."
+  - "Distinguish structural absence, source-field absence, invalid code, and ordinary missingness."
+  - "Report missingness by year, state, hospital, and cohort before modeling."
+rules:
+  race_color:
+    primary: "explicit missing category because missingness is plausibly institutionally patterned"
+    sensitivity: "multiple imputation only if field semantics are stable and diagnostics support MAR; otherwise stratified bounds"
+  contextual_covariates:
+    primary: "complete municipality records when >=95% population coverage"
+    sensitivity: "multiple imputation with geographic and temporal predictors; compare with complete case"
+  cnes_monthly_capacity:
+    primary: "no carry-forward"
+    sensitivity: "single-month interpolation only inside a stable observed spell, flagged and never used to create adoption"
+  travel_time:
+    primary: "route only valid geocoded origin-destination pairs"
+    sensitivity: "great-circle distance; do not impute travel time from outcome or utilization"
+  outcomes:
+    primary: "exclude records with missing/invalid outcome from that endpoint only and report denominator"
+delta_adjustment:
+  required_when: "multiple imputation materially affects a primary claim"
+  scenarios: ["less favorable in missing records", "more favorable in missing records"]
+

@@ -1,0 +1,13 @@
+* text=auto eol=lf
+
+*.docx binary
+*.pdf binary
+*.png binary
+*.tif binary
+*.tiff binary
+*.xlsx binary
+*.xls binary
+*.zip binary
+*.7z binary
+*.tar binary
+*.gz binary

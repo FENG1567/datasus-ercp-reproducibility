@@ -1,0 +1,29 @@
+schema_version: "1.0"
+freeze_status: "FROZEN"
+freeze_date: "2026-08-23"
+primary_narrative: "whether national incorporation translated into sustained, equitable, and network-resilient real service access"
+minimum_publishable_core: ["Aim 1", "Aim 2", "Aim 3"]
+enhancement: "Aim 4"
+optional_only_if_gated: "staggered-adoption quasi-causal module"
+title_downgrade_rules:
+  - "Remove equity from title if IVS/Census linkage covers <95% of target population."
+  - "Remove geographic access claim if valid road routing covers <95% of primary patient flows and <99% of active providers."
+  - "Remove resilience claim if hub-removal results are unstable to node definition or travel threshold."
+  - "Do not make clinical outcome claims if event support, overlap, or calibration is inadequate."
+  - "Do not make causal claims if any quasi-causal gate fails."
+locked_files:
+  - "config/project.yaml"
+  - "config/cohorts.yaml"
+  - "config/estimands.yaml"
+  - "config/qc_gates.yaml"
+  - "config/missing_data.yaml"
+hashes_sha256:
+  config/project.yaml: "d450f236ce7893d7965a7f6130e5e32efbd10b0633150619d968cd8759525215"
+  config/cohorts.yaml: "24c576a5d52bb07b5871ab956e4b21ad7ae300afff123af7a3df632f8a5b20d7"
+  config/estimands.yaml: "6acb787e743ccc6776eebce7117619159a0d07f683bb80cbaab0121cf36f9c9d"
+  config/qc_gates.yaml: "97d3785f8426947128cc12a8e42590405c843e93ae93cc4f0e6e132c2cb34e6c"
+  config/missing_data.yaml: "559e414081382f2a45f675dcc6ccdc82047be603f832a66061c91374bea93e65"
+  reports/SAP_v1.md: "27bd242ea3584f6e1373ff4b715e7af01e124d62cc61f073f842182d650d344a"
+amendment_rule: "Any post-freeze change requires a dated amendment with reason, data visibility status, affected estimand, new hash, and explicit exploratory label when outcome-informed."
+amendments:
+  - "reports/amendments/2026-08-23_remote_root.md"

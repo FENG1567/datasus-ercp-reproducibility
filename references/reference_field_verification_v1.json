@@ -1,0 +1,6241 @@
+{
+  "schema_version": "reference_field_verification_v1",
+  "generated_at": "2026-09-02T14:47:20+08:00",
+  "source_bibliography": "reference list embedded in the final manuscript",
+  "source_sha256": "09392d50bdc727240c32081585ffe391acee320a3923bc66cf4128fc477f3b1f",
+  "count": 25,
+  "verified": 25,
+  "check_suggested": 0,
+  "records": [
+    {
+      "number": 1,
+      "citation_key": "ref_01",
+      "doi": "10.1055/a-0862-0346",
+      "doi_resolved": true,
+      "title_match": true,
+      "pubmed_title_match": true,
+      "journal_match_or_normalization_review": true,
+      "status": "VERIFIED",
+      "crossref": {
+        "status": "VERIFIED_CROSSREF",
+        "doi": "10.1055/a-0862-0346",
+        "title": "Endoscopic management of common bile duct stones: European Society of Gastrointestinal Endoscopy (ESGE) guideline",
+        "container_title": "Endoscopy",
+        "short_container_title": "Endoscopy",
+        "authors": [
+          {
+            "given": "Gianpiero",
+            "family": "Manes",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Gastroenterology, ASST Rhodense, Rho and Garbagnate M.se Hospitals, Milan, Italy"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Gregorios",
+            "family": "Paspatis",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Gastroenterology Department, Benizelion General Hospital, Heraklion, Crete, Greece"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Lars",
+            "family": "Aabakken",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "GI Endoscopy, Rikshospitalet University Hospital, Hospital and Faculty of Medicine, University of Oslo, Oslo, Norway"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Andrea",
+            "family": "Anderloni",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Digestive Endoscopy Unit, Division of Gastroenterology, Humanitas Research Hospital, Rozzano, Milan, Italy"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Marianna",
+            "family": "Arvanitakis",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Gastroenterology, Hepatology and Digestive Oncology, Erasme University Hospital Université Libre de Bruxelles, Brussels, Belgium"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Philippe",
+            "family": "Ah-Soune",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Service d'Hépato-Gastroentérologie, Hôpital Saint-Musse, Toulon, France"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Marc",
+            "family": "Barthet",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Service d'Hépato-gastroentérologie, Hôpital Nord, Marseille, France"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Dirk",
+            "family": "Domagk",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Medicine B, University of Münster, Münster, Germany"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Jean-Marc",
+            "family": "Dumonceau",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Gedyt Endoscopy Center, Buenos Aires, Argentina"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Jean-Francois",
+            "family": "Gigot",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Abdominal Surgery and Transplantation, Cliniques Universitaires Saint-Luc, Université Catholique de Louvain, Brussels, Belgium"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Istvan",
+            "family": "Hritz",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Semmelweis University, 1st Department of Surgery, Endoscopy Unit, Budapest, Hungary"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "George",
+            "family": "Karamanolis",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Academic Department of Gastroenterology, Laiko General Hospital, Medical School, National and Kapodistrian University of Athens, Athens, Greece"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Andrea",
+            "family": "Laghi",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Pathological Sciences, Sapienza University, Rome, Italy"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Alberto",
+            "family": "Mariani",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Pancreato-Biliary Endoscopy and Endosonography Division, Pancreas Translational & Clinical Research Center, Vita-Salute San Raffaele University, IRCCS San Raffaele Scientific Institute, Milan, Italy"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Konstantina",
+            "family": "Paraskeva",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Gastroenterology Unit, Konstantopoulio General Hospital, Athens, Greece"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Jürgen",
+            "family": "Pohl",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Gastroenterology and Interventional Endoscopy, Klinikum Friedrichshain, Berlin, Germany"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Thierry",
+            "family": "Ponchon",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Digestive Diseases, Hôpital Edouard Herriot, Lyon, France"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Fredrik",
+            "family": "Swahn",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Center for Digestive Diseases, Karolinska University Hospital and Division of Surgery, CLINTEC, Karolinska Institute, Stockholm, Sweden"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Rinze W. F.",
+            "family": "ter Steege",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Gastroenterology and Hepatology, University of Groningen, University Medical Center Groningen, Groningen, The Netherlands"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Andrea",
+            "family": "Tringali",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Digestive Endoscopy Unit, Catholic University, Rome, Italy"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Antonios",
+            "family": "Vezakis",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Gastroenterology Unit, 2 Department of Surgery, School of Medicine, National and Kapodistrian University of Athens, Athens, Greece"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Earl J.",
+            "family": "Williams",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Gastroenterology, Royal Bournemouth Hospital, Bournemouth, UK"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Jeanin E.",
+            "family": "van Hooft",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Gastroenterology and Hepatology, Amsterdam University Medical Center, University of Amsterdam, Amsterdam, The Netherlands"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2019,
+              5
+            ]
+          ]
+        },
+        "volume": "51",
+        "issue": "05",
+        "page": "472-491",
+        "type": "journal-article",
+        "url": "https://doi.org/10.1055/a-0862-0346"
+      },
+      "pubmed": {
+        "uid": "30943551",
+        "pubdate": "2019 May",
+        "epubdate": "2019 Apr 3",
+        "source": "Endoscopy",
+        "authors": [
+          {
+            "name": "Manes G",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Paspatis G",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Aabakken L",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Anderloni A",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Arvanitakis M",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Ah-Soune P",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Barthet M",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Domagk D",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Dumonceau JM",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Gigot JF",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Hritz I",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Karamanolis G",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Laghi A",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Mariani A",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Paraskeva K",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Pohl J",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Ponchon T",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Swahn F",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Ter Steege RWF",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Tringali A",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Vezakis A",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Williams EJ",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "van Hooft JE",
+            "authtype": "Author",
+            "clusterid": ""
+          }
+        ],
+        "lastauthor": "van Hooft JE",
+        "title": "Endoscopic management of common bile duct stones: European Society of Gastrointestinal Endoscopy (ESGE) guideline.",
+        "sorttitle": "endoscopic management of common bile duct stones european society of gastrointestinal endoscopy esge guideline",
+        "volume": "51",
+        "issue": "5",
+        "pages": "472-491",
+        "lang": [
+          "eng"
+        ],
+        "nlmuniqueid": "0215166",
+        "issn": "0013-726X",
+        "essn": "1438-8812",
+        "pubtype": [
+          "Journal Article",
+          "Practice Guideline",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "recordstatus": "PubMed - indexed for MEDLINE",
+        "pubstatus": "256",
+        "articleids": [
+          {
+            "idtype": "pubmed",
+            "idtypen": 1,
+            "value": "30943551"
+          },
+          {
+            "idtype": "doi",
+            "idtypen": 3,
+            "value": "10.1055/a-0862-0346"
+          }
+        ],
+        "history": [
+          {
+            "pubstatus": "pubmed",
+            "date": "2019/04/04 06:00"
+          },
+          {
+            "pubstatus": "medline",
+            "date": "2020/04/25 06:00"
+          },
+          {
+            "pubstatus": "entrez",
+            "date": "2019/04/04 06:00"
+          }
+        ],
+        "references": [],
+        "attributes": [
+          "Has Abstract"
+        ],
+        "pmcrefcount": "",
+        "fulljournalname": "Endoscopy",
+        "elocationid": "doi: 10.1055/a-0862-0346",
+        "doctype": "citation",
+        "srccontriblist": [],
+        "booktitle": "",
+        "medium": "",
+        "edition": "",
+        "publisherlocation": "",
+        "publishername": "",
+        "srcdate": "",
+        "reportnumber": "",
+        "availablefromurl": "",
+        "locationlabel": "",
+        "doccontriblist": [],
+        "docdate": "",
+        "bookname": "",
+        "chapter": "",
+        "sortpubdate": "2019/05/01 00:00",
+        "sortfirstauthor": "Manes G",
+        "vernaculartitle": ""
+      }
+    },
+    {
+      "number": 2,
+      "citation_key": "ref_02",
+      "doi": "10.1055/a-1075-4080",
+      "doi_resolved": true,
+      "title_match": true,
+      "pubmed_title_match": true,
+      "journal_match_or_normalization_review": true,
+      "status": "VERIFIED",
+      "crossref": {
+        "status": "VERIFIED_CROSSREF",
+        "doi": "10.1055/a-1075-4080",
+        "title": "ERCP-related adverse events: European Society of Gastrointestinal Endoscopy (ESGE) Guideline",
+        "container_title": "Endoscopy",
+        "short_container_title": "Endoscopy",
+        "authors": [
+          {
+            "given": "Jean-Marc",
+            "family": "Dumonceau",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Gastroenterology Service, Hôpital Civil Marie Curie, Charleroi, Belgium"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Christine",
+            "family": "Kapral",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Gastroenterology and Hepatology, Ordensklinikum Barmherzige Schwestern, Linz, Austria"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Lars",
+            "family": "Aabakken",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "GI Endoscopy Unit, OUS, Rikshospitalet University Hospital, Oslo, Norway"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Ioannis S.",
+            "family": "Papanikolaou",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Hepatogastroenterology Unit, Second Department of Internal Medicine – Propaedeutic, Research Institute and Diabetes Center, Medical School, National and Kapodistrian University, Attikon University General Hospital, Athens, Greece"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Andrea",
+            "family": "Tringali",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Digestive Endoscopy Unit, Fondazione Policlinico Universitario A. Gemelli IRCCS, Rome, Italy"
+              },
+              {
+                "name": "Centre for Endoscopic Research, Therapeutics and Training (CERTT), Università Cattolica del Sacro Cuore, Rome, Italy"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Geoffroy",
+            "family": "Vanbiervliet",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Centre Hospitalier Universitaire de Nice, Pole D.A.R.E, Endoscopie Digestive, Nice, France"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Torsten",
+            "family": "Beyna",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Internal Medicine and Gastroenterology, Evangelisches Krankenhaus Düsseldorf, Dusseldorf, Germany"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Mario",
+            "family": "Dinis-Ribeiro",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Gastroenterology Department, Portuguese Oncology Institute of Porto, Portugal"
+              },
+              {
+                "name": "Center for Research in Health Technologies and Information Systems (CINTESIS), Faculty of Medicine, Porto, Portugal"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Istvan",
+            "family": "Hritz",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Semmelweis University, 1st Department of Surgery, Center for Therapeutic Endoscopy, Budapest, Hungary"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Alberto",
+            "family": "Mariani",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Division of Pancreato-Biliary Endoscopy and Endosonography, Pancreas Translational & Clinical Research Center, San Raffaele Scientific Institute IRCCS, Vita Salute San Raffaele University, Milan, Italy"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Gregorios",
+            "family": "Paspatis",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Gastroenterology Department, Benizelion General Hospital, Heraklion, Crete, Greece"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Franco",
+            "family": "Radaelli",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Gastroenterology Department, Valduce Hospital, Como, Italy,"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Sundeep",
+            "family": "Lakhtakia",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Asian Institute of Gastroenterology, Hyderabad, India"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Andrew M.",
+            "family": "Veitch",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Gastroenterology, New Cross Hospital, Wolverhampton, UK"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Jeanin E.",
+            "family": "van Hooft",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Gastroenterology and Hepatology, Amsterdam University Medical Centers, University of Amsterdam, The Netherlands"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2020,
+              2
+            ]
+          ]
+        },
+        "volume": "52",
+        "issue": "02",
+        "page": "127-149",
+        "type": "journal-article",
+        "url": "https://doi.org/10.1055/a-1075-4080"
+      },
+      "pubmed": {
+        "uid": "31863440",
+        "pubdate": "2020 Feb",
+        "epubdate": "2019 Dec 20",
+        "source": "Endoscopy",
+        "authors": [
+          {
+            "name": "Dumonceau JM",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Kapral C",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Aabakken L",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Papanikolaou IS",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Tringali A",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Vanbiervliet G",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Beyna T",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Dinis-Ribeiro M",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Hritz I",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Mariani A",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Paspatis G",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Radaelli F",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Lakhtakia S",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Veitch AM",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "van Hooft JE",
+            "authtype": "Author",
+            "clusterid": ""
+          }
+        ],
+        "lastauthor": "van Hooft JE",
+        "title": "ERCP-related adverse events: European Society of Gastrointestinal Endoscopy (ESGE) Guideline.",
+        "sorttitle": "ercp related adverse events european society of gastrointestinal endoscopy esge guideline",
+        "volume": "52",
+        "issue": "2",
+        "pages": "127-149",
+        "lang": [
+          "eng"
+        ],
+        "nlmuniqueid": "0215166",
+        "issn": "0013-726X",
+        "essn": "1438-8812",
+        "pubtype": [
+          "Journal Article",
+          "Practice Guideline"
+        ],
+        "recordstatus": "PubMed - indexed for MEDLINE",
+        "pubstatus": "256",
+        "articleids": [
+          {
+            "idtype": "pubmed",
+            "idtypen": 1,
+            "value": "31863440"
+          },
+          {
+            "idtype": "doi",
+            "idtypen": 3,
+            "value": "10.1055/a-1075-4080"
+          }
+        ],
+        "history": [
+          {
+            "pubstatus": "pubmed",
+            "date": "2019/12/22 06:00"
+          },
+          {
+            "pubstatus": "medline",
+            "date": "2021/02/16 06:00"
+          },
+          {
+            "pubstatus": "entrez",
+            "date": "2019/12/22 06:00"
+          }
+        ],
+        "references": [],
+        "attributes": [
+          "Has Abstract"
+        ],
+        "pmcrefcount": "",
+        "fulljournalname": "Endoscopy",
+        "elocationid": "doi: 10.1055/a-1075-4080",
+        "doctype": "citation",
+        "srccontriblist": [],
+        "booktitle": "",
+        "medium": "",
+        "edition": "",
+        "publisherlocation": "",
+        "publishername": "",
+        "srcdate": "",
+        "reportnumber": "",
+        "availablefromurl": "",
+        "locationlabel": "",
+        "doccontriblist": [],
+        "docdate": "",
+        "bookname": "",
+        "chapter": "",
+        "sortpubdate": "2020/02/01 00:00",
+        "sortfirstauthor": "Dumonceau JM",
+        "vernaculartitle": ""
+      }
+    },
+    {
+      "number": 3,
+      "citation_key": "ref_03",
+      "doi": "10.1136/gutjnl-2016-312317",
+      "doi_resolved": true,
+      "title_match": true,
+      "pubmed_title_match": true,
+      "journal_match_or_normalization_review": true,
+      "status": "VERIFIED",
+      "crossref": {
+        "status": "VERIFIED_CROSSREF",
+        "doi": "10.1136/gutjnl-2016-312317",
+        "title": "Updated guideline on the management of common bile duct stones (CBDS)",
+        "container_title": "Gut",
+        "short_container_title": "Gut",
+        "authors": [
+          {
+            "given": "Earl",
+            "family": "Williams",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Bournemouth Digestive Diseases Centre, Royal Bournemouth and Christchurch NHS Hospital Trust, Bournemouth, UK"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Ian",
+            "family": "Beckingham",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "HPB Service, Nottingham University Hospitals NHS Trust, Nottingham, UK"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Ghassan",
+            "family": "El Sayed",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Bournemouth Digestive Diseases Centre, Royal Bournemouth and Christchurch NHS Hospital Trust, Bournemouth, UK"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Kurinchi",
+            "family": "Gurusamy",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Surgery, University College London Medical School, London, UK"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Richard",
+            "family": "Sturgess",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Aintree Digestive Diseases Unit, Aintree University Hospital Liverpool, Liverpool, UK"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "George",
+            "family": "Webster",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Hepatopancreatobiliary Medicine, University College Hospital, London, UK"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Tudor",
+            "family": "Young",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Radiology, The Princess of Wales Hospital, Bridgend, UK"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2017,
+              5
+            ]
+          ]
+        },
+        "volume": "66",
+        "issue": "5",
+        "page": "765-782",
+        "type": "journal-article",
+        "url": "https://doi.org/10.1136/gutjnl-2016-312317"
+      },
+      "pubmed": {
+        "uid": "28122906",
+        "pubdate": "2017 May",
+        "epubdate": "2017 Jan 25",
+        "source": "Gut",
+        "authors": [
+          {
+            "name": "Williams E",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Beckingham I",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "El Sayed G",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Gurusamy K",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Sturgess R",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Webster G",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Young T",
+            "authtype": "Author",
+            "clusterid": ""
+          }
+        ],
+        "lastauthor": "Young T",
+        "title": "Updated guideline on the management of common bile duct stones (CBDS).",
+        "sorttitle": "updated guideline on the management of common bile duct stones cbds",
+        "volume": "66",
+        "issue": "5",
+        "pages": "765-782",
+        "lang": [
+          "eng"
+        ],
+        "nlmuniqueid": "2985108R",
+        "issn": "0017-5749",
+        "essn": "1468-3288",
+        "pubtype": [
+          "Journal Article",
+          "Practice Guideline"
+        ],
+        "recordstatus": "PubMed - indexed for MEDLINE",
+        "pubstatus": "256",
+        "articleids": [
+          {
+            "idtype": "pubmed",
+            "idtypen": 1,
+            "value": "28122906"
+          },
+          {
+            "idtype": "doi",
+            "idtypen": 3,
+            "value": "10.1136/gutjnl-2016-312317"
+          },
+          {
+            "idtype": "pii",
+            "idtypen": 4,
+            "value": "gutjnl-2016-312317"
+          }
+        ],
+        "history": [
+          {
+            "pubstatus": "received",
+            "date": "2016/05/25 00:00"
+          },
+          {
+            "pubstatus": "revised",
+            "date": "2016/12/08 00:00"
+          },
+          {
+            "pubstatus": "accepted",
+            "date": "2016/12/15 00:00"
+          },
+          {
+            "pubstatus": "pubmed",
+            "date": "2017/01/27 06:00"
+          },
+          {
+            "pubstatus": "medline",
+            "date": "2017/07/14 06:00"
+          },
+          {
+            "pubstatus": "entrez",
+            "date": "2017/01/27 06:00"
+          }
+        ],
+        "references": [],
+        "attributes": [
+          "Has Abstract"
+        ],
+        "pmcrefcount": "",
+        "fulljournalname": "Gut",
+        "elocationid": "doi: 10.1136/gutjnl-2016-312317",
+        "doctype": "citation",
+        "srccontriblist": [],
+        "booktitle": "",
+        "medium": "",
+        "edition": "",
+        "publisherlocation": "",
+        "publishername": "",
+        "srcdate": "",
+        "reportnumber": "",
+        "availablefromurl": "",
+        "locationlabel": "",
+        "doccontriblist": [],
+        "docdate": "",
+        "bookname": "",
+        "chapter": "",
+        "sortpubdate": "2017/05/01 00:00",
+        "sortfirstauthor": "Williams E",
+        "vernaculartitle": ""
+      }
+    },
+    {
+      "number": 4,
+      "citation_key": "ref_04",
+      "doi": "10.1590/0102-672020180001e1348",
+      "doi_resolved": true,
+      "title_match": true,
+      "pubmed_title_match": true,
+      "journal_match_or_normalization_review": true,
+      "status": "VERIFIED",
+      "crossref": {
+        "status": "VERIFIED_CROSSREF",
+        "doi": "10.1590/0102-672020180001e1348",
+        "title": "ERCP PERFORMANCE IN A TERTIARY BRAZILIAN CENTER: FOCUS ON NEW RISK FACTORS, COMPLICATIONS AND QUALITY INDICATORS",
+        "container_title": "ABCD. Arquivos Brasileiros de Cirurgia Digestiva (São Paulo)",
+        "short_container_title": "ABCD, arq. bras. cir. dig.",
+        "authors": [
+          {
+            "given": "Alana Costa",
+            "family": "BORGES",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Zilda Arns Hospital and Maternity,  Brasil"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Paulo César de",
+            "family": "ALMEIDA",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "State University of Ceará,  Brazil"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Stella Maria Torres",
+            "family": "FURLANI",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "César Cals General Hospital,  Brasil"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Marcelo de Sousa",
+            "family": "CURY",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "SCOPE Gastrointestinal Endoscopy Unit,  Brasil"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Douglas K.",
+            "family": "PLESKOW",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Beth Israel Deaconess Medical Center,  USA"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2018,
+              6,
+              21
+            ]
+          ]
+        },
+        "volume": "31",
+        "issue": "1",
+        "page": "",
+        "type": "journal-article",
+        "url": "https://doi.org/10.1590/0102-672020180001e1348"
+      },
+      "pubmed": {
+        "uid": "29947682",
+        "pubdate": "2018 Jun 21",
+        "epubdate": "2018 Jun 21",
+        "source": "Arq Bras Cir Dig",
+        "authors": [
+          {
+            "name": "Borges AC",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Almeida PC",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Furlani SMT",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Cury MS",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Pleskow DK",
+            "authtype": "Author",
+            "clusterid": ""
+          }
+        ],
+        "lastauthor": "Pleskow DK",
+        "title": "ERCP PERFORMANCE IN A TERTIARY BRAZILIAN CENTER: FOCUS ON NEW RISK FACTORS, COMPLICATIONS AND QUALITY INDICATORS.",
+        "sorttitle": "ercp performance in a tertiary brazilian center focus on new risk factors complications and quality indicators",
+        "volume": "31",
+        "issue": "1",
+        "pages": "e1348",
+        "lang": [
+          "eng",
+          "por"
+        ],
+        "nlmuniqueid": "9100283",
+        "issn": "0102-6720",
+        "essn": "2317-6326",
+        "pubtype": [
+          "Journal Article",
+          "Observational Study"
+        ],
+        "recordstatus": "PubMed - indexed for MEDLINE",
+        "pubstatus": "3",
+        "articleids": [
+          {
+            "idtype": "pubmed",
+            "idtypen": 1,
+            "value": "29947682"
+          },
+          {
+            "idtype": "pmc",
+            "idtypen": 8,
+            "value": "PMC6049994"
+          },
+          {
+            "idtype": "pmcid",
+            "idtypen": 5,
+            "value": "pmc-id: PMC6049994;"
+          },
+          {
+            "idtype": "doi",
+            "idtypen": 3,
+            "value": "10.1590/0102-672020180001e1348"
+          },
+          {
+            "idtype": "pii",
+            "idtypen": 4,
+            "value": "S0102-67202018000100309"
+          }
+        ],
+        "history": [
+          {
+            "pubstatus": "received",
+            "date": "2017/11/21 00:00"
+          },
+          {
+            "pubstatus": "accepted",
+            "date": "2018/01/30 00:00"
+          },
+          {
+            "pubstatus": "entrez",
+            "date": "2018/06/28 06:00"
+          },
+          {
+            "pubstatus": "pubmed",
+            "date": "2018/06/28 06:00"
+          },
+          {
+            "pubstatus": "medline",
+            "date": "2019/01/25 06:00"
+          },
+          {
+            "pubstatus": "pmc-release",
+            "date": "2018/06/21 00:00"
+          }
+        ],
+        "references": [],
+        "attributes": [
+          "Has Abstract"
+        ],
+        "pmcrefcount": 41,
+        "fulljournalname": "Arquivos brasileiros de cirurgia digestiva : ABCD = Brazilian archives of digestive surgery",
+        "elocationid": "doi: 10.1590/0102-672020180001e1348",
+        "doctype": "citation",
+        "srccontriblist": [],
+        "booktitle": "",
+        "medium": "",
+        "edition": "",
+        "publisherlocation": "",
+        "publishername": "",
+        "srcdate": "",
+        "reportnumber": "",
+        "availablefromurl": "",
+        "locationlabel": "",
+        "doccontriblist": [],
+        "docdate": "",
+        "bookname": "",
+        "chapter": "",
+        "sortpubdate": "2018/06/21 00:00",
+        "sortfirstauthor": "Borges AC",
+        "vernaculartitle": ""
+      }
+    },
+    {
+      "number": 5,
+      "citation_key": "ref_05",
+      "doi": "10.1136/bmjopen-2013-002689",
+      "doi_resolved": true,
+      "title_match": true,
+      "pubmed_title_match": true,
+      "journal_match_or_normalization_review": true,
+      "status": "VERIFIED",
+      "crossref": {
+        "status": "VERIFIED_CROSSREF",
+        "doi": "10.1136/bmjopen-2013-002689",
+        "title": "Endoscopic retrograde cholangiopancreatography: utilisation and outcomes in a 10-year population-based cohort",
+        "container_title": "BMJ Open",
+        "short_container_title": "BMJ Open",
+        "authors": [
+          {
+            "given": "Nayantara",
+            "family": "Coelho-Prabhu",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Nilay D",
+            "family": "Shah",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Holly",
+            "family": "Van Houten",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Patrick S",
+            "family": "Kamath",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Todd H",
+            "family": "Baron",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2013
+            ]
+          ]
+        },
+        "volume": "3",
+        "issue": "5",
+        "page": "e002689",
+        "type": "journal-article",
+        "url": "https://doi.org/10.1136/bmjopen-2013-002689"
+      },
+      "pubmed": {
+        "uid": "23793659",
+        "pubdate": "2013 May 31",
+        "epubdate": "2013 May 31",
+        "source": "BMJ Open",
+        "authors": [
+          {
+            "name": "Coelho-Prabhu N",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Shah ND",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Van Houten H",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Kamath PS",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Baron TH",
+            "authtype": "Author",
+            "clusterid": ""
+          }
+        ],
+        "lastauthor": "Baron TH",
+        "title": "Endoscopic retrograde cholangiopancreatography: utilisation and outcomes in a 10-year population-based cohort.",
+        "sorttitle": "endoscopic retrograde cholangiopancreatography utilisation and outcomes in a 10 year population based cohort",
+        "volume": "3",
+        "issue": "5",
+        "pages": "",
+        "lang": [
+          "eng"
+        ],
+        "nlmuniqueid": "101552874",
+        "issn": "",
+        "essn": "2044-6055",
+        "pubtype": [
+          "Journal Article"
+        ],
+        "recordstatus": "PubMed",
+        "pubstatus": "3",
+        "articleids": [
+          {
+            "idtype": "pubmed",
+            "idtypen": 1,
+            "value": "23793659"
+          },
+          {
+            "idtype": "pmc",
+            "idtypen": 8,
+            "value": "PMC4387279"
+          },
+          {
+            "idtype": "pmcid",
+            "idtypen": 5,
+            "value": "pmc-id: PMC4387279;"
+          },
+          {
+            "idtype": "doi",
+            "idtypen": 3,
+            "value": "10.1136/bmjopen-2013-002689"
+          },
+          {
+            "idtype": "pii",
+            "idtypen": 4,
+            "value": "bmjopen-2013-002689"
+          }
+        ],
+        "history": [
+          {
+            "pubstatus": "entrez",
+            "date": "2013/06/25 06:00"
+          },
+          {
+            "pubstatus": "pubmed",
+            "date": "2013/06/26 06:00"
+          },
+          {
+            "pubstatus": "medline",
+            "date": "2013/06/26 06:01"
+          },
+          {
+            "pubstatus": "pmc-release",
+            "date": "2013/05/29 00:00"
+          }
+        ],
+        "references": [],
+        "attributes": [
+          "Has Abstract"
+        ],
+        "pmcrefcount": 19,
+        "fulljournalname": "BMJ open",
+        "elocationid": "doi: 10.1136/bmjopen-2013-002689",
+        "doctype": "citation",
+        "srccontriblist": [],
+        "booktitle": "",
+        "medium": "",
+        "edition": "",
+        "publisherlocation": "",
+        "publishername": "",
+        "srcdate": "",
+        "reportnumber": "",
+        "availablefromurl": "",
+        "locationlabel": "",
+        "doccontriblist": [],
+        "docdate": "",
+        "bookname": "",
+        "chapter": "",
+        "sortpubdate": "2013/05/31 00:00",
+        "sortfirstauthor": "Coelho-Prabhu N",
+        "vernaculartitle": ""
+      }
+    },
+    {
+      "number": 6,
+      "citation_key": "ref_06",
+      "doi": "10.1016/j.gie.2016.12.021",
+      "doi_resolved": true,
+      "title_match": true,
+      "pubmed_title_match": true,
+      "journal_match_or_normalization_review": true,
+      "status": "VERIFIED",
+      "crossref": {
+        "status": "VERIFIED_CROSSREF",
+        "doi": "10.1016/j.gie.2016.12.021",
+        "title": "Evolution in the utilization of biliary interventions in the United States: results of a nationwide longitudinal study from 1998 to 2013",
+        "container_title": "Gastrointestinal Endoscopy",
+        "short_container_title": "Gastrointestinal Endoscopy",
+        "authors": [
+          {
+            "given": "Robert J.",
+            "family": "Huang",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Nirav C.",
+            "family": "Thosani",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Monique T.",
+            "family": "Barakat",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Abhishek",
+            "family": "Choudhary",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Alka",
+            "family": "Mithal",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Gurkirpal",
+            "family": "Singh",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Saurabh",
+            "family": "Sethi",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Subhas",
+            "family": "Banerjee",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2017,
+              8
+            ]
+          ]
+        },
+        "volume": "86",
+        "issue": "2",
+        "page": "319-326.e5",
+        "type": "journal-article",
+        "url": "https://doi.org/10.1016/j.gie.2016.12.021"
+      },
+      "pubmed": {
+        "uid": "28062313",
+        "pubdate": "2017 Aug",
+        "epubdate": "2017 Jan 4",
+        "source": "Gastrointest Endosc",
+        "authors": [
+          {
+            "name": "Huang RJ",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Thosani NC",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Barakat MT",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Choudhary A",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Mithal A",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Singh G",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Sethi S",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Banerjee S",
+            "authtype": "Author",
+            "clusterid": ""
+          }
+        ],
+        "lastauthor": "Banerjee S",
+        "title": "Evolution in the utilization of biliary interventions in the United States: results of a nationwide longitudinal study from 1998 to 2013.",
+        "sorttitle": "evolution in the utilization of biliary interventions in the united states results of a nationwide longitudinal study from 1998 to 2013",
+        "volume": "86",
+        "issue": "2",
+        "pages": "319-326.e5",
+        "lang": [
+          "eng"
+        ],
+        "nlmuniqueid": "0010505",
+        "issn": "0016-5107",
+        "essn": "1097-6779",
+        "pubtype": [
+          "Journal Article"
+        ],
+        "recordstatus": "PubMed - indexed for MEDLINE",
+        "pubstatus": "256",
+        "articleids": [
+          {
+            "idtype": "pubmed",
+            "idtypen": 1,
+            "value": "28062313"
+          },
+          {
+            "idtype": "mid",
+            "idtypen": 8,
+            "value": "NIHMS871892"
+          },
+          {
+            "idtype": "pmc",
+            "idtypen": 8,
+            "value": "PMC5496794"
+          },
+          {
+            "idtype": "pmcid",
+            "idtypen": 5,
+            "value": "pmc-id: PMC5496794;manuscript-id: NIHMS871892;"
+          },
+          {
+            "idtype": "doi",
+            "idtypen": 3,
+            "value": "10.1016/j.gie.2016.12.021"
+          },
+          {
+            "idtype": "pii",
+            "idtypen": 4,
+            "value": "S0016-5107(16)30898-7"
+          }
+        ],
+        "history": [
+          {
+            "pubstatus": "received",
+            "date": "2016/10/02 00:00"
+          },
+          {
+            "pubstatus": "accepted",
+            "date": "2016/12/21 00:00"
+          },
+          {
+            "pubstatus": "pubmed",
+            "date": "2017/01/08 06:00"
+          },
+          {
+            "pubstatus": "medline",
+            "date": "2018/05/04 06:00"
+          },
+          {
+            "pubstatus": "entrez",
+            "date": "2017/01/08 06:00"
+          },
+          {
+            "pubstatus": "pmc-release",
+            "date": "2018/08/01 00:00"
+          }
+        ],
+        "references": [
+          {
+            "refsource": "Gastrointest Endosc. 2017 Aug;86(2):327-328. doi: 10.1016/j.gie.2017.03.1547.",
+            "reftype": "Comment in",
+            "pmid": 28728670,
+            "note": ""
+          }
+        ],
+        "attributes": [
+          "Has Abstract"
+        ],
+        "pmcrefcount": 25,
+        "fulljournalname": "Gastrointestinal endoscopy",
+        "elocationid": "doi: 10.1016/j.gie.2016.12.021",
+        "doctype": "citation",
+        "srccontriblist": [],
+        "booktitle": "",
+        "medium": "",
+        "edition": "",
+        "publisherlocation": "",
+        "publishername": "",
+        "srcdate": "",
+        "reportnumber": "",
+        "availablefromurl": "",
+        "locationlabel": "",
+        "doccontriblist": [],
+        "docdate": "",
+        "bookname": "",
+        "chapter": "",
+        "sortpubdate": "2017/08/01 00:00",
+        "sortfirstauthor": "Huang RJ",
+        "vernaculartitle": ""
+      }
+    },
+    {
+      "number": 7,
+      "citation_key": "ref_07",
+      "doi": "10.5009/gnl18537",
+      "doi_resolved": true,
+      "title_match": true,
+      "pubmed_title_match": true,
+      "journal_match_or_normalization_review": true,
+      "status": "VERIFIED",
+      "crossref": {
+        "status": "VERIFIED_CROSSREF",
+        "doi": "10.5009/gnl18537",
+        "title": "Impact of Hospital Volume and the Experience of Endoscopist on Adverse Events Related to Endoscopic Retrograde Cholangiopancreatography: A Prospective Observational Study",
+        "container_title": "Gut and Liver",
+        "short_container_title": "Gut and Liver",
+        "authors": [
+          {
+            "ORCID": "https://orcid.org/0000-0002-3929-9180",
+            "authenticated-orcid": false,
+            "given": "Hyun Jik",
+            "family": "Lee",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Department of Internal Medicine, Keimyung University Dongsan Medical Center, Daegu, Korea"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-9903-1282",
+            "authenticated-orcid": false,
+            "given": "Chang Min",
+            "family": "Cho",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Center for Pancreatobiliary Tumor, Kyungpook National University Chilgok Hospital, Daegu, Korea"
+              },
+              {
+                "name": "Department of Internal Medicine, School of Medicine, Kyungpook National University, Daegu, Korea"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0003-3180-1655",
+            "authenticated-orcid": false,
+            "given": "Jun",
+            "family": "Heo",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Internal Medicine, School of Medicine, Kyungpook National University, Daegu, Korea"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0001-8749-408X",
+            "authenticated-orcid": false,
+            "given": "Min Kyu",
+            "family": "Jung",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Internal Medicine, School of Medicine, Kyungpook National University, Daegu, Korea"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0003-4178-2056",
+            "authenticated-orcid": false,
+            "given": "Tae Nyeun",
+            "family": "Kim",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Internal Medicine, Yeungnam University Medical Center, Daegu, Korea"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0001-7786-7882",
+            "authenticated-orcid": false,
+            "given": "Kook Hyun",
+            "family": "Kim",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Internal Medicine, Yeungnam University Medical Center, Daegu, Korea"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0001-5572-5453",
+            "authenticated-orcid": false,
+            "given": "Hyunsoo",
+            "family": "Kim",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Internal Medicine, Daegu Fatima Hospital, Daegu, Korea"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0003-2203-102X",
+            "authenticated-orcid": false,
+            "given": "Kwang Bum",
+            "family": "Cho",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Internal Medicine, Keimyung University Dongsan Medical Center, Daegu, Korea"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0003-3365-1662",
+            "authenticated-orcid": false,
+            "given": "Ho Gak",
+            "family": "Kim",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Internal Medicine, Daegu Catholic University Medical Center, Daegu, Korea"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0001-8674-370X",
+            "authenticated-orcid": false,
+            "given": "Jimin",
+            "family": "Han",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Internal Medicine, Daegu Catholic University Medical Center, Daegu, Korea"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-1029-9064",
+            "authenticated-orcid": false,
+            "given": "Dong Wook",
+            "family": "Lee",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Internal Medicine, Daegu Catholic University Medical Center, Daegu, Korea"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-5835-9417",
+            "authenticated-orcid": false,
+            "given": "Yoon Suk",
+            "family": "Lee",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Internal Medicine, Inje University College of Medicine, Busan, Korea"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2020,
+              3,
+              15
+            ]
+          ]
+        },
+        "volume": "14",
+        "issue": "2",
+        "page": "257-264",
+        "type": "journal-article",
+        "url": "https://doi.org/10.5009/gnl18537"
+      },
+      "pubmed": {
+        "uid": "31060119",
+        "pubdate": "2020 Mar 15",
+        "epubdate": "",
+        "source": "Gut Liver",
+        "authors": [
+          {
+            "name": "Lee HJ",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Cho CM",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Heo J",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Jung MK",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Kim TN",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Kim KH",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Kim H",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Cho KB",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Kim HG",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Han J",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Lee DW",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Lee YS",
+            "authtype": "Author",
+            "clusterid": ""
+          }
+        ],
+        "lastauthor": "Lee YS",
+        "title": "Impact of Hospital Volume and the Experience of Endoscopist on Adverse Events Related to Endoscopic Retrograde Cholangiopancreatography: A Prospective Observational Study.",
+        "sorttitle": "impact of hospital volume and the experience of endoscopist on adverse events related to endoscopic retrograde cholangiopancreatography a prospective observational study",
+        "volume": "14",
+        "issue": "2",
+        "pages": "257-264",
+        "lang": [
+          "eng"
+        ],
+        "nlmuniqueid": "101316452",
+        "issn": "1976-2283",
+        "essn": "2005-1212",
+        "pubtype": [
+          "Journal Article",
+          "Observational Study"
+        ],
+        "recordstatus": "PubMed - indexed for MEDLINE",
+        "pubstatus": "4",
+        "articleids": [
+          {
+            "idtype": "pubmed",
+            "idtypen": 1,
+            "value": "31060119"
+          },
+          {
+            "idtype": "pmc",
+            "idtypen": 8,
+            "value": "PMC7096235"
+          },
+          {
+            "idtype": "pmcid",
+            "idtypen": 5,
+            "value": "pmc-id: PMC7096235;"
+          },
+          {
+            "idtype": "doi",
+            "idtypen": 3,
+            "value": "10.5009/gnl18537"
+          },
+          {
+            "idtype": "pii",
+            "idtypen": 4,
+            "value": "gnl18537"
+          }
+        ],
+        "history": [
+          {
+            "pubstatus": "received",
+            "date": "2018/12/07 00:00"
+          },
+          {
+            "pubstatus": "revised",
+            "date": "2019/03/17 00:00"
+          },
+          {
+            "pubstatus": "accepted",
+            "date": "2019/03/24 00:00"
+          },
+          {
+            "pubstatus": "pubmed",
+            "date": "2019/05/07 06:00"
+          },
+          {
+            "pubstatus": "medline",
+            "date": "2021/02/02 06:00"
+          },
+          {
+            "pubstatus": "entrez",
+            "date": "2019/05/07 06:00"
+          },
+          {
+            "pubstatus": "pmc-release",
+            "date": "2020/01/07 00:00"
+          }
+        ],
+        "references": [],
+        "attributes": [
+          "Has Abstract"
+        ],
+        "pmcrefcount": 33,
+        "fulljournalname": "Gut and liver",
+        "elocationid": "doi: 10.5009/gnl18537",
+        "doctype": "citation",
+        "srccontriblist": [],
+        "booktitle": "",
+        "medium": "",
+        "edition": "",
+        "publisherlocation": "",
+        "publishername": "",
+        "srcdate": "",
+        "reportnumber": "",
+        "availablefromurl": "",
+        "locationlabel": "",
+        "doccontriblist": [],
+        "docdate": "",
+        "bookname": "",
+        "chapter": "",
+        "sortpubdate": "2020/03/15 00:00",
+        "sortfirstauthor": "Lee HJ",
+        "vernaculartitle": ""
+      }
+    },
+    {
+      "number": 8,
+      "citation_key": "ref_08",
+      "doi": "10.1136/gut.2006.097543",
+      "doi_resolved": true,
+      "title_match": true,
+      "pubmed_title_match": true,
+      "journal_match_or_normalization_review": true,
+      "status": "VERIFIED",
+      "crossref": {
+        "status": "VERIFIED_CROSSREF",
+        "doi": "10.1136/gut.2006.097543",
+        "title": "Are we meeting the standards set for endoscopy? Results of a large-scale prospective survey of endoscopic retrograde cholangio-pancreatograph practice",
+        "container_title": "Gut",
+        "short_container_title": "Gut",
+        "authors": [
+          {
+            "given": "Earl J",
+            "family": "Williams",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Steve",
+            "family": "Taylor",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Peter",
+            "family": "Fairclough",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Adrian",
+            "family": "Hamlyn",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Richard F",
+            "family": "Logan",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Derrick",
+            "family": "Martin",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Stuart A",
+            "family": "Riley",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Peter",
+            "family": "Veitch",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Mark",
+            "family": "Wilkinson",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Paula J",
+            "family": "Williamson",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Martin",
+            "family": "Lombard",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2007,
+              6
+            ]
+          ]
+        },
+        "volume": "56",
+        "issue": "6",
+        "page": "821-829",
+        "type": "journal-article",
+        "url": "https://doi.org/10.1136/gut.2006.097543"
+      },
+      "pubmed": {
+        "uid": "17145737",
+        "pubdate": "2007 Jun",
+        "epubdate": "2006 Dec 4",
+        "source": "Gut",
+        "authors": [
+          {
+            "name": "Williams EJ",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Taylor S",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Fairclough P",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Hamlyn A",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Logan RF",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Martin D",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Riley SA",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Veitch P",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Wilkinson M",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Williamson PR",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Lombard M",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "BSG Audit of ERCP",
+            "authtype": "CollectiveName",
+            "clusterid": ""
+          }
+        ],
+        "lastauthor": "Lombard M",
+        "title": "Are we meeting the standards set for endoscopy? Results of a large-scale prospective survey of endoscopic retrograde cholangio-pancreatograph practice.",
+        "sorttitle": "are we meeting the standards set for endoscopy results of a large scale prospective survey of endoscopic retrograde cholangio pancreatograph practice",
+        "volume": "56",
+        "issue": "6",
+        "pages": "821-9",
+        "lang": [
+          "eng"
+        ],
+        "nlmuniqueid": "2985108R",
+        "issn": "0017-5749",
+        "essn": "1468-3288",
+        "pubtype": [
+          "Journal Article",
+          "Multicenter Study",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "recordstatus": "PubMed - indexed for MEDLINE",
+        "pubstatus": "256",
+        "articleids": [
+          {
+            "idtype": "pubmed",
+            "idtypen": 1,
+            "value": "17145737"
+          },
+          {
+            "idtype": "pmc",
+            "idtypen": 8,
+            "value": "PMC1954883"
+          },
+          {
+            "idtype": "pmcid",
+            "idtypen": 5,
+            "value": "pmc-id: PMC1954883;"
+          },
+          {
+            "idtype": "doi",
+            "idtypen": 3,
+            "value": "10.1136/gut.2006.097543"
+          },
+          {
+            "idtype": "pii",
+            "idtypen": 4,
+            "value": "gut.2006.097543"
+          }
+        ],
+        "history": [
+          {
+            "pubstatus": "pubmed",
+            "date": "2006/12/06 09:00"
+          },
+          {
+            "pubstatus": "medline",
+            "date": "2007/06/27 09:00"
+          },
+          {
+            "pubstatus": "entrez",
+            "date": "2006/12/06 09:00"
+          },
+          {
+            "pubstatus": "pmc-release",
+            "date": "2010/06/01 00:00"
+          }
+        ],
+        "references": [
+          {
+            "refsource": "Gut. 2007 Jun;56(6):796-801. doi: 10.1136/gut.2006.102046.",
+            "reftype": "Comment in",
+            "pmid": 17229794,
+            "note": ""
+          },
+          {
+            "refsource": "Gut. 2016 Sep;65(9):1571. doi: 10.1136/gut.2006.097543corr1.",
+            "reftype": "Erratum in",
+            "pmid": 27507906,
+            "note": ""
+          }
+        ],
+        "attributes": [
+          "Has Abstract"
+        ],
+        "pmcrefcount": 21,
+        "fulljournalname": "Gut",
+        "elocationid": "",
+        "doctype": "citation",
+        "srccontriblist": [],
+        "booktitle": "",
+        "medium": "",
+        "edition": "",
+        "publisherlocation": "",
+        "publishername": "",
+        "srcdate": "",
+        "reportnumber": "",
+        "availablefromurl": "",
+        "locationlabel": "",
+        "doccontriblist": [],
+        "docdate": "",
+        "bookname": "",
+        "chapter": "",
+        "sortpubdate": "2007/06/01 00:00",
+        "sortfirstauthor": "Williams EJ",
+        "vernaculartitle": ""
+      }
+    },
+    {
+      "number": 9,
+      "citation_key": "ref_09",
+      "doi": "10.1002/bjs.8992",
+      "doi_resolved": true,
+      "title_match": true,
+      "pubmed_title_match": true,
+      "journal_match_or_normalization_review": true,
+      "status": "VERIFIED",
+      "crossref": {
+        "status": "VERIFIED_CROSSREF",
+        "doi": "10.1002/bjs.8992",
+        "title": "Patterns and predictive factors of complications after endoscopic retrograde cholangiopancreatography",
+        "container_title": "Journal of British Surgery",
+        "short_container_title": "",
+        "authors": [
+          {
+            "given": "T",
+            "family": "Glomsaker",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Department of Gastroenterological Surgery, Stavanger University Hospital , Stavanger,",
+                "place": [
+                  "Norway"
+                ]
+              },
+              {
+                "name": "Department of Surgical Sciences, University of Bergen , Bergen,",
+                "place": [
+                  "Norway"
+                ]
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "G",
+            "family": "Hoff",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Medicine, Telemark Hospital , Skien,",
+                "place": [
+                  "Norway"
+                ]
+              },
+              {
+                "name": "Department of Faculty of Medicine, University of Oslo ,",
+                "place": [
+                  "Norway"
+                ]
+              },
+              {
+                "name": "Department of Cancer Registry of Norway , Oslo,",
+                "place": [
+                  "Norway"
+                ]
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "J T",
+            "family": "Kvaløy",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Mathematics and Natural Sciences, University of Stavanger , Stavanger,",
+                "place": [
+                  "Norway"
+                ]
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "K",
+            "family": "Søreide",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Gastroenterological Surgery, Stavanger University Hospital , Stavanger,",
+                "place": [
+                  "Norway"
+                ]
+              },
+              {
+                "name": "Department of Surgical Sciences, University of Bergen , Bergen,",
+                "place": [
+                  "Norway"
+                ]
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "L",
+            "family": "Aabakken",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Medicine, Stavanger University Hospital , Stavanger,",
+                "place": [
+                  "Norway"
+                ]
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "J A",
+            "family": "Søreide",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Gastroenterological Surgery, Stavanger University Hospital , Stavanger,",
+                "place": [
+                  "Norway"
+                ]
+              },
+              {
+                "name": "Department of Surgical Sciences, University of Bergen , Bergen,",
+                "place": [
+                  "Norway"
+                ]
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2013,
+              1,
+              8
+            ]
+          ]
+        },
+        "volume": "100",
+        "issue": "3",
+        "page": "373-380",
+        "type": "journal-article",
+        "url": "https://doi.org/10.1002/bjs.8992"
+      },
+      "pubmed": {
+        "uid": "23225493",
+        "pubdate": "2013 Feb",
+        "epubdate": "2012 Dec 6",
+        "source": "Br J Surg",
+        "authors": [
+          {
+            "name": "Glomsaker T",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Hoff G",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Kvaløy JT",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Søreide K",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Aabakken L",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Søreide JA",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Norwegian Gastronet ERCP Group",
+            "authtype": "CollectiveName",
+            "clusterid": ""
+          }
+        ],
+        "lastauthor": "Søreide JA",
+        "title": "Patterns and predictive factors of complications after endoscopic retrograde cholangiopancreatography.",
+        "sorttitle": "patterns and predictive factors of complications after endoscopic retrograde cholangiopancreatography",
+        "volume": "100",
+        "issue": "3",
+        "pages": "373-80",
+        "lang": [
+          "eng"
+        ],
+        "nlmuniqueid": "0372553",
+        "issn": "0007-1323",
+        "essn": "1365-2168",
+        "pubtype": [
+          "Evaluation Study",
+          "Journal Article",
+          "Multicenter Study",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "recordstatus": "PubMed - indexed for MEDLINE",
+        "pubstatus": "256",
+        "articleids": [
+          {
+            "idtype": "pubmed",
+            "idtypen": 1,
+            "value": "23225493"
+          },
+          {
+            "idtype": "doi",
+            "idtypen": 3,
+            "value": "10.1002/bjs.8992"
+          }
+        ],
+        "history": [
+          {
+            "pubstatus": "accepted",
+            "date": "2012/09/27 00:00"
+          },
+          {
+            "pubstatus": "entrez",
+            "date": "2012/12/11 06:00"
+          },
+          {
+            "pubstatus": "pubmed",
+            "date": "2012/12/12 06:00"
+          },
+          {
+            "pubstatus": "medline",
+            "date": "2013/02/26 06:00"
+          }
+        ],
+        "references": [],
+        "attributes": [
+          "Has Abstract"
+        ],
+        "pmcrefcount": "",
+        "fulljournalname": "The British journal of surgery",
+        "elocationid": "doi: 10.1002/bjs.8992",
+        "doctype": "citation",
+        "srccontriblist": [],
+        "booktitle": "",
+        "medium": "",
+        "edition": "",
+        "publisherlocation": "",
+        "publishername": "",
+        "srcdate": "",
+        "reportnumber": "",
+        "availablefromurl": "",
+        "locationlabel": "",
+        "doccontriblist": [],
+        "docdate": "",
+        "bookname": "",
+        "chapter": "",
+        "sortpubdate": "2013/02/01 00:00",
+        "sortfirstauthor": "Glomsaker T",
+        "vernaculartitle": ""
+      }
+    },
+    {
+      "number": 10,
+      "citation_key": "ref_10",
+      "doi": "10.1136/flgastro-2012-100182",
+      "doi_resolved": true,
+      "title_match": true,
+      "pubmed_title_match": true,
+      "journal_match_or_normalization_review": true,
+      "status": "VERIFIED",
+      "crossref": {
+        "status": "VERIFIED_CROSSREF",
+        "doi": "10.1136/flgastro-2012-100182",
+        "title": "Endoscopic retrograde cholangiopancreatography: is the centre better? The case against centralisation of ERCP services",
+        "container_title": "Frontline Gastroenterology",
+        "short_container_title": "Frontline Gastroenterol",
+        "authors": [
+          {
+            "given": "A Frank",
+            "family": "Muller",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2013,
+              7
+            ]
+          ]
+        },
+        "volume": "4",
+        "issue": "3",
+        "page": "210-212",
+        "type": "journal-article",
+        "url": "https://doi.org/10.1136/flgastro-2012-100182"
+      },
+      "pubmed": {
+        "uid": "23795285",
+        "pubdate": "2013 Jul",
+        "epubdate": "2012 Nov 29",
+        "source": "Frontline Gastroenterol",
+        "authors": [
+          {
+            "name": "Muller AF",
+            "authtype": "Author",
+            "clusterid": ""
+          }
+        ],
+        "lastauthor": "Muller AF",
+        "title": "Endoscopic retrograde cholangiopancreatography: is the centre better? The case against centralisation of ERCP services.",
+        "sorttitle": "endoscopic retrograde cholangiopancreatography is the centre better the case against centralisation of ercp services",
+        "volume": "4",
+        "issue": "3",
+        "pages": "210-212",
+        "lang": [
+          "eng"
+        ],
+        "nlmuniqueid": "101528589",
+        "issn": "2041-4137",
+        "essn": "2041-4145",
+        "pubtype": [
+          "Journal Article"
+        ],
+        "recordstatus": "PubMed",
+        "pubstatus": "256",
+        "articleids": [
+          {
+            "idtype": "pubmed",
+            "idtypen": 1,
+            "value": "23795285"
+          },
+          {
+            "idtype": "pmc",
+            "idtypen": 8,
+            "value": "PMC3686311"
+          },
+          {
+            "idtype": "pmcid",
+            "idtypen": 5,
+            "value": "pmc-id: PMC3686311;"
+          },
+          {
+            "idtype": "doi",
+            "idtypen": 3,
+            "value": "10.1136/flgastro-2012-100182"
+          },
+          {
+            "idtype": "pii",
+            "idtypen": 4,
+            "value": "flgastro-2012-100182"
+          }
+        ],
+        "history": [
+          {
+            "pubstatus": "received",
+            "date": "2012/05/17 00:00"
+          },
+          {
+            "pubstatus": "revised",
+            "date": "2012/09/27 00:00"
+          },
+          {
+            "pubstatus": "accepted",
+            "date": "2012/10/23 00:00"
+          },
+          {
+            "pubstatus": "entrez",
+            "date": "2013/06/25 06:00"
+          },
+          {
+            "pubstatus": "pubmed",
+            "date": "2013/06/25 06:00"
+          },
+          {
+            "pubstatus": "medline",
+            "date": "2013/06/25 06:01"
+          },
+          {
+            "pubstatus": "pmc-release",
+            "date": "2013/07/01 00:00"
+          }
+        ],
+        "references": [],
+        "attributes": [
+          "Has Abstract"
+        ],
+        "pmcrefcount": 18,
+        "fulljournalname": "Frontline gastroenterology",
+        "elocationid": "",
+        "doctype": "citation",
+        "srccontriblist": [],
+        "booktitle": "",
+        "medium": "",
+        "edition": "",
+        "publisherlocation": "",
+        "publishername": "",
+        "srcdate": "",
+        "reportnumber": "",
+        "availablefromurl": "",
+        "locationlabel": "",
+        "doccontriblist": [],
+        "docdate": "",
+        "bookname": "",
+        "chapter": "",
+        "sortpubdate": "2013/07/01 00:00",
+        "sortfirstauthor": "Muller AF",
+        "vernaculartitle": ""
+      }
+    },
+    {
+      "number": 11,
+      "citation_key": "ref_11",
+      "doi": "10.1007/s00464-022-09535-w",
+      "doi_resolved": true,
+      "title_match": true,
+      "pubmed_title_match": true,
+      "journal_match_or_normalization_review": true,
+      "status": "VERIFIED",
+      "crossref": {
+        "status": "VERIFIED_CROSSREF",
+        "doi": "10.1007/s00464-022-09535-w",
+        "title": "Racial disparities in endoscopic retrograde cholangiopancreatography (ERCP) utilization in the United States: are we getting better?",
+        "container_title": "Surgical Endoscopy",
+        "short_container_title": "Surg Endosc",
+        "authors": [
+          {
+            "ORCID": "https://orcid.org/0000-0002-8544-9039",
+            "authenticated-orcid": false,
+            "given": "Dushyant Singh",
+            "family": "Dahiya",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0003-4074-6395",
+            "authenticated-orcid": false,
+            "given": "Abhilash",
+            "family": "Perisetti",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0001-6248-2445",
+            "authenticated-orcid": false,
+            "given": "Neil",
+            "family": "Sharma",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-1002-2823",
+            "authenticated-orcid": false,
+            "given": "Sumant",
+            "family": "Inamdar",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-9433-9042",
+            "authenticated-orcid": false,
+            "given": "Hemant",
+            "family": "Goyal",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0001-8581-1408",
+            "authenticated-orcid": false,
+            "given": "Amandeep",
+            "family": "Singh",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-4094-3682",
+            "authenticated-orcid": false,
+            "given": "Laura",
+            "family": "Rotundo",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0003-1343-9939",
+            "authenticated-orcid": false,
+            "given": "Rajat",
+            "family": "Garg",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Chin-I",
+            "family": "Cheng",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Sailaja",
+            "family": "Pisipati",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0003-1641-9976",
+            "authenticated-orcid": false,
+            "given": "Mohammad",
+            "family": "Al-Haddad",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0003-2506-8602",
+            "authenticated-orcid": false,
+            "given": "Madhusudhan",
+            "family": "Sanaka",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2023,
+              1
+            ]
+          ]
+        },
+        "volume": "37",
+        "issue": "1",
+        "page": "421-433",
+        "type": "journal-article",
+        "url": "https://doi.org/10.1007/s00464-022-09535-w"
+      },
+      "pubmed": {
+        "uid": "35986223",
+        "pubdate": "2023 Jan",
+        "epubdate": "2022 Aug 19",
+        "source": "Surg Endosc",
+        "authors": [
+          {
+            "name": "Dahiya DS",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Perisetti A",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Sharma N",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Inamdar S",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Goyal H",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Singh A",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Rotundo L",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Garg R",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Cheng CI",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Pisipati S",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Al-Haddad M",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Sanaka M",
+            "authtype": "Author",
+            "clusterid": ""
+          }
+        ],
+        "lastauthor": "Sanaka M",
+        "title": "Racial disparities in endoscopic retrograde cholangiopancreatography (ERCP) utilization in the United States: are we getting better?",
+        "sorttitle": "racial disparities in endoscopic retrograde cholangiopancreatography ercp utilization in the united states are we getting better",
+        "volume": "37",
+        "issue": "1",
+        "pages": "421-433",
+        "lang": [
+          "eng"
+        ],
+        "nlmuniqueid": "8806653",
+        "issn": "0930-2794",
+        "essn": "1432-2218",
+        "pubtype": [
+          "Journal Article"
+        ],
+        "recordstatus": "PubMed - indexed for MEDLINE",
+        "pubstatus": "256",
+        "articleids": [
+          {
+            "idtype": "pubmed",
+            "idtypen": 1,
+            "value": "35986223"
+          },
+          {
+            "idtype": "doi",
+            "idtypen": 3,
+            "value": "10.1007/s00464-022-09535-w"
+          },
+          {
+            "idtype": "pii",
+            "idtypen": 4,
+            "value": "10.1007/s00464-022-09535-w"
+          }
+        ],
+        "history": [
+          {
+            "pubstatus": "received",
+            "date": "2022/02/03 00:00"
+          },
+          {
+            "pubstatus": "accepted",
+            "date": "2022/08/04 00:00"
+          },
+          {
+            "pubstatus": "pubmed",
+            "date": "2022/08/20 06:00"
+          },
+          {
+            "pubstatus": "medline",
+            "date": "2023/01/18 06:00"
+          },
+          {
+            "pubstatus": "entrez",
+            "date": "2022/08/19 23:30"
+          }
+        ],
+        "references": [],
+        "attributes": [
+          "Has Abstract"
+        ],
+        "pmcrefcount": "",
+        "fulljournalname": "Surgical endoscopy",
+        "elocationid": "doi: 10.1007/s00464-022-09535-w",
+        "doctype": "citation",
+        "srccontriblist": [],
+        "booktitle": "",
+        "medium": "",
+        "edition": "",
+        "publisherlocation": "",
+        "publishername": "",
+        "srcdate": "",
+        "reportnumber": "",
+        "availablefromurl": "",
+        "locationlabel": "",
+        "doccontriblist": [],
+        "docdate": "",
+        "bookname": "",
+        "chapter": "",
+        "sortpubdate": "2023/01/01 00:00",
+        "sortfirstauthor": "Dahiya DS",
+        "vernaculartitle": ""
+      }
+    },
+    {
+      "number": 12,
+      "citation_key": "ref_12",
+      "doi": "10.1590/0102-311x00032419",
+      "doi_resolved": true,
+      "title_match": true,
+      "pubmed_title_match": null,
+      "journal_match_or_normalization_review": true,
+      "status": "VERIFIED",
+      "crossref": {
+        "status": "VERIFIED_CROSSREF",
+        "doi": "10.1590/0102-311x00032419",
+        "title": "Microdatasus: pacote para download e pré-processamento de microdados do Departamento de Informática do SUS (DATASUS)",
+        "container_title": "Cadernos de Saúde Pública",
+        "short_container_title": "Cad. Saúde Pública",
+        "authors": [
+          {
+            "ORCID": "https://orcid.org/0000-0003-0652-8466",
+            "authenticated-orcid": false,
+            "given": "Raphael de Freitas",
+            "family": "Saldanha",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Fundação Oswaldo Cruz,  Brazil"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0001-9597-5967",
+            "authenticated-orcid": false,
+            "given": "Ronaldo Rocha",
+            "family": "Bastos",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Universidade Federal de Juiz de Fora,  Brazil"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-1161-2753",
+            "authenticated-orcid": false,
+            "given": "Christovam",
+            "family": "Barcellos",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Fundação Oswaldo Cruz,  Brazil"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2019
+            ]
+          ]
+        },
+        "volume": "35",
+        "issue": "9",
+        "page": "e00032419",
+        "type": "journal-article",
+        "url": "https://doi.org/10.1590/0102-311x00032419"
+      },
+      "pubmed": {}
+    },
+    {
+      "number": 13,
+      "citation_key": "ref_13",
+      "doi": "10.1590/0100-6991e-20233545-en",
+      "doi_resolved": true,
+      "title_match": true,
+      "pubmed_title_match": true,
+      "journal_match_or_normalization_review": true,
+      "status": "VERIFIED",
+      "crossref": {
+        "status": "VERIFIED_CROSSREF",
+        "doi": "10.1590/0100-6991e-20233545-en",
+        "title": "Limitations of using the DATASUS database as a primary source of data in surgical research: a scoping review",
+        "container_title": "Revista do Colégio Brasileiro de Cirurgiões",
+        "short_container_title": "Rev. Col. Bras. Cir.",
+        "authors": [
+          {
+            "ORCID": "https://orcid.org/0000-0003-4899-8685",
+            "authenticated-orcid": false,
+            "given": "SOFIA WAGEMAKER",
+            "family": "VIANA",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Kursk State Medical University, Rússia"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0003-1075-9494",
+            "authenticated-orcid": false,
+            "given": "MATHEUS DANIEL",
+            "family": "FALEIRO",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Universidade Federal de Minas Gerais, Brazil"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0003-2442-6260",
+            "authenticated-orcid": false,
+            "given": "ANNA LUIZA FONTES",
+            "family": "MENDES",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Universidade Federal de Minas Gerais, Brazil"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-8052-9750",
+            "authenticated-orcid": false,
+            "given": "AMANDA CIPRIANO",
+            "family": "TORQUATO",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Universidade Vale do Rio Doce, Brazil"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-2111-1573",
+            "authenticated-orcid": false,
+            "given": "CLARA PEREIRA OLIVEIRA",
+            "family": "TAVARES",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Universidade Salvador, Brazil"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-6523-8891",
+            "authenticated-orcid": false,
+            "given": "BRENDA",
+            "family": "FERES",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Kursk State Medical University, Rússia"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0001-9704-2466",
+            "authenticated-orcid": false,
+            "given": "MIGUEL GODEIRO",
+            "family": "FERNANDEZ",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Escola Bahiana de Medicina e Saúde Pública, Brazil"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-0780-6125",
+            "authenticated-orcid": false,
+            "given": "ITALLO ROMERO MARQUES",
+            "family": "SOBREIRA",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Centro Universitário Tocantinense Presidente Antônio Carlos, Brasil"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0003-3277-6439",
+            "authenticated-orcid": false,
+            "given": "CAROLINE MARQUES DE",
+            "family": "AQUINO",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Universidade Nove de Julho, Brazil"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0001-9675-0380",
+            "authenticated-orcid": false,
+            "given": "SIMONE DE CAMPOS VIEIRA",
+            "family": "ABIB",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Universidade Federal de São Paulo, Brazil"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-3786-7850",
+            "authenticated-orcid": false,
+            "given": "FABIO",
+            "family": "BOTELHO",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Universidade Federal de Minas Gerais, Brazil; The Montreal Children’s Hospital, Harvey E. Beardmore Division of Pediatric Surgery, Canadá"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2023
+            ]
+          ]
+        },
+        "volume": "50",
+        "issue": "",
+        "page": "e20233545",
+        "type": "journal-article",
+        "url": "https://doi.org/10.1590/0100-6991e-20233545-en"
+      },
+      "pubmed": {
+        "uid": "37646726",
+        "pubdate": "2023",
+        "epubdate": "2023 Aug 25",
+        "source": "Rev Col Bras Cir",
+        "authors": [
+          {
+            "name": "Viana SW",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Faleiro MD",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Mendes ALF",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Torquato AC",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Tavares CPO",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Feres B",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Fernandez MG",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Sobreira IRM",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Aquino CM",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Abib SCV",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Botelho F",
+            "authtype": "Author",
+            "clusterid": ""
+          }
+        ],
+        "lastauthor": "Botelho F",
+        "title": "Limitations of using the DATASUS database as a primary source of data in surgical research: a scoping review.",
+        "sorttitle": "limitations of using the datasus database as a primary source of data in surgical research a scoping review",
+        "volume": "50",
+        "issue": "",
+        "pages": "e20233545",
+        "lang": [
+          "eng",
+          "por"
+        ],
+        "nlmuniqueid": "7809515",
+        "issn": "0100-6991",
+        "essn": "1809-4546",
+        "pubtype": [
+          "Journal Article",
+          "Scoping Review"
+        ],
+        "recordstatus": "PubMed - indexed for MEDLINE",
+        "pubstatus": "258",
+        "articleids": [
+          {
+            "idtype": "pubmed",
+            "idtypen": 1,
+            "value": "37646726"
+          },
+          {
+            "idtype": "pmc",
+            "idtypen": 8,
+            "value": "PMC10508673"
+          },
+          {
+            "idtype": "pmcid",
+            "idtypen": 5,
+            "value": "pmc-id: PMC10508673;"
+          },
+          {
+            "idtype": "doi",
+            "idtypen": 3,
+            "value": "10.1590/0100-6991e-20233545-en"
+          },
+          {
+            "idtype": "pii",
+            "idtypen": 4,
+            "value": "S0100-69912023000100308"
+          }
+        ],
+        "history": [
+          {
+            "pubstatus": "received",
+            "date": "2023/02/16 00:00"
+          },
+          {
+            "pubstatus": "accepted",
+            "date": "2023/05/19 00:00"
+          },
+          {
+            "pubstatus": "medline",
+            "date": "2023/08/31 06:42"
+          },
+          {
+            "pubstatus": "pubmed",
+            "date": "2023/08/30 12:42"
+          },
+          {
+            "pubstatus": "entrez",
+            "date": "2023/08/30 10:43"
+          },
+          {
+            "pubstatus": "pmc-release",
+            "date": "2023/08/14 00:00"
+          }
+        ],
+        "references": [],
+        "attributes": [
+          "Has Abstract"
+        ],
+        "pmcrefcount": 59,
+        "fulljournalname": "Revista do Colegio Brasileiro de Cirurgioes",
+        "elocationid": "doi: 10.1590/0100-6991e-20233545-en",
+        "doctype": "citation",
+        "srccontriblist": [],
+        "booktitle": "",
+        "medium": "",
+        "edition": "",
+        "publisherlocation": "",
+        "publishername": "",
+        "srcdate": "",
+        "reportnumber": "",
+        "availablefromurl": "",
+        "locationlabel": "",
+        "doccontriblist": [],
+        "docdate": "",
+        "bookname": "",
+        "chapter": "",
+        "sortpubdate": "2023/08/25 00:00",
+        "sortfirstauthor": "Viana SW",
+        "vernaculartitle": ""
+      }
+    },
+    {
+      "number": 14,
+      "citation_key": "ref_14",
+      "doi": "10.1590/0100-6991e-20223180-en",
+      "doi_resolved": true,
+      "title_match": true,
+      "pubmed_title_match": true,
+      "journal_match_or_normalization_review": true,
+      "status": "VERIFIED",
+      "crossref": {
+        "status": "VERIFIED_CROSSREF",
+        "doi": "10.1590/0100-6991e-20223180-en",
+        "title": "Cohort cholecystectomies in the Brazilian public system: is access to laparoscopy universal after three decades?",
+        "container_title": "Revista do Colégio Brasileiro de Cirurgiões",
+        "short_container_title": "Rev. Col. Bras. Cir.",
+        "authors": [
+          {
+            "ORCID": "https://orcid.org/0000-0003-4262-595X",
+            "authenticated-orcid": false,
+            "given": "JOSÉ GUSTAVO",
+            "family": "OLIJNYK",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Hospital Nossa Senhora da Conceição,  Brazil; Hospital Militar de Área de Porto Alegre,  Brasil"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-0267-6827",
+            "authenticated-orcid": false,
+            "given": "ISABELLE GARIBALDI",
+            "family": "VALANDRO",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Universidade Federal do Rio Grande do Sul,  Brazil"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-6519-0496",
+            "authenticated-orcid": false,
+            "given": "MARCELA",
+            "family": "RODRIGUES",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Universidade Federal do Rio Grande do Sul,  Brazil"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0001-5083-5776",
+            "authenticated-orcid": false,
+            "given": "MAURO ANTÔNIO",
+            "family": "CZEPIELEWSKI",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Universidade Federal do Rio Grande do Sul,  Brazil"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0003-2356-2789",
+            "authenticated-orcid": false,
+            "given": "LEANDRO TOTTI",
+            "family": "CAVAZZOLA",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Universidade Federal do Rio Grande do Sul,  Brazil"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2022
+            ]
+          ]
+        },
+        "volume": "49",
+        "issue": "",
+        "page": "e20223180",
+        "type": "journal-article",
+        "url": "https://doi.org/10.1590/0100-6991e-20223180-en"
+      },
+      "pubmed": {
+        "uid": "35858035",
+        "pubdate": "2022",
+        "epubdate": "2022 Jul 15",
+        "source": "Rev Col Bras Cir",
+        "authors": [
+          {
+            "name": "Olijnyk JG",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Valandro IG",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Rodrigues M",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Czepielewski MA",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Cavazzola LT",
+            "authtype": "Author",
+            "clusterid": ""
+          }
+        ],
+        "lastauthor": "Cavazzola LT",
+        "title": "Cohort cholecystectomies in the Brazilian public system: is access to laparoscopy universal after three decades?",
+        "sorttitle": "cohort cholecystectomies in the brazilian public system is access to laparoscopy universal after three decades",
+        "volume": "49",
+        "issue": "",
+        "pages": "e20223180",
+        "lang": [
+          "eng",
+          "por"
+        ],
+        "nlmuniqueid": "7809515",
+        "issn": "0100-6991",
+        "essn": "1809-4546",
+        "pubtype": [
+          "Journal Article"
+        ],
+        "recordstatus": "PubMed - indexed for MEDLINE",
+        "pubstatus": "258",
+        "articleids": [
+          {
+            "idtype": "pubmed",
+            "idtypen": 1,
+            "value": "35858035"
+          },
+          {
+            "idtype": "pmc",
+            "idtypen": 8,
+            "value": "PMC10578786"
+          },
+          {
+            "idtype": "pmcid",
+            "idtypen": 5,
+            "value": "pmc-id: PMC10578786;"
+          },
+          {
+            "idtype": "doi",
+            "idtypen": 3,
+            "value": "10.1590/0100-6991e-20223180-en"
+          },
+          {
+            "idtype": "pii",
+            "idtypen": 4,
+            "value": "S0100-69912022000100222"
+          }
+        ],
+        "history": [
+          {
+            "pubstatus": "received",
+            "date": "2021/09/04 00:00"
+          },
+          {
+            "pubstatus": "accepted",
+            "date": "2022/04/06 00:00"
+          },
+          {
+            "pubstatus": "entrez",
+            "date": "2022/07/20 15:15"
+          },
+          {
+            "pubstatus": "pubmed",
+            "date": "2022/07/21 06:00"
+          },
+          {
+            "pubstatus": "medline",
+            "date": "2022/07/23 06:00"
+          },
+          {
+            "pubstatus": "pmc-release",
+            "date": "2022/07/08 00:00"
+          }
+        ],
+        "references": [],
+        "attributes": [
+          "Has Abstract"
+        ],
+        "pmcrefcount": 35,
+        "fulljournalname": "Revista do Colegio Brasileiro de Cirurgioes",
+        "elocationid": "doi: 10.1590/0100-6991e-20223180-en",
+        "doctype": "citation",
+        "srccontriblist": [],
+        "booktitle": "",
+        "medium": "",
+        "edition": "",
+        "publisherlocation": "",
+        "publishername": "",
+        "srcdate": "",
+        "reportnumber": "",
+        "availablefromurl": "",
+        "locationlabel": "",
+        "doccontriblist": [],
+        "docdate": "",
+        "bookname": "",
+        "chapter": "",
+        "sortpubdate": "2022/07/15 00:00",
+        "sortfirstauthor": "Olijnyk JG",
+        "vernaculartitle": ""
+      }
+    },
+    {
+      "number": 15,
+      "citation_key": "ref_15",
+      "doi": "10.1007/s00268-014-2493-3",
+      "doi_resolved": true,
+      "title_match": true,
+      "pubmed_title_match": true,
+      "journal_match_or_normalization_review": true,
+      "status": "VERIFIED",
+      "crossref": {
+        "status": "VERIFIED_CROSSREF",
+        "doi": "10.1007/s00268-014-2493-3",
+        "title": "Video-Assisted Surgery Implementation in the Public Health System of a Developing Country",
+        "container_title": "World Journal of Surgery",
+        "short_container_title": "World J Surg",
+        "authors": [
+          {
+            "given": "José Gustavo",
+            "family": "Olijnyk",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Leandro Totti",
+            "family": "Cavazzola",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "José Eduardo",
+            "family": "de Aguilar-Nascimento",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Miguel Prestes",
+            "family": "Nácul",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Elias Couto",
+            "family": "e Almeida Filho",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2014,
+              3,
+              11
+            ]
+          ]
+        },
+        "volume": "",
+        "issue": "",
+        "page": "",
+        "type": "journal-article",
+        "url": "https://doi.org/10.1007/s00268-014-2493-3"
+      },
+      "pubmed": {
+        "uid": "24615611",
+        "pubdate": "2014 Aug",
+        "epubdate": "",
+        "source": "World J Surg",
+        "authors": [
+          {
+            "name": "Olijnyk JG",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Cavazzola LT",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "de Aguilar-Nascimento JE",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Nácul MP",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Couto e Almeida Filho E",
+            "authtype": "Author",
+            "clusterid": ""
+          }
+        ],
+        "lastauthor": "Couto e Almeida Filho E",
+        "title": "Video-assisted surgery implementation in the public health system of a developing country.",
+        "sorttitle": "video assisted surgery implementation in the public health system of a developing country",
+        "volume": "38",
+        "issue": "8",
+        "pages": "1912-6",
+        "lang": [
+          "eng"
+        ],
+        "nlmuniqueid": "7704052",
+        "issn": "0364-2313",
+        "essn": "1432-2323",
+        "pubtype": [
+          "Journal Article"
+        ],
+        "recordstatus": "PubMed - indexed for MEDLINE",
+        "pubstatus": "4",
+        "articleids": [
+          {
+            "idtype": "pubmed",
+            "idtypen": 1,
+            "value": "24615611"
+          },
+          {
+            "idtype": "doi",
+            "idtypen": 3,
+            "value": "10.1007/s00268-014-2493-3"
+          }
+        ],
+        "history": [
+          {
+            "pubstatus": "entrez",
+            "date": "2014/03/12 06:00"
+          },
+          {
+            "pubstatus": "pubmed",
+            "date": "2014/03/13 06:00"
+          },
+          {
+            "pubstatus": "medline",
+            "date": "2015/08/04 06:00"
+          }
+        ],
+        "references": [],
+        "attributes": [
+          "Has Abstract"
+        ],
+        "pmcrefcount": "",
+        "fulljournalname": "World journal of surgery",
+        "elocationid": "doi: 10.1007/s00268-014-2493-3",
+        "doctype": "citation",
+        "srccontriblist": [],
+        "booktitle": "",
+        "medium": "",
+        "edition": "",
+        "publisherlocation": "",
+        "publishername": "",
+        "srcdate": "",
+        "reportnumber": "",
+        "availablefromurl": "",
+        "locationlabel": "",
+        "doccontriblist": [],
+        "docdate": "",
+        "bookname": "",
+        "chapter": "",
+        "sortpubdate": "2014/08/01 00:00",
+        "sortfirstauthor": "Olijnyk JG",
+        "vernaculartitle": ""
+      }
+    },
+    {
+      "number": 16,
+      "citation_key": "ref_16",
+      "doi": "10.1590/0102-6720201700010013",
+      "doi_resolved": true,
+      "title_match": true,
+      "pubmed_title_match": true,
+      "journal_match_or_normalization_review": true,
+      "status": "VERIFIED",
+      "crossref": {
+        "status": "VERIFIED_CROSSREF",
+        "doi": "10.1590/0102-6720201700010013",
+        "title": "MORTALITY OF URGENCY VERSUS ELECTIVE VIDEOLAPAROSCOPIC CHOLECYSTECTOMY FOR ACUTE CHOLECYSTITIS",
+        "container_title": "ABCD. Arquivos Brasileiros de Cirurgia Digestiva (São Paulo)",
+        "short_container_title": "ABCD, arq. bras. cir. dig.",
+        "authors": [
+          {
+            "given": "Saulo José Oliveira",
+            "family": "FELÍCIO",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Bahiana Medical School and Public Health, Brazil"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Ediriomar Peixoto",
+            "family": "MATOS",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Bahiana Medical School and Public Health, Brazil"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Antonio Maurício",
+            "family": "CERQUEIRA",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Bahiana Medical School and Public Health, Brazil"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Kurt Wolfgang Schindler Freire de",
+            "family": "FARIAS",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Bahiana Medical School and Public Health, Brazil"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Ramon de Assis",
+            "family": "SILVA",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Bahiana Medical School and Public Health, Brazil"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Mateus de Oliveira",
+            "family": "TORRES",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Bahiana Medical School and Public Health, Brazil"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2017,
+              3
+            ]
+          ]
+        },
+        "volume": "30",
+        "issue": "1",
+        "page": "47-50",
+        "type": "journal-article",
+        "url": "https://doi.org/10.1590/0102-6720201700010013"
+      },
+      "pubmed": {
+        "uid": "28489169",
+        "pubdate": "2017 Jan-Mar",
+        "epubdate": "",
+        "source": "Arq Bras Cir Dig",
+        "authors": [
+          {
+            "name": "Felício SJO",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Matos EP",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Cerqueira AM",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Farias KWSF",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Silva RA",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Torres MO",
+            "authtype": "Author",
+            "clusterid": ""
+          }
+        ],
+        "lastauthor": "Torres MO",
+        "title": "MORTALITY OF URGENCY VERSUS ELECTIVE VIDEOLAPAROSCOPIC CHOLECYSTECTOMY FOR ACUTE CHOLECYSTITIS.",
+        "sorttitle": "mortality of urgency versus elective videolaparoscopic cholecystectomy for acute cholecystitis",
+        "volume": "30",
+        "issue": "1",
+        "pages": "47-50",
+        "lang": [
+          "eng",
+          "por"
+        ],
+        "nlmuniqueid": "9100283",
+        "issn": "0102-6720",
+        "essn": "2317-6326",
+        "pubtype": [
+          "Comparative Study",
+          "Journal Article"
+        ],
+        "recordstatus": "PubMed - indexed for MEDLINE",
+        "pubstatus": "4",
+        "articleids": [
+          {
+            "idtype": "pubmed",
+            "idtypen": 1,
+            "value": "28489169"
+          },
+          {
+            "idtype": "pmc",
+            "idtypen": 8,
+            "value": "PMC5424687"
+          },
+          {
+            "idtype": "pmcid",
+            "idtypen": 5,
+            "value": "pmc-id: PMC5424687;"
+          },
+          {
+            "idtype": "doi",
+            "idtypen": 3,
+            "value": "10.1590/0102-6720201700010013"
+          },
+          {
+            "idtype": "pii",
+            "idtypen": 4,
+            "value": "S0102-67202017000100047"
+          }
+        ],
+        "history": [
+          {
+            "pubstatus": "received",
+            "date": "2016/09/15 00:00"
+          },
+          {
+            "pubstatus": "accepted",
+            "date": "2016/12/13 00:00"
+          },
+          {
+            "pubstatus": "entrez",
+            "date": "2017/05/11 06:00"
+          },
+          {
+            "pubstatus": "pubmed",
+            "date": "2017/05/11 06:00"
+          },
+          {
+            "pubstatus": "medline",
+            "date": "2018/05/12 06:00"
+          },
+          {
+            "pubstatus": "pmc-release",
+            "date": "2017/01/01 00:00"
+          }
+        ],
+        "references": [],
+        "attributes": [
+          "Has Abstract"
+        ],
+        "pmcrefcount": 22,
+        "fulljournalname": "Arquivos brasileiros de cirurgia digestiva : ABCD = Brazilian archives of digestive surgery",
+        "elocationid": "doi: 10.1590/0102-6720201700010013",
+        "doctype": "citation",
+        "srccontriblist": [],
+        "booktitle": "",
+        "medium": "",
+        "edition": "",
+        "publisherlocation": "",
+        "publishername": "",
+        "srcdate": "",
+        "reportnumber": "",
+        "availablefromurl": "",
+        "locationlabel": "",
+        "doccontriblist": [],
+        "docdate": "",
+        "bookname": "",
+        "chapter": "",
+        "sortpubdate": "2017/01/01 00:00",
+        "sortfirstauthor": "Felício SJO",
+        "vernaculartitle": ""
+      }
+    },
+    {
+      "number": 17,
+      "citation_key": "ref_17",
+      "doi": "10.1038/s41598-022-13746-5",
+      "doi_resolved": true,
+      "title_match": true,
+      "pubmed_title_match": true,
+      "journal_match_or_normalization_review": true,
+      "status": "VERIFIED",
+      "crossref": {
+        "status": "VERIFIED_CROSSREF",
+        "doi": "10.1038/s41598-022-13746-5",
+        "title": "The disruption of elective procedures due to COVID-19 in Brazil in 2020",
+        "container_title": "Scientific Reports",
+        "short_container_title": "Sci Rep",
+        "authors": [
+          {
+            "given": "Gustavo Saraiva",
+            "family": "Frio",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Letícia Xander",
+            "family": "Russo",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Cleandro Pires",
+            "family": "de Albuquerque",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Licia Maria Henrique",
+            "family": "da Mota",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Adriana Ferreira",
+            "family": "Barros-Areal",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Andréa Pedrosa Ribeiro Alves",
+            "family": "Oliveira",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "João",
+            "family": "Firmino-Machado",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Everton Nunes",
+            "family": "da Silva",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2022,
+              6,
+              29
+            ]
+          ]
+        },
+        "volume": "12",
+        "issue": "1",
+        "page": "10942",
+        "type": "journal-article",
+        "url": "https://doi.org/10.1038/s41598-022-13746-5"
+      },
+      "pubmed": {
+        "uid": "35768482",
+        "pubdate": "2022 Jun 29",
+        "epubdate": "2022 Jun 29",
+        "source": "Sci Rep",
+        "authors": [
+          {
+            "name": "Frio GS",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Russo LX",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "de Albuquerque CP",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "da Mota LMH",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Barros-Areal AF",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Oliveira APRA",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Firmino-Machado J",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "da Silva EN",
+            "authtype": "Author",
+            "clusterid": ""
+          }
+        ],
+        "lastauthor": "da Silva EN",
+        "title": "The disruption of elective procedures due to COVID-19 in Brazil in 2020.",
+        "sorttitle": "disruption of elective procedures due to covid 19 in brazil in 2020",
+        "volume": "12",
+        "issue": "1",
+        "pages": "10942",
+        "lang": [
+          "eng"
+        ],
+        "nlmuniqueid": "101563288",
+        "issn": "",
+        "essn": "2045-2322",
+        "pubtype": [
+          "Journal Article"
+        ],
+        "recordstatus": "PubMed - indexed for MEDLINE",
+        "pubstatus": "3",
+        "articleids": [
+          {
+            "idtype": "pubmed",
+            "idtypen": 1,
+            "value": "35768482"
+          },
+          {
+            "idtype": "pmc",
+            "idtypen": 8,
+            "value": "PMC9243075"
+          },
+          {
+            "idtype": "pmcid",
+            "idtypen": 5,
+            "value": "pmc-id: PMC9243075;"
+          },
+          {
+            "idtype": "doi",
+            "idtypen": 3,
+            "value": "10.1038/s41598-022-13746-5"
+          },
+          {
+            "idtype": "pii",
+            "idtypen": 4,
+            "value": "10.1038/s41598-022-13746-5"
+          }
+        ],
+        "history": [
+          {
+            "pubstatus": "received",
+            "date": "2021/09/28 00:00"
+          },
+          {
+            "pubstatus": "accepted",
+            "date": "2022/05/27 00:00"
+          },
+          {
+            "pubstatus": "entrez",
+            "date": "2022/06/29 23:20"
+          },
+          {
+            "pubstatus": "pubmed",
+            "date": "2022/06/30 06:00"
+          },
+          {
+            "pubstatus": "medline",
+            "date": "2022/07/02 06:00"
+          },
+          {
+            "pubstatus": "pmc-release",
+            "date": "2022/06/29 00:00"
+          }
+        ],
+        "references": [],
+        "attributes": [
+          "Has Abstract"
+        ],
+        "pmcrefcount": 33,
+        "fulljournalname": "Scientific reports",
+        "elocationid": "doi: 10.1038/s41598-022-13746-5",
+        "doctype": "citation",
+        "srccontriblist": [],
+        "booktitle": "",
+        "medium": "",
+        "edition": "",
+        "publisherlocation": "",
+        "publishername": "",
+        "srcdate": "",
+        "reportnumber": "",
+        "availablefromurl": "",
+        "locationlabel": "",
+        "doccontriblist": [],
+        "docdate": "",
+        "bookname": "",
+        "chapter": "",
+        "sortpubdate": "2022/06/29 00:00",
+        "sortfirstauthor": "Frio GS",
+        "vernaculartitle": ""
+      }
+    },
+    {
+      "number": 18,
+      "citation_key": "ref_18",
+      "doi": "10.1186/s12913-021-07006-x",
+      "doi_resolved": true,
+      "title_match": true,
+      "pubmed_title_match": true,
+      "journal_match_or_normalization_review": true,
+      "status": "VERIFIED",
+      "crossref": {
+        "status": "VERIFIED_CROSSREF",
+        "doi": "10.1186/s12913-021-07006-x",
+        "title": "Patterns of hospital utilization in the Unified Health System in six Brazilian capitals: comparison between the year before and the first six first months of the COVID-19 pandemic",
+        "container_title": "BMC Health Services Research",
+        "short_container_title": "BMC Health Serv Res",
+        "authors": [
+          {
+            "given": "Margareth Crisóstomo",
+            "family": "Portela",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Claudia Cristina",
+            "family": "de Aguiar Pereira",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Sheyla Maria Lemos",
+            "family": "Lima",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Carla Lourenço Tavares",
+            "family": "de Andrade",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Mônica",
+            "family": "Martins",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2021,
+              12
+            ]
+          ]
+        },
+        "volume": "21",
+        "issue": "1",
+        "page": "976",
+        "type": "journal-article",
+        "url": "https://doi.org/10.1186/s12913-021-07006-x"
+      },
+      "pubmed": {
+        "uid": "34535135",
+        "pubdate": "2021 Sep 17",
+        "epubdate": "2021 Sep 17",
+        "source": "BMC Health Serv Res",
+        "authors": [
+          {
+            "name": "Portela MC",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "de Aguiar Pereira CC",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Lima SML",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "de Andrade CLT",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Martins M",
+            "authtype": "Author",
+            "clusterid": ""
+          }
+        ],
+        "lastauthor": "Martins M",
+        "title": "Patterns of hospital utilization in the Unified Health System in six Brazilian capitals: comparison between the year before and the first six first months of the COVID-19 pandemic.",
+        "sorttitle": "patterns of hospital utilization in the unified health system in six brazilian capitals comparison between the year before and the first six first months of the covid 19 pandemic",
+        "volume": "21",
+        "issue": "1",
+        "pages": "976",
+        "lang": [
+          "eng"
+        ],
+        "nlmuniqueid": "101088677",
+        "issn": "",
+        "essn": "1472-6963",
+        "pubtype": [
+          "Journal Article",
+          "Observational Study"
+        ],
+        "recordstatus": "PubMed - indexed for MEDLINE",
+        "pubstatus": "3",
+        "articleids": [
+          {
+            "idtype": "pubmed",
+            "idtypen": 1,
+            "value": "34535135"
+          },
+          {
+            "idtype": "pmc",
+            "idtypen": 8,
+            "value": "PMC8445784"
+          },
+          {
+            "idtype": "pmcid",
+            "idtypen": 5,
+            "value": "pmc-id: PMC8445784;"
+          },
+          {
+            "idtype": "doi",
+            "idtypen": 3,
+            "value": "10.1186/s12913-021-07006-x"
+          },
+          {
+            "idtype": "pii",
+            "idtypen": 4,
+            "value": "10.1186/s12913-021-07006-x"
+          }
+        ],
+        "history": [
+          {
+            "pubstatus": "received",
+            "date": "2021/03/06 00:00"
+          },
+          {
+            "pubstatus": "accepted",
+            "date": "2021/09/08 00:00"
+          },
+          {
+            "pubstatus": "entrez",
+            "date": "2021/09/18 05:26"
+          },
+          {
+            "pubstatus": "pubmed",
+            "date": "2021/09/19 06:00"
+          },
+          {
+            "pubstatus": "medline",
+            "date": "2021/09/22 06:00"
+          },
+          {
+            "pubstatus": "pmc-release",
+            "date": "2021/09/17 00:00"
+          }
+        ],
+        "references": [],
+        "attributes": [
+          "Has Abstract"
+        ],
+        "pmcrefcount": 31,
+        "fulljournalname": "BMC health services research",
+        "elocationid": "doi: 10.1186/s12913-021-07006-x",
+        "doctype": "citation",
+        "srccontriblist": [],
+        "booktitle": "",
+        "medium": "",
+        "edition": "",
+        "publisherlocation": "",
+        "publishername": "",
+        "srcdate": "",
+        "reportnumber": "",
+        "availablefromurl": "",
+        "locationlabel": "",
+        "doccontriblist": [],
+        "docdate": "",
+        "bookname": "",
+        "chapter": "",
+        "sortpubdate": "2021/09/17 00:00",
+        "sortfirstauthor": "Portela MC",
+        "vernaculartitle": ""
+      }
+    },
+    {
+      "number": 19,
+      "citation_key": "ref_19",
+      "doi": "10.1055/s-0042-1744961",
+      "doi_resolved": true,
+      "title_match": true,
+      "pubmed_title_match": null,
+      "journal_match_or_normalization_review": true,
+      "status": "VERIFIED",
+      "crossref": {
+        "status": "VERIFIED_CROSSREF",
+        "doi": "10.1055/s-0042-1744961",
+        "title": "REDUCTION IN THE NUMBER OF ENDOSCOPIC RETROGRADE CHOLANGIOPANCREATOGRAPHIES PERFORMED IN BRAZIL DURING THE COVID-19 PANDEMIC",
+        "container_title": "Endoscopy",
+        "short_container_title": "Endoscopy",
+        "authors": [
+          {
+            "given": "T.",
+            "family": "Correa",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Federal University of Pelotas, Faculty of Medicine, Pelotas, Brazil"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2022,
+              4
+            ]
+          ]
+        },
+        "volume": "54",
+        "issue": "S 01",
+        "page": "S148-S148",
+        "type": "journal-article",
+        "url": "https://doi.org/10.1055/s-0042-1744961"
+      },
+      "pubmed": {}
+    },
+    {
+      "number": 20,
+      "citation_key": "ref_20",
+      "doi": "10.3390/jcm13020460",
+      "doi_resolved": true,
+      "title_match": true,
+      "pubmed_title_match": true,
+      "journal_match_or_normalization_review": true,
+      "status": "VERIFIED",
+      "crossref": {
+        "status": "VERIFIED_CROSSREF",
+        "doi": "10.3390/jcm13020460",
+        "title": "The Safety and Cost Analysis of Outpatient Laparoendoscopy in the Treatment of Cholecystocholedocholithiasis: A Retrospective Study",
+        "container_title": "Journal of Clinical Medicine",
+        "short_container_title": "JCM",
+        "authors": [
+          {
+            "ORCID": "https://orcid.org/0000-0001-5118-0361",
+            "authenticated-orcid": false,
+            "given": "José Sebastião",
+            "family": "dos Santos",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Department of Surgery and Anatomy, Faculty of Medicine of Ribeirão Preto, University of São Paulo (FMRP-USP), São Paulo 05508-220, Brazil"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Rafael",
+            "family": "Kemp",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Surgery and Anatomy, Faculty of Medicine of Ribeirão Preto, University of São Paulo (FMRP-USP), São Paulo 05508-220, Brazil"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Alicia Guadalupe Mendoza",
+            "family": "Orquera",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Postgraduate Program, Department of Surgery and Anatomy, Faculty of Medicine of Ribeirão Preto, University of São Paulo (FMRP-USP), São Paulo 05508-220, Brazil"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Alberto Facury",
+            "family": "Gaspar",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Postgraduate Program, Department of Surgery and Anatomy, Faculty of Medicine of Ribeirão Preto, University of São Paulo (FMRP-USP), São Paulo 05508-220, Brazil"
+              },
+              {
+                "name": "University Hospital, Faculty of Medicine of Ribeirão Preto, University of São Paulo (FMRP-USP), São Paulo 05508-220, Brazil"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Jorge Resende Lopes",
+            "family": "Júnior",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "University Hospital, Faculty of Medicine of Ribeirão Preto, University of São Paulo (FMRP-USP), São Paulo 05508-220, Brazil"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Lucas Tobias Almeida",
+            "family": "Queiroz",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Postgraduate Program, Department of Surgery and Anatomy, Faculty of Medicine of Ribeirão Preto, University of São Paulo (FMRP-USP), São Paulo 05508-220, Brazil"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Víctor Antônio Peres Alves Ferreira",
+            "family": "Avezum",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Postgraduate Program, Department of Surgery and Anatomy, Faculty of Medicine of Ribeirão Preto, University of São Paulo (FMRP-USP), São Paulo 05508-220, Brazil"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "José Celso",
+            "family": "Ardengh",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "University Hospital, Faculty of Medicine of Ribeirão Preto, University of São Paulo (FMRP-USP), São Paulo 05508-220, Brazil"
+              },
+              {
+                "name": "Digestive Endoscopy Service, Hospital Moriah, São Paulo 04084-002, Brazil"
+              },
+              {
+                "name": "Department of Diagnostic Imaging, Federal University of São Paulo, São Paulo 04021-001, Brazil"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Ajith Kumar",
+            "family": "Sankarankutty",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Surgery and Anatomy, Faculty of Medicine of Ribeirão Preto, University of São Paulo (FMRP-USP), São Paulo 05508-220, Brazil"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Leonardo Santos",
+            "family": "Lima",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Postgraduate Program, Department of Surgery and Anatomy, Faculty of Medicine of Ribeirão Preto, University of São Paulo (FMRP-USP), São Paulo 05508-220, Brazil"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2024,
+              1,
+              14
+            ]
+          ]
+        },
+        "volume": "13",
+        "issue": "2",
+        "page": "460",
+        "type": "journal-article",
+        "url": "https://doi.org/10.3390/jcm13020460"
+      },
+      "pubmed": {
+        "uid": "38256593",
+        "pubdate": "2024 Jan 14",
+        "epubdate": "2024 Jan 14",
+        "source": "J Clin Med",
+        "authors": [
+          {
+            "name": "Dos Santos JS",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Kemp R",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Orquera AGM",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Gaspar AF",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Júnior JRL",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Queiroz LTA",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Avezum VAPAF",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Ardengh JC",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Sankarankutty AK",
+            "authtype": "Author",
+            "clusterid": ""
+          },
+          {
+            "name": "Lima LS",
+            "authtype": "Author",
+            "clusterid": ""
+          }
+        ],
+        "lastauthor": "Lima LS",
+        "title": "The Safety and Cost Analysis of Outpatient Laparoendoscopy in the Treatment of Cholecystocholedocholithiasis: A Retrospective Study.",
+        "sorttitle": "safety and cost analysis of outpatient laparoendoscopy in the treatment of cholecystocholedocholithiasis a retrospective study",
+        "volume": "13",
+        "issue": "2",
+        "pages": "",
+        "lang": [
+          "eng"
+        ],
+        "nlmuniqueid": "101606588",
+        "issn": "2077-0383",
+        "essn": "2077-0383",
+        "pubtype": [
+          "Journal Article"
+        ],
+        "recordstatus": "PubMed",
+        "pubstatus": "3",
+        "articleids": [
+          {
+            "idtype": "pubmed",
+            "idtypen": 1,
+            "value": "38256593"
+          },
+          {
+            "idtype": "pmc",
+            "idtypen": 8,
+            "value": "PMC10816273"
+          },
+          {
+            "idtype": "pmcid",
+            "idtypen": 5,
+            "value": "pmc-id: PMC10816273;"
+          },
+          {
+            "idtype": "doi",
+            "idtypen": 3,
+            "value": "10.3390/jcm13020460"
+          },
+          {
+            "idtype": "pii",
+            "idtypen": 4,
+            "value": "jcm13020460"
+          }
+        ],
+        "history": [
+          {
+            "pubstatus": "received",
+            "date": "2023/12/17 00:00"
+          },
+          {
+            "pubstatus": "revised",
+            "date": "2024/01/04 00:00"
+          },
+          {
+            "pubstatus": "accepted",
+            "date": "2024/01/11 00:00"
+          },
+          {
+            "pubstatus": "medline",
+            "date": "2024/01/23 06:44"
+          },
+          {
+            "pubstatus": "pubmed",
+            "date": "2024/01/23 06:43"
+          },
+          {
+            "pubstatus": "entrez",
+            "date": "2024/01/23 01:15"
+          },
+          {
+            "pubstatus": "pmc-release",
+            "date": "2024/01/14 00:00"
+          }
+        ],
+        "references": [],
+        "attributes": [
+          "Has Abstract"
+        ],
+        "pmcrefcount": 33,
+        "fulljournalname": "Journal of clinical medicine",
+        "elocationid": "doi: 10.3390/jcm13020460",
+        "doctype": "citation",
+        "srccontriblist": [],
+        "booktitle": "",
+        "medium": "",
+        "edition": "",
+        "publisherlocation": "",
+        "publishername": "",
+        "srcdate": "",
+        "reportnumber": "",
+        "availablefromurl": "",
+        "locationlabel": "",
+        "doccontriblist": [],
+        "docdate": "",
+        "bookname": "",
+        "chapter": "",
+        "sortpubdate": "2024/01/14 00:00",
+        "sortfirstauthor": "Dos Santos JS",
+        "vernaculartitle": ""
+      }
+    },
+    {
+      "number": 21,
+      "citation_key": "ref_21",
+      "doi": "10.1371/journal.pmed.0040296",
+      "doi_resolved": true,
+      "title_match": true,
+      "pubmed_title_match": null,
+      "journal_match_or_normalization_review": true,
+      "status": "VERIFIED",
+      "crossref": {
+        "status": "VERIFIED_CROSSREF",
+        "doi": "10.1371/journal.pmed.0040296",
+        "title": "The Strengthening the Reporting of Observational Studies in Epidemiology (STROBE) Statement: Guidelines for Reporting Observational Studies",
+        "container_title": "PLoS Medicine",
+        "short_container_title": "PLoS Med",
+        "authors": [
+          {
+            "given": "Erik",
+            "family": "von Elm",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Douglas G",
+            "family": "Altman",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Matthias",
+            "family": "Egger",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Stuart J",
+            "family": "Pocock",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Peter C",
+            "family": "Gøtzsche",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Jan P",
+            "family": "Vandenbroucke",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "name": "for the STROBE Initiative",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2007,
+              10,
+              16
+            ]
+          ]
+        },
+        "volume": "4",
+        "issue": "10",
+        "page": "e296",
+        "type": "journal-article",
+        "url": "https://doi.org/10.1371/journal.pmed.0040296"
+      },
+      "pubmed": {}
+    },
+    {
+      "number": 22,
+      "citation_key": "ref_22",
+      "doi": "10.1371/journal.pmed.1001885",
+      "doi_resolved": true,
+      "title_match": true,
+      "pubmed_title_match": null,
+      "journal_match_or_normalization_review": true,
+      "status": "VERIFIED",
+      "crossref": {
+        "status": "VERIFIED_CROSSREF",
+        "doi": "10.1371/journal.pmed.1001885",
+        "title": "The REporting of studies Conducted using Observational Routinely-collected health Data (RECORD) Statement",
+        "container_title": "PLOS Medicine",
+        "short_container_title": "PLoS Med",
+        "authors": [
+          {
+            "given": "Eric I.",
+            "family": "Benchimol",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Liam",
+            "family": "Smeeth",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Astrid",
+            "family": "Guttmann",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Katie",
+            "family": "Harron",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "David",
+            "family": "Moher",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Irene",
+            "family": "Petersen",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Henrik T.",
+            "family": "Sørensen",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Erik",
+            "family": "von Elm",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Sinéad M.",
+            "family": "Langan",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "name": "RECORD Working Committee",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2015,
+              10,
+              6
+            ]
+          ]
+        },
+        "volume": "12",
+        "issue": "10",
+        "page": "e1001885",
+        "type": "journal-article",
+        "url": "https://doi.org/10.1371/journal.pmed.1001885"
+      },
+      "pubmed": {}
+    },
+    {
+      "number": 23,
+      "citation_key": "ref_23",
+      "doi": "10.1016/s0140-6736(11)60054-8",
+      "doi_resolved": true,
+      "title_match": true,
+      "pubmed_title_match": null,
+      "journal_match_or_normalization_review": true,
+      "status": "VERIFIED",
+      "crossref": {
+        "status": "VERIFIED_CROSSREF",
+        "doi": "10.1016/s0140-6736(11)60054-8",
+        "title": "The Brazilian health system: history, advances, and challenges",
+        "container_title": "The Lancet",
+        "short_container_title": "The Lancet",
+        "authors": [
+          {
+            "given": "Jairnilson",
+            "family": "Paim",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Claudia",
+            "family": "Travassos",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Celia",
+            "family": "Almeida",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Ligia",
+            "family": "Bahia",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "James",
+            "family": "Macinko",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2011,
+              5
+            ]
+          ]
+        },
+        "volume": "377",
+        "issue": "9779",
+        "page": "1778-1797",
+        "type": "journal-article",
+        "url": "https://doi.org/10.1016/s0140-6736(11)60054-8"
+      },
+      "pubmed": {}
+    },
+    {
+      "number": 24,
+      "citation_key": "ref_24",
+      "doi": "10.1186/1476-072x-3-3",
+      "doi_resolved": true,
+      "title_match": true,
+      "pubmed_title_match": null,
+      "journal_match_or_normalization_review": true,
+      "status": "VERIFIED",
+      "crossref": {
+        "status": "VERIFIED_CROSSREF",
+        "doi": "10.1186/1476-072x-3-3",
+        "title": "Spatial accessibility of primary care: concepts, methods and challenges",
+        "container_title": "International Journal of Health Geographics",
+        "short_container_title": "Int J Health Geogr",
+        "authors": [
+          {
+            "given": "Mark F",
+            "family": "Guagliardo",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2004,
+              2,
+              26
+            ]
+          ]
+        },
+        "volume": "3",
+        "issue": "1",
+        "page": "3",
+        "type": "journal-article",
+        "url": "https://doi.org/10.1186/1476-072x-3-3"
+      },
+      "pubmed": {}
+    },
+    {
+      "number": 25,
+      "citation_key": "ref_25",
+      "doi": "10.1097/01.mlr.0000182534.19832.83",
+      "doi_resolved": true,
+      "title_match": true,
+      "pubmed_title_match": null,
+      "journal_match_or_normalization_review": true,
+      "status": "VERIFIED",
+      "crossref": {
+        "status": "VERIFIED_CROSSREF",
+        "doi": "10.1097/01.mlr.0000182534.19832.83",
+        "title": "Coding Algorithms for Defining Comorbidities in ICD-9-CM and ICD-10 Administrative Data",
+        "container_title": "Medical Care",
+        "short_container_title": "Medical Care",
+        "authors": [
+          {
+            "given": "Hude",
+            "family": "Quan",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Vijaya",
+            "family": "Sundararajan",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Patricia",
+            "family": "Halfon",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Andrew",
+            "family": "Fong",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Bernard",
+            "family": "Burnand",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Jean-Christophe",
+            "family": "Luthi",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "L Duncan",
+            "family": "Saunders",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Cynthia A.",
+            "family": "Beck",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Thomas E.",
+            "family": "Feasby",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "William A.",
+            "family": "Ghali",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2005,
+              11
+            ]
+          ]
+        },
+        "volume": "43",
+        "issue": "11",
+        "page": "1130-1139",
+        "type": "journal-article",
+        "url": "https://doi.org/10.1097/01.mlr.0000182534.19832.83"
+      },
+      "pubmed": {}
+    }
+  ]
+}

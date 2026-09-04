@@ -1,0 +1,13 @@
+[
+  {
+    "file": "brazil-260822.osm.pbf",
+    "size_bytes": 2074198072,
+    "sha256": "b3997da728ca224c6ed062e3adc203cd1e76be1afd02d017af12a075ee52f281",
+    "url": "https://download.geofabrik.de/south-america/brazil-260822.osm.pbf",
+    "date": "2026-08-22",
+    "etag": "7ba1c038-659aa6b51bc69",
+    "license": "OpenStreetMap ODbL 1.0",
+    "status": "complete",
+    "note": "Geofabrik dated snapshot, identical to brazil-latest at access time"
+  }
+]

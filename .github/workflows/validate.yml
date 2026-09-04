@@ -1,0 +1,20 @@
+name: validate-public-release
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate frozen public package
+        run: python scripts/validate_release.py
+      - name: Verify source-data dictionary
+        run: python scripts/make_data_dictionary.py --check
+      - name: Verify release checksums
+        run: python scripts/verify_checksums.py

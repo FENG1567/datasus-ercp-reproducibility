@@ -1,0 +1,1878 @@
+{
+  "contract_sha256": "a0648662bdd5bd02dd330acc294f8d0a79037b3ea30e96f583d91f616938a107",
+  "input_artifacts": {
+    "data_analytic/stage07_rebuild/aim3_v2/network/aim3_patient_flow_edges_display_v2.csv": {
+      "declared_sha256": "f571d5641c01ba003e330a274be21098fa3d97fe316abf49f3330c8f5dfc5bc4",
+      "frozen_copy_of": null,
+      "roles": [
+        "frozen_privacy_suppressed_network_display_edges",
+        "frozen_privacy_suppressed_patient_flow_network_input"
+      ],
+      "sha256": "f571d5641c01ba003e330a274be21098fa3d97fe316abf49f3330c8f5dfc5bc4"
+    },
+    "data_analytic/stage07_rebuild/aim3_v2/network/aim3_residence_projection_leiden_v2.parquet": {
+      "declared_sha256": "3016cf6fbd86e4b1a2dbd8c1ce4e941b5e18abc78799224a41e065debfbdcad1",
+      "frozen_copy_of": null,
+      "roles": [
+        "frozen_Leiden_community_projection"
+      ],
+      "sha256": "3016cf6fbd86e4b1a2dbd8c1ce4e941b5e18abc78799224a41e065debfbdcad1"
+    },
+    "data_analytic/stage07_rebuild/aim3_v2/network/aim3_target_metrics_v2.parquet": {
+      "declared_sha256": "374e15163c404aa19bf8453d170490862689d4b0db1c5d34b0e6dea8f075e1b8",
+      "frozen_copy_of": null,
+      "roles": [
+        "frozen_target_centrality_metrics",
+        "frozen_network_concentration_input"
+      ],
+      "sha256": "374e15163c404aa19bf8453d170490862689d4b0db1c5d34b0e6dea8f075e1b8"
+    },
+    "data_analytic/stage07_rebuild/aim3_v2/resilience/aim3_resilience_random_benchmark_v2.parquet": {
+      "declared_sha256": "b9d0c4d90483362d19d95c4f3adf64a698e097a8fe8394040fd55fcc10431dd4",
+      "frozen_copy_of": null,
+      "roles": [
+        "frozen_random_removal_benchmark"
+      ],
+      "sha256": "b9d0c4d90483362d19d95c4f3adf64a698e097a8fe8394040fd55fcc10431dd4"
+    },
+    "data_analytic/stage07_rebuild/aim3_v2/resilience/aim3_resilience_sequential_display_v2.csv": {
+      "declared_sha256": "c187c0857fbb8a084f8c7e383b4afa8c4151caf7e2f4a454593cfabeb24f6563",
+      "frozen_copy_of": null,
+      "roles": [
+        "frozen_targeted_sequential_hub_removal_display"
+      ],
+      "sha256": "c187c0857fbb8a084f8c7e383b4afa8c4151caf7e2f4a454593cfabeb24f6563"
+    },
+    "data_analytic/stage07_rebuild/aim3_v2/service_area/aim3_service_area_residence_display_v2.csv": {
+      "declared_sha256": "823850cac6eef1cf4275e1d39aa26753488b5f7f5a80c9b0a093e6e83525d4fe",
+      "frozen_copy_of": null,
+      "roles": [
+        "frozen_privacy_suppressed_service_area_residence_display",
+        "frozen_privacy_suppressed_service_area_input"
+      ],
+      "sha256": "823850cac6eef1cf4275e1d39aa26753488b5f7f5a80c9b0a093e6e83525d4fe"
+    },
+    "data_analytic/stage07_rebuild/aim4_v2_corrected/brglm2/aim4_brglm2_design_v2.json": {
+      "declared_sha256": "79fb7b785b174ca351db09096d0b9fdbe7344cfd22b13637b7e55cf0b44ffd4a",
+      "frozen_copy_of": null,
+      "roles": [
+        "frozen_complete_context_design_counts",
+        "complete_context_characteristics",
+        "primary_complete_context_design"
+      ],
+      "sha256": "79fb7b785b174ca351db09096d0b9fdbe7344cfd22b13637b7e55cf0b44ffd4a"
+    },
+    "data_analytic/stage07_rebuild/aim4_v3_stabilized/brglm2/aim4_brglm2_bootstrap_merged_v3.csv.gz": {
+      "declared_sha256": "6a80b034858dbbbfd8174b3aafdebc4057b21efb8a9a9da71877b90c731f0f53",
+      "frozen_copy_of": null,
+      "roles": [
+        "frozen_bootstrap_concordance_and_validity_input_not_accepted_CI",
+        "frozen_bootstrap_yield_and_concordance_input_not_accepted_CI"
+      ],
+      "sha256": "6a80b034858dbbbfd8174b3aafdebc4057b21efb8a9a9da71877b90c731f0f53"
+    },
+    "data_analytic/stage07_rebuild/aim4_v3_stabilized/brglm2/aim4_brglm2_final_qc_v3.json": {
+      "declared_sha256": "bbd9eec3b1c94be3d36c4de292e55dde137f2aab51f8317b486f48e15e45cf9b",
+      "frozen_copy_of": null,
+      "roles": [
+        "bootstrap_validity_gate",
+        "bootstrap_validity_status"
+      ],
+      "sha256": "bbd9eec3b1c94be3d36c4de292e55dde137f2aab51f8317b486f48e15e45cf9b"
+    },
+    "data_analytic/stage07_rebuild/aim4_v3_stabilized/brglm2/aim4_brglm2_point_estimate_v3.json": {
+      "declared_sha256": "e2df6ea1d29254b561f089eabb82eda2a7828083c988c198113aae490ca9ba07",
+      "frozen_copy_of": null,
+      "roles": [
+        "frozen_associational_point_estimates",
+        "frozen_adjusted_associational_point_estimates"
+      ],
+      "sha256": "e2df6ea1d29254b561f089eabb82eda2a7828083c988c198113aae490ca9ba07"
+    },
+    "data_analytic/stage07_rebuild/stage06_v2/run1/stage06_v2_qc.json": {
+      "declared_sha256": "d27d02c19ee554c0fca680219851295fc4f3f03ffa524b76813d4c0e3cc256db",
+      "frozen_copy_of": null,
+      "roles": [
+        "stage06_quasi_causal_downGRADE_status"
+      ],
+      "sha256": "d27d02c19ee554c0fca680219851295fc4f3f03ffa524b76813d4c0e3cc256db"
+    },
+    "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_annual_rates.parquet": {
+      "declared_sha256": "ae41851963ed76e3604914fb9443fef294ff987ac53a1c94d048c76c8580b50a",
+      "frozen_copy_of": null,
+      "roles": [
+        "frozen_annual_population_standardised_rates",
+        "frozen_annual_rate_input"
+      ],
+      "sha256": "ae41851963ed76e3604914fb9443fef294ff987ac53a1c94d048c76c8580b50a"
+    },
+    "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_first_observed_by_year.parquet": {
+      "declared_sha256": "afe4b117cc001c40863effbdbf6b2a798c2510f2648a4653a2aca5efdd62e87a",
+      "frozen_copy_of": null,
+      "roles": [
+        "frozen_non_audit_first_observed_uptake_display_input",
+        "frozen_first_observed_by_year_display",
+        "frozen_non_audit_observed_hospital_input",
+        "frozen_first_observed_input"
+      ],
+      "sha256": "afe4b117cc001c40863effbdbf6b2a798c2510f2648a4653a2aca5efdd62e87a"
+    },
+    "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_hospital_continuity.parquet": {
+      "declared_sha256": "528628b255700c3c5a266029ef99a9c863d86aef97ad08e0d26f7905e3adcd01",
+      "frozen_copy_of": null,
+      "roles": [
+        "frozen_hospital_continuity_and_maintenance_risk_set",
+        "frozen_maintenance_risk_set_input"
+      ],
+      "sha256": "528628b255700c3c5a266029ef99a9c863d86aef97ad08e0d26f7905e3adcd01"
+    },
+    "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_monthly_national.parquet": {
+      "declared_sha256": "6d2f4fff42fcae7a60358b26ad343afc15a0098be32301557c53cf580b9b4f2d",
+      "frozen_copy_of": null,
+      "roles": [
+        "frozen_monthly_unique_AIH_and_active_provider_series",
+        "frozen_non_audit_cohort_time_window_and_volume_input",
+        "frozen_monthly_observed_uptake_input"
+      ],
+      "sha256": "6d2f4fff42fcae7a60358b26ad343afc15a0098be32301557c53cf580b9b4f2d"
+    },
+    "data_stage/stage07_rebuild/aim2_v2/coverage/municipality_year_coverage.parquet": {
+      "declared_sha256": "c0a9ac050a5eef0b7e0881c9c8568f3fe5a0945429eaaa5f8793a3504377a099",
+      "frozen_copy_of": null,
+      "roles": [
+        "frozen_municipality_year_coverage_display_input",
+        "frozen_potential_access_coverage_input"
+      ],
+      "sha256": "c0a9ac050a5eef0b7e0881c9c8568f3fe5a0945429eaaa5f8793a3504377a099"
+    },
+    "data_stage/stage07_rebuild/aim2_v2/travel/pair_year_routes.parquet": {
+      "declared_sha256": "e3e332752a6adecc500b432884d87171d93dc064230669ba62e93dce34a6d2ad",
+      "frozen_copy_of": null,
+      "roles": [
+        "frozen_realised_route_level_input_for_flow_weighted_display",
+        "frozen_route_level_flow_weighted_input"
+      ],
+      "sha256": "e3e332752a6adecc500b432884d87171d93dc064230669ba62e93dce34a6d2ad"
+    },
+    "data_stage/supplement/malha/BR_Municipios_2022.dbf": {
+      "declared_sha256": "3d9a97c7fabc0ca715faae848adf5cae2409205eb9046ad036b33520aef1f0e3",
+      "frozen_copy_of": null,
+      "roles": [
+        "frozen_Brazil_municipality_geometry_attributes"
+      ],
+      "sha256": "3d9a97c7fabc0ca715faae848adf5cae2409205eb9046ad036b33520aef1f0e3"
+    },
+    "data_stage/supplement/malha/BR_Municipios_2022.prj": {
+      "declared_sha256": "c9b61f7c5c0d268153118af4183b06d943c1652e94e1201f513a6dcf0ab06567",
+      "frozen_copy_of": null,
+      "roles": [
+        "frozen_Brazil_municipality_geometry_projection"
+      ],
+      "sha256": "c9b61f7c5c0d268153118af4183b06d943c1652e94e1201f513a6dcf0ab06567"
+    },
+    "data_stage/supplement/malha/BR_Municipios_2022.shp": {
+      "declared_sha256": "eecdf7378666b2ac7a480c0aa388c387131a05d504663b34d0122634bdf165ad",
+      "frozen_copy_of": null,
+      "roles": [
+        "frozen_Brazil_municipality_geometry"
+      ],
+      "sha256": "eecdf7378666b2ac7a480c0aa388c387131a05d504663b34d0122634bdf165ad"
+    },
+    "data_stage/supplement/malha/BR_Municipios_2022.shx": {
+      "declared_sha256": "21e2d2319ade3befc8e0a6f46a7187180c75bd58dd22edde0e344d66ad23049a",
+      "frozen_copy_of": null,
+      "roles": [
+        "frozen_Brazil_municipality_geometry_index"
+      ],
+      "sha256": "21e2d2319ade3befc8e0a6f46a7187180c75bd58dd22edde0e344d66ad23049a"
+    },
+    "reports/stage07/aim1_v2/aim1_descriptive_audit.json": {
+      "declared_sha256": "99ff4a0eb1a75aa575d94636df0f16e81aa419b4b6474ca16139bb82d475f992",
+      "frozen_copy_of": null,
+      "roles": [
+        "observation_boundary_and_uptake_counts",
+        "uptake_first_use_and_maintenance_audit",
+        "hospital_observed_uptake_count",
+        "uptake_and_maintenance"
+      ],
+      "sha256": "99ff4a0eb1a75aa575d94636df0f16e81aa419b4b6474ca16139bb82d475f992"
+    },
+    "reports/stage07/aim1_v2/attempt3/aim1_uptake_audit.json": {
+      "declared_sha256": "1ce239862691d9b009f58d9393ea4f5c32faffb714bbe6ce80f745e46848a84a",
+      "frozen_copy_of": null,
+      "roles": [
+        "uptake_model_technical_status_not_primary_figure_inference",
+        "associational_model_status"
+      ],
+      "sha256": "1ce239862691d9b009f58d9393ea4f5c32faffb714bbe6ce80f745e46848a84a"
+    },
+    "reports/stage07/aim2_v2/coverage_audit.json": {
+      "declared_sha256": "def7152332675f873bd541f21ba1dbf987a951e24700d56cca4dbd452623bca7",
+      "frozen_copy_of": null,
+      "roles": [
+        "frozen_potential_access_coverage_audit",
+        "potential_access"
+      ],
+      "sha256": "def7152332675f873bd541f21ba1dbf987a951e24700d56cca4dbd452623bca7"
+    },
+    "reports/stage07/aim2_v2/equity_audit.json": {
+      "declared_sha256": "865a4d41778427f30c4080e0a7e6babebcf80630233d6915519e1af75958e978",
+      "frozen_copy_of": null,
+      "roles": [
+        "frozen_ecological_equity_results",
+        "ecological_equity"
+      ],
+      "sha256": "865a4d41778427f30c4080e0a7e6babebcf80630233d6915519e1af75958e978"
+    },
+    "reports/stage07/aim2_v2/equity_quintile_standardised_rates.csv": {
+      "declared_sha256": "f115fc2ab22f2692d95b585932e8021a539c4db693a3a79393e110937a0a7f97",
+      "frozen_copy_of": null,
+      "roles": [
+        "frozen_equity_rate_display_data",
+        "frozen_equity_display_rows"
+      ],
+      "sha256": "f115fc2ab22f2692d95b585932e8021a539c4db693a3a79393e110937a0a7f97"
+    },
+    "reports/stage07/aim2_v2/travel_audit.json": {
+      "declared_sha256": "81f403e90e28267a5a23b976e235514db51f2f2428a29ea86bee15e2a300c562",
+      "frozen_copy_of": null,
+      "roles": [
+        "realised_flow_weighted_route_summary",
+        "realised_travel"
+      ],
+      "sha256": "81f403e90e28267a5a23b976e235514db51f2f2428a29ea86bee15e2a300c562"
+    },
+    "reports/stage07/aim2_v3/primary_family_audit.json": {
+      "declared_sha256": "4e96098c9dc41eaf5126b26766dc110c4d13167af0713e595697c1eac611b6ec",
+      "frozen_copy_of": null,
+      "roles": [
+        "QA_only_downgrade_control_not_a_figure_registry_consumer",
+        "aim2_v3_downGRADE_status"
+      ],
+      "sha256": "4e96098c9dc41eaf5126b26766dc110c4d13167af0713e595697c1eac611b6ec"
+    },
+    "reports/stage07/aim3_v2/network_audit.json": {
+      "declared_sha256": "88787a9357722548f621b21638cc98c76ae5378c56d8cec3ccc22acb829af12e",
+      "frozen_copy_of": null,
+      "roles": [
+        "pooled_network_projection_audit",
+        "patient_flow_network"
+      ],
+      "sha256": "88787a9357722548f621b21638cc98c76ae5378c56d8cec3ccc22acb829af12e"
+    },
+    "reports/stage07/aim3_v2/potential_access/audit.json": {
+      "declared_sha256": "2526925f8110e0af0269ac78c02074752b1d6761712b262b669cb6549d02451e",
+      "frozen_copy_of": null,
+      "roles": [
+        "QA_only_potential_access_matrix_control_not_a_figure_registry_consumer",
+        "QA_only_potential_access_context_not_a_figure_registry_consumer",
+        "potential_access_matrix"
+      ],
+      "sha256": "2526925f8110e0af0269ac78c02074752b1d6761712b262b669cb6549d02451e"
+    },
+    "reports/stage07/aim3_v2/resilience/audit.json": {
+      "declared_sha256": "9b370f0abb9db5be6363436376182ce59ca47d308163f85f63cf42f8034b56f8",
+      "frozen_copy_of": null,
+      "roles": [
+        "frozen_resilience_stress_test_audit"
+      ],
+      "sha256": "9b370f0abb9db5be6363436376182ce59ca47d308163f85f63cf42f8034b56f8"
+    },
+    "reports/stage07/aim3_v2/service_area/audit.json": {
+      "declared_sha256": "6cf59a9d540808b84c0cffcd3a24019e5cef154673492b534c73ea17ec2c18bc",
+      "frozen_copy_of": null,
+      "roles": [
+        "QA_only_service_area_context_control_not_a_figure_registry_consumer",
+        "service_area_context"
+      ],
+      "sha256": "6cf59a9d540808b84c0cffcd3a24019e5cef154673492b534c73ea17ec2c18bc"
+    },
+    "reports/stage07/rc_v1/frozen_policy_timeline_evidence.md": {
+      "declared_sha256": "b4351f069e5cdceb378a0da015382df77d1ab3e211ff940937b9e5933f577ed3",
+      "frozen_copy_of": "reports/policy_timeline_evidence.md",
+      "roles": [
+        "local_policy_evidence"
+      ],
+      "sha256": "b4351f069e5cdceb378a0da015382df77d1ab3e211ff940937b9e5933f577ed3"
+    },
+    "reports/stage07/stage03_v2_cohort_qc.json": {
+      "declared_sha256": "f80007cf31b31bfff08e3fede27d7a6df499826eaae92583d9c57e00835359b3",
+      "frozen_copy_of": null,
+      "roles": [
+        "cohort_counts",
+        "cohort_funnel"
+      ],
+      "sha256": "f80007cf31b31bfff08e3fede27d7a6df499826eaae92583d9c57e00835359b3"
+    }
+  },
+  "outputs": {
+    "figure_1_cohort_funnel_source_data.csv": {
+      "columns": [
+        "result_id",
+        "display_label",
+        "value",
+        "value_type",
+        "unit",
+        "denominator_value",
+        "denominator_unit",
+        "evidence_level",
+        "limitation",
+        "missing_status",
+        "suppression_status",
+        "source_artifact",
+        "source_sha256"
+      ],
+      "evidence_level": [
+        "descriptive"
+      ],
+      "presentation_transform": {
+        "aggregation_rule": "No row exclusion or aggregation.",
+        "column_exclusions": [],
+        "suppression_rule": "No additional display suppression."
+      },
+      "registry_ids": [
+        "cohort.a_unique_aih",
+        "cohort.b_final_unique_aih",
+        "uptake.left_censored_202101",
+        "uptake.hospitals_ever_observed"
+      ],
+      "rows": 4,
+      "sha256": "c58879a8bff9bb3f8707dacf252b273126211ff676b3569c80a06c73ff72a701",
+      "source_artifact_hashes": {
+        "data_analytic/stage07_rebuild/aim3_v2/network/aim3_patient_flow_edges_display_v2.csv": "f571d5641c01ba003e330a274be21098fa3d97fe316abf49f3330c8f5dfc5bc4",
+        "data_analytic/stage07_rebuild/aim3_v2/network/aim3_residence_projection_leiden_v2.parquet": "3016cf6fbd86e4b1a2dbd8c1ce4e941b5e18abc78799224a41e065debfbdcad1",
+        "data_analytic/stage07_rebuild/aim3_v2/network/aim3_target_metrics_v2.parquet": "374e15163c404aa19bf8453d170490862689d4b0db1c5d34b0e6dea8f075e1b8",
+        "data_analytic/stage07_rebuild/aim3_v2/resilience/aim3_resilience_random_benchmark_v2.parquet": "b9d0c4d90483362d19d95c4f3adf64a698e097a8fe8394040fd55fcc10431dd4",
+        "data_analytic/stage07_rebuild/aim3_v2/resilience/aim3_resilience_sequential_display_v2.csv": "c187c0857fbb8a084f8c7e383b4afa8c4151caf7e2f4a454593cfabeb24f6563",
+        "data_analytic/stage07_rebuild/aim3_v2/service_area/aim3_service_area_residence_display_v2.csv": "823850cac6eef1cf4275e1d39aa26753488b5f7f5a80c9b0a093e6e83525d4fe",
+        "data_analytic/stage07_rebuild/aim4_v2_corrected/brglm2/aim4_brglm2_design_v2.json": "79fb7b785b174ca351db09096d0b9fdbe7344cfd22b13637b7e55cf0b44ffd4a",
+        "data_analytic/stage07_rebuild/aim4_v3_stabilized/brglm2/aim4_brglm2_bootstrap_merged_v3.csv.gz": "6a80b034858dbbbfd8174b3aafdebc4057b21efb8a9a9da71877b90c731f0f53",
+        "data_analytic/stage07_rebuild/aim4_v3_stabilized/brglm2/aim4_brglm2_final_qc_v3.json": "bbd9eec3b1c94be3d36c4de292e55dde137f2aab51f8317b486f48e15e45cf9b",
+        "data_analytic/stage07_rebuild/aim4_v3_stabilized/brglm2/aim4_brglm2_point_estimate_v3.json": "e2df6ea1d29254b561f089eabb82eda2a7828083c988c198113aae490ca9ba07",
+        "data_analytic/stage07_rebuild/stage06_v2/run1/stage06_v2_qc.json": "d27d02c19ee554c0fca680219851295fc4f3f03ffa524b76813d4c0e3cc256db",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_annual_rates.parquet": "ae41851963ed76e3604914fb9443fef294ff987ac53a1c94d048c76c8580b50a",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_first_observed_by_year.parquet": "afe4b117cc001c40863effbdbf6b2a798c2510f2648a4653a2aca5efdd62e87a",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_hospital_continuity.parquet": "528628b255700c3c5a266029ef99a9c863d86aef97ad08e0d26f7905e3adcd01",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_monthly_national.parquet": "6d2f4fff42fcae7a60358b26ad343afc15a0098be32301557c53cf580b9b4f2d",
+        "data_stage/stage07_rebuild/aim2_v2/coverage/municipality_year_coverage.parquet": "c0a9ac050a5eef0b7e0881c9c8568f3fe5a0945429eaaa5f8793a3504377a099",
+        "data_stage/stage07_rebuild/aim2_v2/travel/pair_year_routes.parquet": "e3e332752a6adecc500b432884d87171d93dc064230669ba62e93dce34a6d2ad",
+        "data_stage/supplement/malha/BR_Municipios_2022.dbf": "3d9a97c7fabc0ca715faae848adf5cae2409205eb9046ad036b33520aef1f0e3",
+        "data_stage/supplement/malha/BR_Municipios_2022.prj": "c9b61f7c5c0d268153118af4183b06d943c1652e94e1201f513a6dcf0ab06567",
+        "data_stage/supplement/malha/BR_Municipios_2022.shp": "eecdf7378666b2ac7a480c0aa388c387131a05d504663b34d0122634bdf165ad",
+        "data_stage/supplement/malha/BR_Municipios_2022.shx": "21e2d2319ade3befc8e0a6f46a7187180c75bd58dd22edde0e344d66ad23049a",
+        "reports/stage07/aim1_v2/aim1_descriptive_audit.json": "99ff4a0eb1a75aa575d94636df0f16e81aa419b4b6474ca16139bb82d475f992",
+        "reports/stage07/aim1_v2/attempt3/aim1_uptake_audit.json": "1ce239862691d9b009f58d9393ea4f5c32faffb714bbe6ce80f745e46848a84a",
+        "reports/stage07/aim2_v2/coverage_audit.json": "def7152332675f873bd541f21ba1dbf987a951e24700d56cca4dbd452623bca7",
+        "reports/stage07/aim2_v2/equity_audit.json": "865a4d41778427f30c4080e0a7e6babebcf80630233d6915519e1af75958e978",
+        "reports/stage07/aim2_v2/equity_quintile_standardised_rates.csv": "f115fc2ab22f2692d95b585932e8021a539c4db693a3a79393e110937a0a7f97",
+        "reports/stage07/aim2_v2/travel_audit.json": "81f403e90e28267a5a23b976e235514db51f2f2428a29ea86bee15e2a300c562",
+        "reports/stage07/aim2_v3/primary_family_audit.json": "4e96098c9dc41eaf5126b26766dc110c4d13167af0713e595697c1eac611b6ec",
+        "reports/stage07/aim3_v2/network_audit.json": "88787a9357722548f621b21638cc98c76ae5378c56d8cec3ccc22acb829af12e",
+        "reports/stage07/aim3_v2/potential_access/audit.json": "2526925f8110e0af0269ac78c02074752b1d6761712b262b669cb6549d02451e",
+        "reports/stage07/aim3_v2/resilience/audit.json": "9b370f0abb9db5be6363436376182ce59ca47d308163f85f63cf42f8034b56f8",
+        "reports/stage07/aim3_v2/service_area/audit.json": "6cf59a9d540808b84c0cffcd3a24019e5cef154673492b534c73ea17ec2c18bc",
+        "reports/stage07/rc_v1/frozen_policy_timeline_evidence.md": "b4351f069e5cdceb378a0da015382df77d1ab3e211ff940937b9e5933f577ed3",
+        "reports/stage07/stage03_v2_cohort_qc.json": "f80007cf31b31bfff08e3fede27d7a6df499826eaae92583d9c57e00835359b3"
+      },
+      "status": "PASS",
+      "suppression_status": "preserved_or_not_applicable"
+    },
+    "figure_1_policy_timeline_source_data.csv": {
+      "columns": [
+        "date",
+        "event",
+        "evidence",
+        "location",
+        "source_artifact",
+        "source_sha256"
+      ],
+      "evidence_level": [
+        "descriptive"
+      ],
+      "presentation_transform": {
+        "aggregation_rule": "No row exclusion or aggregation.",
+        "column_exclusions": [],
+        "suppression_rule": "No additional display suppression."
+      },
+      "registry_ids": [
+        "cohort.a_unique_aih",
+        "cohort.b_final_unique_aih",
+        "uptake.left_censored_202101",
+        "uptake.hospitals_ever_observed"
+      ],
+      "rows": 4,
+      "sha256": "683899ddde16aa40fee5d822d67a1cb9364281ea51c8ae0fde0f928635238523",
+      "source_artifact_hashes": {
+        "data_analytic/stage07_rebuild/aim3_v2/network/aim3_patient_flow_edges_display_v2.csv": "f571d5641c01ba003e330a274be21098fa3d97fe316abf49f3330c8f5dfc5bc4",
+        "data_analytic/stage07_rebuild/aim3_v2/network/aim3_residence_projection_leiden_v2.parquet": "3016cf6fbd86e4b1a2dbd8c1ce4e941b5e18abc78799224a41e065debfbdcad1",
+        "data_analytic/stage07_rebuild/aim3_v2/network/aim3_target_metrics_v2.parquet": "374e15163c404aa19bf8453d170490862689d4b0db1c5d34b0e6dea8f075e1b8",
+        "data_analytic/stage07_rebuild/aim3_v2/resilience/aim3_resilience_random_benchmark_v2.parquet": "b9d0c4d90483362d19d95c4f3adf64a698e097a8fe8394040fd55fcc10431dd4",
+        "data_analytic/stage07_rebuild/aim3_v2/resilience/aim3_resilience_sequential_display_v2.csv": "c187c0857fbb8a084f8c7e383b4afa8c4151caf7e2f4a454593cfabeb24f6563",
+        "data_analytic/stage07_rebuild/aim3_v2/service_area/aim3_service_area_residence_display_v2.csv": "823850cac6eef1cf4275e1d39aa26753488b5f7f5a80c9b0a093e6e83525d4fe",
+        "data_analytic/stage07_rebuild/aim4_v2_corrected/brglm2/aim4_brglm2_design_v2.json": "79fb7b785b174ca351db09096d0b9fdbe7344cfd22b13637b7e55cf0b44ffd4a",
+        "data_analytic/stage07_rebuild/aim4_v3_stabilized/brglm2/aim4_brglm2_bootstrap_merged_v3.csv.gz": "6a80b034858dbbbfd8174b3aafdebc4057b21efb8a9a9da71877b90c731f0f53",
+        "data_analytic/stage07_rebuild/aim4_v3_stabilized/brglm2/aim4_brglm2_final_qc_v3.json": "bbd9eec3b1c94be3d36c4de292e55dde137f2aab51f8317b486f48e15e45cf9b",
+        "data_analytic/stage07_rebuild/aim4_v3_stabilized/brglm2/aim4_brglm2_point_estimate_v3.json": "e2df6ea1d29254b561f089eabb82eda2a7828083c988c198113aae490ca9ba07",
+        "data_analytic/stage07_rebuild/stage06_v2/run1/stage06_v2_qc.json": "d27d02c19ee554c0fca680219851295fc4f3f03ffa524b76813d4c0e3cc256db",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_annual_rates.parquet": "ae41851963ed76e3604914fb9443fef294ff987ac53a1c94d048c76c8580b50a",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_first_observed_by_year.parquet": "afe4b117cc001c40863effbdbf6b2a798c2510f2648a4653a2aca5efdd62e87a",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_hospital_continuity.parquet": "528628b255700c3c5a266029ef99a9c863d86aef97ad08e0d26f7905e3adcd01",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_monthly_national.parquet": "6d2f4fff42fcae7a60358b26ad343afc15a0098be32301557c53cf580b9b4f2d",
+        "data_stage/stage07_rebuild/aim2_v2/coverage/municipality_year_coverage.parquet": "c0a9ac050a5eef0b7e0881c9c8568f3fe5a0945429eaaa5f8793a3504377a099",
+        "data_stage/stage07_rebuild/aim2_v2/travel/pair_year_routes.parquet": "e3e332752a6adecc500b432884d87171d93dc064230669ba62e93dce34a6d2ad",
+        "data_stage/supplement/malha/BR_Municipios_2022.dbf": "3d9a97c7fabc0ca715faae848adf5cae2409205eb9046ad036b33520aef1f0e3",
+        "data_stage/supplement/malha/BR_Municipios_2022.prj": "c9b61f7c5c0d268153118af4183b06d943c1652e94e1201f513a6dcf0ab06567",
+        "data_stage/supplement/malha/BR_Municipios_2022.shp": "eecdf7378666b2ac7a480c0aa388c387131a05d504663b34d0122634bdf165ad",
+        "data_stage/supplement/malha/BR_Municipios_2022.shx": "21e2d2319ade3befc8e0a6f46a7187180c75bd58dd22edde0e344d66ad23049a",
+        "reports/stage07/aim1_v2/aim1_descriptive_audit.json": "99ff4a0eb1a75aa575d94636df0f16e81aa419b4b6474ca16139bb82d475f992",
+        "reports/stage07/aim1_v2/attempt3/aim1_uptake_audit.json": "1ce239862691d9b009f58d9393ea4f5c32faffb714bbe6ce80f745e46848a84a",
+        "reports/stage07/aim2_v2/coverage_audit.json": "def7152332675f873bd541f21ba1dbf987a951e24700d56cca4dbd452623bca7",
+        "reports/stage07/aim2_v2/equity_audit.json": "865a4d41778427f30c4080e0a7e6babebcf80630233d6915519e1af75958e978",
+        "reports/stage07/aim2_v2/equity_quintile_standardised_rates.csv": "f115fc2ab22f2692d95b585932e8021a539c4db693a3a79393e110937a0a7f97",
+        "reports/stage07/aim2_v2/travel_audit.json": "81f403e90e28267a5a23b976e235514db51f2f2428a29ea86bee15e2a300c562",
+        "reports/stage07/aim2_v3/primary_family_audit.json": "4e96098c9dc41eaf5126b26766dc110c4d13167af0713e595697c1eac611b6ec",
+        "reports/stage07/aim3_v2/network_audit.json": "88787a9357722548f621b21638cc98c76ae5378c56d8cec3ccc22acb829af12e",
+        "reports/stage07/aim3_v2/potential_access/audit.json": "2526925f8110e0af0269ac78c02074752b1d6761712b262b669cb6549d02451e",
+        "reports/stage07/aim3_v2/resilience/audit.json": "9b370f0abb9db5be6363436376182ce59ca47d308163f85f63cf42f8034b56f8",
+        "reports/stage07/aim3_v2/service_area/audit.json": "6cf59a9d540808b84c0cffcd3a24019e5cef154673492b534c73ea17ec2c18bc",
+        "reports/stage07/rc_v1/frozen_policy_timeline_evidence.md": "b4351f069e5cdceb378a0da015382df77d1ab3e211ff940937b9e5933f577ed3",
+        "reports/stage07/stage03_v2_cohort_qc.json": "f80007cf31b31bfff08e3fede27d7a6df499826eaae92583d9c57e00835359b3"
+      },
+      "status": "PASS",
+      "suppression_status": "preserved_or_not_applicable"
+    },
+    "figure_2_first_observed_source_data.csv": {
+      "columns": [
+        "source_dataset",
+        "first_observed_year",
+        "n_hospitals",
+        "source_artifact",
+        "source_sha256"
+      ],
+      "evidence_level": [
+        "descriptive"
+      ],
+      "presentation_transform": {
+        "aggregation_rule": "No row exclusion or aggregation.",
+        "column_exclusions": [],
+        "suppression_rule": "No additional display suppression."
+      },
+      "registry_ids": [
+        "uptake.hospitals_ever_observed",
+        "uptake.left_censored_202101",
+        "uptake.first_observed_2021",
+        "uptake.first_observed_2022",
+        "uptake.first_observed_2023",
+        "uptake.first_observed_2024",
+        "uptake.first_observed_2025",
+        "maintenance.first_completed_12m"
+      ],
+      "rows": 5,
+      "sha256": "7c6f95f79287d126576b7d27d067c976dd4cb0b6fa2f4f027a04794984d4f5e3",
+      "source_artifact_hashes": {
+        "data_analytic/stage07_rebuild/aim3_v2/network/aim3_patient_flow_edges_display_v2.csv": "f571d5641c01ba003e330a274be21098fa3d97fe316abf49f3330c8f5dfc5bc4",
+        "data_analytic/stage07_rebuild/aim3_v2/network/aim3_residence_projection_leiden_v2.parquet": "3016cf6fbd86e4b1a2dbd8c1ce4e941b5e18abc78799224a41e065debfbdcad1",
+        "data_analytic/stage07_rebuild/aim3_v2/network/aim3_target_metrics_v2.parquet": "374e15163c404aa19bf8453d170490862689d4b0db1c5d34b0e6dea8f075e1b8",
+        "data_analytic/stage07_rebuild/aim3_v2/resilience/aim3_resilience_random_benchmark_v2.parquet": "b9d0c4d90483362d19d95c4f3adf64a698e097a8fe8394040fd55fcc10431dd4",
+        "data_analytic/stage07_rebuild/aim3_v2/resilience/aim3_resilience_sequential_display_v2.csv": "c187c0857fbb8a084f8c7e383b4afa8c4151caf7e2f4a454593cfabeb24f6563",
+        "data_analytic/stage07_rebuild/aim3_v2/service_area/aim3_service_area_residence_display_v2.csv": "823850cac6eef1cf4275e1d39aa26753488b5f7f5a80c9b0a093e6e83525d4fe",
+        "data_analytic/stage07_rebuild/aim4_v2_corrected/brglm2/aim4_brglm2_design_v2.json": "79fb7b785b174ca351db09096d0b9fdbe7344cfd22b13637b7e55cf0b44ffd4a",
+        "data_analytic/stage07_rebuild/aim4_v3_stabilized/brglm2/aim4_brglm2_bootstrap_merged_v3.csv.gz": "6a80b034858dbbbfd8174b3aafdebc4057b21efb8a9a9da71877b90c731f0f53",
+        "data_analytic/stage07_rebuild/aim4_v3_stabilized/brglm2/aim4_brglm2_final_qc_v3.json": "bbd9eec3b1c94be3d36c4de292e55dde137f2aab51f8317b486f48e15e45cf9b",
+        "data_analytic/stage07_rebuild/aim4_v3_stabilized/brglm2/aim4_brglm2_point_estimate_v3.json": "e2df6ea1d29254b561f089eabb82eda2a7828083c988c198113aae490ca9ba07",
+        "data_analytic/stage07_rebuild/stage06_v2/run1/stage06_v2_qc.json": "d27d02c19ee554c0fca680219851295fc4f3f03ffa524b76813d4c0e3cc256db",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_annual_rates.parquet": "ae41851963ed76e3604914fb9443fef294ff987ac53a1c94d048c76c8580b50a",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_first_observed_by_year.parquet": "afe4b117cc001c40863effbdbf6b2a798c2510f2648a4653a2aca5efdd62e87a",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_hospital_continuity.parquet": "528628b255700c3c5a266029ef99a9c863d86aef97ad08e0d26f7905e3adcd01",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_monthly_national.parquet": "6d2f4fff42fcae7a60358b26ad343afc15a0098be32301557c53cf580b9b4f2d",
+        "data_stage/stage07_rebuild/aim2_v2/coverage/municipality_year_coverage.parquet": "c0a9ac050a5eef0b7e0881c9c8568f3fe5a0945429eaaa5f8793a3504377a099",
+        "data_stage/stage07_rebuild/aim2_v2/travel/pair_year_routes.parquet": "e3e332752a6adecc500b432884d87171d93dc064230669ba62e93dce34a6d2ad",
+        "data_stage/supplement/malha/BR_Municipios_2022.dbf": "3d9a97c7fabc0ca715faae848adf5cae2409205eb9046ad036b33520aef1f0e3",
+        "data_stage/supplement/malha/BR_Municipios_2022.prj": "c9b61f7c5c0d268153118af4183b06d943c1652e94e1201f513a6dcf0ab06567",
+        "data_stage/supplement/malha/BR_Municipios_2022.shp": "eecdf7378666b2ac7a480c0aa388c387131a05d504663b34d0122634bdf165ad",
+        "data_stage/supplement/malha/BR_Municipios_2022.shx": "21e2d2319ade3befc8e0a6f46a7187180c75bd58dd22edde0e344d66ad23049a",
+        "reports/stage07/aim1_v2/aim1_descriptive_audit.json": "99ff4a0eb1a75aa575d94636df0f16e81aa419b4b6474ca16139bb82d475f992",
+        "reports/stage07/aim1_v2/attempt3/aim1_uptake_audit.json": "1ce239862691d9b009f58d9393ea4f5c32faffb714bbe6ce80f745e46848a84a",
+        "reports/stage07/aim2_v2/coverage_audit.json": "def7152332675f873bd541f21ba1dbf987a951e24700d56cca4dbd452623bca7",
+        "reports/stage07/aim2_v2/equity_audit.json": "865a4d41778427f30c4080e0a7e6babebcf80630233d6915519e1af75958e978",
+        "reports/stage07/aim2_v2/equity_quintile_standardised_rates.csv": "f115fc2ab22f2692d95b585932e8021a539c4db693a3a79393e110937a0a7f97",
+        "reports/stage07/aim2_v2/travel_audit.json": "81f403e90e28267a5a23b976e235514db51f2f2428a29ea86bee15e2a300c562",
+        "reports/stage07/aim2_v3/primary_family_audit.json": "4e96098c9dc41eaf5126b26766dc110c4d13167af0713e595697c1eac611b6ec",
+        "reports/stage07/aim3_v2/network_audit.json": "88787a9357722548f621b21638cc98c76ae5378c56d8cec3ccc22acb829af12e",
+        "reports/stage07/aim3_v2/potential_access/audit.json": "2526925f8110e0af0269ac78c02074752b1d6761712b262b669cb6549d02451e",
+        "reports/stage07/aim3_v2/resilience/audit.json": "9b370f0abb9db5be6363436376182ce59ca47d308163f85f63cf42f8034b56f8",
+        "reports/stage07/aim3_v2/service_area/audit.json": "6cf59a9d540808b84c0cffcd3a24019e5cef154673492b534c73ea17ec2c18bc",
+        "reports/stage07/rc_v1/frozen_policy_timeline_evidence.md": "b4351f069e5cdceb378a0da015382df77d1ab3e211ff940937b9e5933f577ed3",
+        "reports/stage07/stage03_v2_cohort_qc.json": "f80007cf31b31bfff08e3fede27d7a6df499826eaae92583d9c57e00835359b3"
+      },
+      "status": "PASS",
+      "suppression_status": "preserved_or_not_applicable"
+    },
+    "figure_2_maintenance_source_data.csv": {
+      "columns": [
+        "source_dataset",
+        "SP_CNES",
+        "first_observed_month",
+        "left_censored_prevalent_202101",
+        "ever_maintained_6of12",
+        "any_cessation_event",
+        "any_recovery_event",
+        "maintained_first_completed_12m",
+        "maintained_last_evaluable_window",
+        "last_evaluable_window_month",
+        "first_observed_year",
+        "source_artifact",
+        "source_sha256"
+      ],
+      "evidence_level": [
+        "descriptive"
+      ],
+      "presentation_transform": {
+        "aggregation_rule": "No row exclusion or aggregation.",
+        "column_exclusions": [],
+        "suppression_rule": "No additional display suppression."
+      },
+      "registry_ids": [
+        "uptake.hospitals_ever_observed",
+        "uptake.left_censored_202101",
+        "uptake.first_observed_2021",
+        "uptake.first_observed_2022",
+        "uptake.first_observed_2023",
+        "uptake.first_observed_2024",
+        "uptake.first_observed_2025",
+        "maintenance.first_completed_12m"
+      ],
+      "rows": 445,
+      "sha256": "f7ce44b616577f1853dfe3351369c7c2f91623e3f2b072f158878802130b5944",
+      "source_artifact_hashes": {
+        "data_analytic/stage07_rebuild/aim3_v2/network/aim3_patient_flow_edges_display_v2.csv": "f571d5641c01ba003e330a274be21098fa3d97fe316abf49f3330c8f5dfc5bc4",
+        "data_analytic/stage07_rebuild/aim3_v2/network/aim3_residence_projection_leiden_v2.parquet": "3016cf6fbd86e4b1a2dbd8c1ce4e941b5e18abc78799224a41e065debfbdcad1",
+        "data_analytic/stage07_rebuild/aim3_v2/network/aim3_target_metrics_v2.parquet": "374e15163c404aa19bf8453d170490862689d4b0db1c5d34b0e6dea8f075e1b8",
+        "data_analytic/stage07_rebuild/aim3_v2/resilience/aim3_resilience_random_benchmark_v2.parquet": "b9d0c4d90483362d19d95c4f3adf64a698e097a8fe8394040fd55fcc10431dd4",
+        "data_analytic/stage07_rebuild/aim3_v2/resilience/aim3_resilience_sequential_display_v2.csv": "c187c0857fbb8a084f8c7e383b4afa8c4151caf7e2f4a454593cfabeb24f6563",
+        "data_analytic/stage07_rebuild/aim3_v2/service_area/aim3_service_area_residence_display_v2.csv": "823850cac6eef1cf4275e1d39aa26753488b5f7f5a80c9b0a093e6e83525d4fe",
+        "data_analytic/stage07_rebuild/aim4_v2_corrected/brglm2/aim4_brglm2_design_v2.json": "79fb7b785b174ca351db09096d0b9fdbe7344cfd22b13637b7e55cf0b44ffd4a",
+        "data_analytic/stage07_rebuild/aim4_v3_stabilized/brglm2/aim4_brglm2_bootstrap_merged_v3.csv.gz": "6a80b034858dbbbfd8174b3aafdebc4057b21efb8a9a9da71877b90c731f0f53",
+        "data_analytic/stage07_rebuild/aim4_v3_stabilized/brglm2/aim4_brglm2_final_qc_v3.json": "bbd9eec3b1c94be3d36c4de292e55dde137f2aab51f8317b486f48e15e45cf9b",
+        "data_analytic/stage07_rebuild/aim4_v3_stabilized/brglm2/aim4_brglm2_point_estimate_v3.json": "e2df6ea1d29254b561f089eabb82eda2a7828083c988c198113aae490ca9ba07",
+        "data_analytic/stage07_rebuild/stage06_v2/run1/stage06_v2_qc.json": "d27d02c19ee554c0fca680219851295fc4f3f03ffa524b76813d4c0e3cc256db",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_annual_rates.parquet": "ae41851963ed76e3604914fb9443fef294ff987ac53a1c94d048c76c8580b50a",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_first_observed_by_year.parquet": "afe4b117cc001c40863effbdbf6b2a798c2510f2648a4653a2aca5efdd62e87a",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_hospital_continuity.parquet": "528628b255700c3c5a266029ef99a9c863d86aef97ad08e0d26f7905e3adcd01",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_monthly_national.parquet": "6d2f4fff42fcae7a60358b26ad343afc15a0098be32301557c53cf580b9b4f2d",
+        "data_stage/stage07_rebuild/aim2_v2/coverage/municipality_year_coverage.parquet": "c0a9ac050a5eef0b7e0881c9c8568f3fe5a0945429eaaa5f8793a3504377a099",
+        "data_stage/stage07_rebuild/aim2_v2/travel/pair_year_routes.parquet": "e3e332752a6adecc500b432884d87171d93dc064230669ba62e93dce34a6d2ad",
+        "data_stage/supplement/malha/BR_Municipios_2022.dbf": "3d9a97c7fabc0ca715faae848adf5cae2409205eb9046ad036b33520aef1f0e3",
+        "data_stage/supplement/malha/BR_Municipios_2022.prj": "c9b61f7c5c0d268153118af4183b06d943c1652e94e1201f513a6dcf0ab06567",
+        "data_stage/supplement/malha/BR_Municipios_2022.shp": "eecdf7378666b2ac7a480c0aa388c387131a05d504663b34d0122634bdf165ad",
+        "data_stage/supplement/malha/BR_Municipios_2022.shx": "21e2d2319ade3befc8e0a6f46a7187180c75bd58dd22edde0e344d66ad23049a",
+        "reports/stage07/aim1_v2/aim1_descriptive_audit.json": "99ff4a0eb1a75aa575d94636df0f16e81aa419b4b6474ca16139bb82d475f992",
+        "reports/stage07/aim1_v2/attempt3/aim1_uptake_audit.json": "1ce239862691d9b009f58d9393ea4f5c32faffb714bbe6ce80f745e46848a84a",
+        "reports/stage07/aim2_v2/coverage_audit.json": "def7152332675f873bd541f21ba1dbf987a951e24700d56cca4dbd452623bca7",
+        "reports/stage07/aim2_v2/equity_audit.json": "865a4d41778427f30c4080e0a7e6babebcf80630233d6915519e1af75958e978",
+        "reports/stage07/aim2_v2/equity_quintile_standardised_rates.csv": "f115fc2ab22f2692d95b585932e8021a539c4db693a3a79393e110937a0a7f97",
+        "reports/stage07/aim2_v2/travel_audit.json": "81f403e90e28267a5a23b976e235514db51f2f2428a29ea86bee15e2a300c562",
+        "reports/stage07/aim2_v3/primary_family_audit.json": "4e96098c9dc41eaf5126b26766dc110c4d13167af0713e595697c1eac611b6ec",
+        "reports/stage07/aim3_v2/network_audit.json": "88787a9357722548f621b21638cc98c76ae5378c56d8cec3ccc22acb829af12e",
+        "reports/stage07/aim3_v2/potential_access/audit.json": "2526925f8110e0af0269ac78c02074752b1d6761712b262b669cb6549d02451e",
+        "reports/stage07/aim3_v2/resilience/audit.json": "9b370f0abb9db5be6363436376182ce59ca47d308163f85f63cf42f8034b56f8",
+        "reports/stage07/aim3_v2/service_area/audit.json": "6cf59a9d540808b84c0cffcd3a24019e5cef154673492b534c73ea17ec2c18bc",
+        "reports/stage07/rc_v1/frozen_policy_timeline_evidence.md": "b4351f069e5cdceb378a0da015382df77d1ab3e211ff940937b9e5933f577ed3",
+        "reports/stage07/stage03_v2_cohort_qc.json": "f80007cf31b31bfff08e3fede27d7a6df499826eaae92583d9c57e00835359b3"
+      },
+      "status": "PASS",
+      "suppression_status": "preserved_or_not_applicable"
+    },
+    "figure_2_monthly_uptake_source_data.csv": {
+      "columns": [
+        "source_dataset",
+        "cohort",
+        "competence_month",
+        "n_unique_aih",
+        "n_active_hospitals",
+        "n_active_provider_municipalities",
+        "source_artifact",
+        "source_sha256",
+        "year",
+        "adult_population",
+        "total_population",
+        "denominator_population",
+        "rate_per_100k",
+        "denominator_definition"
+      ],
+      "evidence_level": [
+        "descriptive"
+      ],
+      "presentation_transform": {
+        "aggregation_rule": "No row exclusion or aggregation.",
+        "column_exclusions": [],
+        "suppression_rule": "No additional display suppression."
+      },
+      "registry_ids": [
+        "uptake.hospitals_ever_observed",
+        "uptake.left_censored_202101",
+        "uptake.first_observed_2021",
+        "uptake.first_observed_2022",
+        "uptake.first_observed_2023",
+        "uptake.first_observed_2024",
+        "uptake.first_observed_2025",
+        "maintenance.first_completed_12m"
+      ],
+      "rows": 130,
+      "sha256": "fa54c4f6336d9c7f2c6638dfca14f3e4f84ef8c5b9b502a7ad8d7256267931a6",
+      "source_artifact_hashes": {
+        "data_analytic/stage07_rebuild/aim3_v2/network/aim3_patient_flow_edges_display_v2.csv": "f571d5641c01ba003e330a274be21098fa3d97fe316abf49f3330c8f5dfc5bc4",
+        "data_analytic/stage07_rebuild/aim3_v2/network/aim3_residence_projection_leiden_v2.parquet": "3016cf6fbd86e4b1a2dbd8c1ce4e941b5e18abc78799224a41e065debfbdcad1",
+        "data_analytic/stage07_rebuild/aim3_v2/network/aim3_target_metrics_v2.parquet": "374e15163c404aa19bf8453d170490862689d4b0db1c5d34b0e6dea8f075e1b8",
+        "data_analytic/stage07_rebuild/aim3_v2/resilience/aim3_resilience_random_benchmark_v2.parquet": "b9d0c4d90483362d19d95c4f3adf64a698e097a8fe8394040fd55fcc10431dd4",
+        "data_analytic/stage07_rebuild/aim3_v2/resilience/aim3_resilience_sequential_display_v2.csv": "c187c0857fbb8a084f8c7e383b4afa8c4151caf7e2f4a454593cfabeb24f6563",
+        "data_analytic/stage07_rebuild/aim3_v2/service_area/aim3_service_area_residence_display_v2.csv": "823850cac6eef1cf4275e1d39aa26753488b5f7f5a80c9b0a093e6e83525d4fe",
+        "data_analytic/stage07_rebuild/aim4_v2_corrected/brglm2/aim4_brglm2_design_v2.json": "79fb7b785b174ca351db09096d0b9fdbe7344cfd22b13637b7e55cf0b44ffd4a",
+        "data_analytic/stage07_rebuild/aim4_v3_stabilized/brglm2/aim4_brglm2_bootstrap_merged_v3.csv.gz": "6a80b034858dbbbfd8174b3aafdebc4057b21efb8a9a9da71877b90c731f0f53",
+        "data_analytic/stage07_rebuild/aim4_v3_stabilized/brglm2/aim4_brglm2_final_qc_v3.json": "bbd9eec3b1c94be3d36c4de292e55dde137f2aab51f8317b486f48e15e45cf9b",
+        "data_analytic/stage07_rebuild/aim4_v3_stabilized/brglm2/aim4_brglm2_point_estimate_v3.json": "e2df6ea1d29254b561f089eabb82eda2a7828083c988c198113aae490ca9ba07",
+        "data_analytic/stage07_rebuild/stage06_v2/run1/stage06_v2_qc.json": "d27d02c19ee554c0fca680219851295fc4f3f03ffa524b76813d4c0e3cc256db",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_annual_rates.parquet": "ae41851963ed76e3604914fb9443fef294ff987ac53a1c94d048c76c8580b50a",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_first_observed_by_year.parquet": "afe4b117cc001c40863effbdbf6b2a798c2510f2648a4653a2aca5efdd62e87a",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_hospital_continuity.parquet": "528628b255700c3c5a266029ef99a9c863d86aef97ad08e0d26f7905e3adcd01",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_monthly_national.parquet": "6d2f4fff42fcae7a60358b26ad343afc15a0098be32301557c53cf580b9b4f2d",
+        "data_stage/stage07_rebuild/aim2_v2/coverage/municipality_year_coverage.parquet": "c0a9ac050a5eef0b7e0881c9c8568f3fe5a0945429eaaa5f8793a3504377a099",
+        "data_stage/stage07_rebuild/aim2_v2/travel/pair_year_routes.parquet": "e3e332752a6adecc500b432884d87171d93dc064230669ba62e93dce34a6d2ad",
+        "data_stage/supplement/malha/BR_Municipios_2022.dbf": "3d9a97c7fabc0ca715faae848adf5cae2409205eb9046ad036b33520aef1f0e3",
+        "data_stage/supplement/malha/BR_Municipios_2022.prj": "c9b61f7c5c0d268153118af4183b06d943c1652e94e1201f513a6dcf0ab06567",
+        "data_stage/supplement/malha/BR_Municipios_2022.shp": "eecdf7378666b2ac7a480c0aa388c387131a05d504663b34d0122634bdf165ad",
+        "data_stage/supplement/malha/BR_Municipios_2022.shx": "21e2d2319ade3befc8e0a6f46a7187180c75bd58dd22edde0e344d66ad23049a",
+        "reports/stage07/aim1_v2/aim1_descriptive_audit.json": "99ff4a0eb1a75aa575d94636df0f16e81aa419b4b6474ca16139bb82d475f992",
+        "reports/stage07/aim1_v2/attempt3/aim1_uptake_audit.json": "1ce239862691d9b009f58d9393ea4f5c32faffb714bbe6ce80f745e46848a84a",
+        "reports/stage07/aim2_v2/coverage_audit.json": "def7152332675f873bd541f21ba1dbf987a951e24700d56cca4dbd452623bca7",
+        "reports/stage07/aim2_v2/equity_audit.json": "865a4d41778427f30c4080e0a7e6babebcf80630233d6915519e1af75958e978",
+        "reports/stage07/aim2_v2/equity_quintile_standardised_rates.csv": "f115fc2ab22f2692d95b585932e8021a539c4db693a3a79393e110937a0a7f97",
+        "reports/stage07/aim2_v2/travel_audit.json": "81f403e90e28267a5a23b976e235514db51f2f2428a29ea86bee15e2a300c562",
+        "reports/stage07/aim2_v3/primary_family_audit.json": "4e96098c9dc41eaf5126b26766dc110c4d13167af0713e595697c1eac611b6ec",
+        "reports/stage07/aim3_v2/network_audit.json": "88787a9357722548f621b21638cc98c76ae5378c56d8cec3ccc22acb829af12e",
+        "reports/stage07/aim3_v2/potential_access/audit.json": "2526925f8110e0af0269ac78c02074752b1d6761712b262b669cb6549d02451e",
+        "reports/stage07/aim3_v2/resilience/audit.json": "9b370f0abb9db5be6363436376182ce59ca47d308163f85f63cf42f8034b56f8",
+        "reports/stage07/aim3_v2/service_area/audit.json": "6cf59a9d540808b84c0cffcd3a24019e5cef154673492b534c73ea17ec2c18bc",
+        "reports/stage07/rc_v1/frozen_policy_timeline_evidence.md": "b4351f069e5cdceb378a0da015382df77d1ab3e211ff940937b9e5933f577ed3",
+        "reports/stage07/stage03_v2_cohort_qc.json": "f80007cf31b31bfff08e3fede27d7a6df499826eaae92583d9c57e00835359b3"
+      },
+      "status": "PASS",
+      "suppression_status": "preserved_or_not_applicable"
+    },
+    "figure_3_equity_source_data.csv": {
+      "columns": [
+        "source_dataset",
+        "quintile",
+        "n",
+        "adult_person_years",
+        "crude_rate_per_100k",
+        "age_sex_standardised_rate_per_100k",
+        "standardised_lo95",
+        "standardised_hi95",
+        "bootstrap_municipalities",
+        "exposure",
+        "source_artifact",
+        "source_sha256"
+      ],
+      "evidence_level": [
+        "descriptive"
+      ],
+      "presentation_transform": {
+        "aggregation_rule": "No row exclusion or aggregation.",
+        "column_exclusions": [],
+        "suppression_rule": "No additional display suppression."
+      },
+      "registry_ids": [
+        "travel.flow_weighted_median_min",
+        "travel.flow_weighted_p90_min",
+        "travel.flow_weighted_share_gt120"
+      ],
+      "rows": 10,
+      "sha256": "2758ecf070ab65f7b99e5f1a2c255fdefb152e56c6f04887c48b321727139abc",
+      "source_artifact_hashes": {
+        "data_analytic/stage07_rebuild/aim3_v2/network/aim3_patient_flow_edges_display_v2.csv": "f571d5641c01ba003e330a274be21098fa3d97fe316abf49f3330c8f5dfc5bc4",
+        "data_analytic/stage07_rebuild/aim3_v2/network/aim3_residence_projection_leiden_v2.parquet": "3016cf6fbd86e4b1a2dbd8c1ce4e941b5e18abc78799224a41e065debfbdcad1",
+        "data_analytic/stage07_rebuild/aim3_v2/network/aim3_target_metrics_v2.parquet": "374e15163c404aa19bf8453d170490862689d4b0db1c5d34b0e6dea8f075e1b8",
+        "data_analytic/stage07_rebuild/aim3_v2/resilience/aim3_resilience_random_benchmark_v2.parquet": "b9d0c4d90483362d19d95c4f3adf64a698e097a8fe8394040fd55fcc10431dd4",
+        "data_analytic/stage07_rebuild/aim3_v2/resilience/aim3_resilience_sequential_display_v2.csv": "c187c0857fbb8a084f8c7e383b4afa8c4151caf7e2f4a454593cfabeb24f6563",
+        "data_analytic/stage07_rebuild/aim3_v2/service_area/aim3_service_area_residence_display_v2.csv": "823850cac6eef1cf4275e1d39aa26753488b5f7f5a80c9b0a093e6e83525d4fe",
+        "data_analytic/stage07_rebuild/aim4_v2_corrected/brglm2/aim4_brglm2_design_v2.json": "79fb7b785b174ca351db09096d0b9fdbe7344cfd22b13637b7e55cf0b44ffd4a",
+        "data_analytic/stage07_rebuild/aim4_v3_stabilized/brglm2/aim4_brglm2_bootstrap_merged_v3.csv.gz": "6a80b034858dbbbfd8174b3aafdebc4057b21efb8a9a9da71877b90c731f0f53",
+        "data_analytic/stage07_rebuild/aim4_v3_stabilized/brglm2/aim4_brglm2_final_qc_v3.json": "bbd9eec3b1c94be3d36c4de292e55dde137f2aab51f8317b486f48e15e45cf9b",
+        "data_analytic/stage07_rebuild/aim4_v3_stabilized/brglm2/aim4_brglm2_point_estimate_v3.json": "e2df6ea1d29254b561f089eabb82eda2a7828083c988c198113aae490ca9ba07",
+        "data_analytic/stage07_rebuild/stage06_v2/run1/stage06_v2_qc.json": "d27d02c19ee554c0fca680219851295fc4f3f03ffa524b76813d4c0e3cc256db",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_annual_rates.parquet": "ae41851963ed76e3604914fb9443fef294ff987ac53a1c94d048c76c8580b50a",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_first_observed_by_year.parquet": "afe4b117cc001c40863effbdbf6b2a798c2510f2648a4653a2aca5efdd62e87a",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_hospital_continuity.parquet": "528628b255700c3c5a266029ef99a9c863d86aef97ad08e0d26f7905e3adcd01",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_monthly_national.parquet": "6d2f4fff42fcae7a60358b26ad343afc15a0098be32301557c53cf580b9b4f2d",
+        "data_stage/stage07_rebuild/aim2_v2/coverage/municipality_year_coverage.parquet": "c0a9ac050a5eef0b7e0881c9c8568f3fe5a0945429eaaa5f8793a3504377a099",
+        "data_stage/stage07_rebuild/aim2_v2/travel/pair_year_routes.parquet": "e3e332752a6adecc500b432884d87171d93dc064230669ba62e93dce34a6d2ad",
+        "data_stage/supplement/malha/BR_Municipios_2022.dbf": "3d9a97c7fabc0ca715faae848adf5cae2409205eb9046ad036b33520aef1f0e3",
+        "data_stage/supplement/malha/BR_Municipios_2022.prj": "c9b61f7c5c0d268153118af4183b06d943c1652e94e1201f513a6dcf0ab06567",
+        "data_stage/supplement/malha/BR_Municipios_2022.shp": "eecdf7378666b2ac7a480c0aa388c387131a05d504663b34d0122634bdf165ad",
+        "data_stage/supplement/malha/BR_Municipios_2022.shx": "21e2d2319ade3befc8e0a6f46a7187180c75bd58dd22edde0e344d66ad23049a",
+        "reports/stage07/aim1_v2/aim1_descriptive_audit.json": "99ff4a0eb1a75aa575d94636df0f16e81aa419b4b6474ca16139bb82d475f992",
+        "reports/stage07/aim1_v2/attempt3/aim1_uptake_audit.json": "1ce239862691d9b009f58d9393ea4f5c32faffb714bbe6ce80f745e46848a84a",
+        "reports/stage07/aim2_v2/coverage_audit.json": "def7152332675f873bd541f21ba1dbf987a951e24700d56cca4dbd452623bca7",
+        "reports/stage07/aim2_v2/equity_audit.json": "865a4d41778427f30c4080e0a7e6babebcf80630233d6915519e1af75958e978",
+        "reports/stage07/aim2_v2/equity_quintile_standardised_rates.csv": "f115fc2ab22f2692d95b585932e8021a539c4db693a3a79393e110937a0a7f97",
+        "reports/stage07/aim2_v2/travel_audit.json": "81f403e90e28267a5a23b976e235514db51f2f2428a29ea86bee15e2a300c562",
+        "reports/stage07/aim2_v3/primary_family_audit.json": "4e96098c9dc41eaf5126b26766dc110c4d13167af0713e595697c1eac611b6ec",
+        "reports/stage07/aim3_v2/network_audit.json": "88787a9357722548f621b21638cc98c76ae5378c56d8cec3ccc22acb829af12e",
+        "reports/stage07/aim3_v2/potential_access/audit.json": "2526925f8110e0af0269ac78c02074752b1d6761712b262b669cb6549d02451e",
+        "reports/stage07/aim3_v2/resilience/audit.json": "9b370f0abb9db5be6363436376182ce59ca47d308163f85f63cf42f8034b56f8",
+        "reports/stage07/aim3_v2/service_area/audit.json": "6cf59a9d540808b84c0cffcd3a24019e5cef154673492b534c73ea17ec2c18bc",
+        "reports/stage07/rc_v1/frozen_policy_timeline_evidence.md": "b4351f069e5cdceb378a0da015382df77d1ab3e211ff940937b9e5933f577ed3",
+        "reports/stage07/stage03_v2_cohort_qc.json": "f80007cf31b31bfff08e3fede27d7a6df499826eaae92583d9c57e00835359b3"
+      },
+      "status": "PASS",
+      "suppression_status": "preserved_or_not_applicable"
+    },
+    "figure_3_travel_source_data.csv": {
+      "columns": [
+        "route_status",
+        "travel_bin_lower_min",
+        "travel_bin_upper_min",
+        "travel_bin_label",
+        "route_source",
+        "cross_municipality",
+        "cross_state",
+        "weighted_n_aih_display",
+        "source_dataset",
+        "source_artifact",
+        "source_sha256"
+      ],
+      "evidence_level": [
+        "descriptive"
+      ],
+      "presentation_transform": {
+        "aggregation_rule": "All route-level records are grouped into fixed 15-minute bins [0,15), …, [165,180), [180,+∞), plus NOT_ROUTED; n_aih is used only as an internal weight.",
+        "column_exclusions": [
+          "res_municipio",
+          "treat_municipio",
+          "n_aih"
+        ],
+        "suppression_rule": "weighted_n_aih_display replaces 1-4 with '<5'."
+      },
+      "registry_ids": [
+        "travel.flow_weighted_median_min",
+        "travel.flow_weighted_p90_min",
+        "travel.flow_weighted_share_gt120"
+      ],
+      "rows": 42,
+      "sha256": "346966bc4d71f699d7cac33241c41d25747e952a06421fba7fbc89d1041f8c7b",
+      "source_artifact_hashes": {
+        "data_analytic/stage07_rebuild/aim3_v2/network/aim3_patient_flow_edges_display_v2.csv": "f571d5641c01ba003e330a274be21098fa3d97fe316abf49f3330c8f5dfc5bc4",
+        "data_analytic/stage07_rebuild/aim3_v2/network/aim3_residence_projection_leiden_v2.parquet": "3016cf6fbd86e4b1a2dbd8c1ce4e941b5e18abc78799224a41e065debfbdcad1",
+        "data_analytic/stage07_rebuild/aim3_v2/network/aim3_target_metrics_v2.parquet": "374e15163c404aa19bf8453d170490862689d4b0db1c5d34b0e6dea8f075e1b8",
+        "data_analytic/stage07_rebuild/aim3_v2/resilience/aim3_resilience_random_benchmark_v2.parquet": "b9d0c4d90483362d19d95c4f3adf64a698e097a8fe8394040fd55fcc10431dd4",
+        "data_analytic/stage07_rebuild/aim3_v2/resilience/aim3_resilience_sequential_display_v2.csv": "c187c0857fbb8a084f8c7e383b4afa8c4151caf7e2f4a454593cfabeb24f6563",
+        "data_analytic/stage07_rebuild/aim3_v2/service_area/aim3_service_area_residence_display_v2.csv": "823850cac6eef1cf4275e1d39aa26753488b5f7f5a80c9b0a093e6e83525d4fe",
+        "data_analytic/stage07_rebuild/aim4_v2_corrected/brglm2/aim4_brglm2_design_v2.json": "79fb7b785b174ca351db09096d0b9fdbe7344cfd22b13637b7e55cf0b44ffd4a",
+        "data_analytic/stage07_rebuild/aim4_v3_stabilized/brglm2/aim4_brglm2_bootstrap_merged_v3.csv.gz": "6a80b034858dbbbfd8174b3aafdebc4057b21efb8a9a9da71877b90c731f0f53",
+        "data_analytic/stage07_rebuild/aim4_v3_stabilized/brglm2/aim4_brglm2_final_qc_v3.json": "bbd9eec3b1c94be3d36c4de292e55dde137f2aab51f8317b486f48e15e45cf9b",
+        "data_analytic/stage07_rebuild/aim4_v3_stabilized/brglm2/aim4_brglm2_point_estimate_v3.json": "e2df6ea1d29254b561f089eabb82eda2a7828083c988c198113aae490ca9ba07",
+        "data_analytic/stage07_rebuild/stage06_v2/run1/stage06_v2_qc.json": "d27d02c19ee554c0fca680219851295fc4f3f03ffa524b76813d4c0e3cc256db",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_annual_rates.parquet": "ae41851963ed76e3604914fb9443fef294ff987ac53a1c94d048c76c8580b50a",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_first_observed_by_year.parquet": "afe4b117cc001c40863effbdbf6b2a798c2510f2648a4653a2aca5efdd62e87a",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_hospital_continuity.parquet": "528628b255700c3c5a266029ef99a9c863d86aef97ad08e0d26f7905e3adcd01",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_monthly_national.parquet": "6d2f4fff42fcae7a60358b26ad343afc15a0098be32301557c53cf580b9b4f2d",
+        "data_stage/stage07_rebuild/aim2_v2/coverage/municipality_year_coverage.parquet": "c0a9ac050a5eef0b7e0881c9c8568f3fe5a0945429eaaa5f8793a3504377a099",
+        "data_stage/stage07_rebuild/aim2_v2/travel/pair_year_routes.parquet": "e3e332752a6adecc500b432884d87171d93dc064230669ba62e93dce34a6d2ad",
+        "data_stage/supplement/malha/BR_Municipios_2022.dbf": "3d9a97c7fabc0ca715faae848adf5cae2409205eb9046ad036b33520aef1f0e3",
+        "data_stage/supplement/malha/BR_Municipios_2022.prj": "c9b61f7c5c0d268153118af4183b06d943c1652e94e1201f513a6dcf0ab06567",
+        "data_stage/supplement/malha/BR_Municipios_2022.shp": "eecdf7378666b2ac7a480c0aa388c387131a05d504663b34d0122634bdf165ad",
+        "data_stage/supplement/malha/BR_Municipios_2022.shx": "21e2d2319ade3befc8e0a6f46a7187180c75bd58dd22edde0e344d66ad23049a",
+        "reports/stage07/aim1_v2/aim1_descriptive_audit.json": "99ff4a0eb1a75aa575d94636df0f16e81aa419b4b6474ca16139bb82d475f992",
+        "reports/stage07/aim1_v2/attempt3/aim1_uptake_audit.json": "1ce239862691d9b009f58d9393ea4f5c32faffb714bbe6ce80f745e46848a84a",
+        "reports/stage07/aim2_v2/coverage_audit.json": "def7152332675f873bd541f21ba1dbf987a951e24700d56cca4dbd452623bca7",
+        "reports/stage07/aim2_v2/equity_audit.json": "865a4d41778427f30c4080e0a7e6babebcf80630233d6915519e1af75958e978",
+        "reports/stage07/aim2_v2/equity_quintile_standardised_rates.csv": "f115fc2ab22f2692d95b585932e8021a539c4db693a3a79393e110937a0a7f97",
+        "reports/stage07/aim2_v2/travel_audit.json": "81f403e90e28267a5a23b976e235514db51f2f2428a29ea86bee15e2a300c562",
+        "reports/stage07/aim2_v3/primary_family_audit.json": "4e96098c9dc41eaf5126b26766dc110c4d13167af0713e595697c1eac611b6ec",
+        "reports/stage07/aim3_v2/network_audit.json": "88787a9357722548f621b21638cc98c76ae5378c56d8cec3ccc22acb829af12e",
+        "reports/stage07/aim3_v2/potential_access/audit.json": "2526925f8110e0af0269ac78c02074752b1d6761712b262b669cb6549d02451e",
+        "reports/stage07/aim3_v2/resilience/audit.json": "9b370f0abb9db5be6363436376182ce59ca47d308163f85f63cf42f8034b56f8",
+        "reports/stage07/aim3_v2/service_area/audit.json": "6cf59a9d540808b84c0cffcd3a24019e5cef154673492b534c73ea17ec2c18bc",
+        "reports/stage07/rc_v1/frozen_policy_timeline_evidence.md": "b4351f069e5cdceb378a0da015382df77d1ab3e211ff940937b9e5933f577ed3",
+        "reports/stage07/stage03_v2_cohort_qc.json": "f80007cf31b31bfff08e3fede27d7a6df499826eaae92583d9c57e00835359b3"
+      },
+      "status": "PASS",
+      "suppression_status": "preserved_or_not_applicable"
+    },
+    "figure_4_municipality_coverage_source_data.csv": {
+      "columns": [
+        "source_dataset",
+        "year",
+        "municipio",
+        "adult_population",
+        "total_population",
+        "n_provider_municipalities_120",
+        "n_provider_municipalities_180",
+        "has_provider_120",
+        "has_provider_180",
+        "anchor_available",
+        "monotonic",
+        "source_artifact",
+        "source_sha256"
+      ],
+      "evidence_level": [
+        "descriptive"
+      ],
+      "presentation_transform": {
+        "aggregation_rule": "No row exclusion or aggregation.",
+        "column_exclusions": [],
+        "suppression_rule": "No additional display suppression."
+      },
+      "registry_ids": [
+        "coverage.2021_adult_share_120",
+        "coverage.2021_adult_share_180",
+        "coverage.2025_adult_share_120",
+        "coverage.2025_adult_share_180",
+        "coverage.anchor_coverage_all_years"
+      ],
+      "rows": 27851,
+      "sha256": "b7717ca393330ed8fa4949580d513f47b85a78610a37525372e5d0e3cc2d401d",
+      "source_artifact_hashes": {
+        "data_analytic/stage07_rebuild/aim3_v2/network/aim3_patient_flow_edges_display_v2.csv": "f571d5641c01ba003e330a274be21098fa3d97fe316abf49f3330c8f5dfc5bc4",
+        "data_analytic/stage07_rebuild/aim3_v2/network/aim3_residence_projection_leiden_v2.parquet": "3016cf6fbd86e4b1a2dbd8c1ce4e941b5e18abc78799224a41e065debfbdcad1",
+        "data_analytic/stage07_rebuild/aim3_v2/network/aim3_target_metrics_v2.parquet": "374e15163c404aa19bf8453d170490862689d4b0db1c5d34b0e6dea8f075e1b8",
+        "data_analytic/stage07_rebuild/aim3_v2/resilience/aim3_resilience_random_benchmark_v2.parquet": "b9d0c4d90483362d19d95c4f3adf64a698e097a8fe8394040fd55fcc10431dd4",
+        "data_analytic/stage07_rebuild/aim3_v2/resilience/aim3_resilience_sequential_display_v2.csv": "c187c0857fbb8a084f8c7e383b4afa8c4151caf7e2f4a454593cfabeb24f6563",
+        "data_analytic/stage07_rebuild/aim3_v2/service_area/aim3_service_area_residence_display_v2.csv": "823850cac6eef1cf4275e1d39aa26753488b5f7f5a80c9b0a093e6e83525d4fe",
+        "data_analytic/stage07_rebuild/aim4_v2_corrected/brglm2/aim4_brglm2_design_v2.json": "79fb7b785b174ca351db09096d0b9fdbe7344cfd22b13637b7e55cf0b44ffd4a",
+        "data_analytic/stage07_rebuild/aim4_v3_stabilized/brglm2/aim4_brglm2_bootstrap_merged_v3.csv.gz": "6a80b034858dbbbfd8174b3aafdebc4057b21efb8a9a9da71877b90c731f0f53",
+        "data_analytic/stage07_rebuild/aim4_v3_stabilized/brglm2/aim4_brglm2_final_qc_v3.json": "bbd9eec3b1c94be3d36c4de292e55dde137f2aab51f8317b486f48e15e45cf9b",
+        "data_analytic/stage07_rebuild/aim4_v3_stabilized/brglm2/aim4_brglm2_point_estimate_v3.json": "e2df6ea1d29254b561f089eabb82eda2a7828083c988c198113aae490ca9ba07",
+        "data_analytic/stage07_rebuild/stage06_v2/run1/stage06_v2_qc.json": "d27d02c19ee554c0fca680219851295fc4f3f03ffa524b76813d4c0e3cc256db",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_annual_rates.parquet": "ae41851963ed76e3604914fb9443fef294ff987ac53a1c94d048c76c8580b50a",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_first_observed_by_year.parquet": "afe4b117cc001c40863effbdbf6b2a798c2510f2648a4653a2aca5efdd62e87a",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_hospital_continuity.parquet": "528628b255700c3c5a266029ef99a9c863d86aef97ad08e0d26f7905e3adcd01",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_monthly_national.parquet": "6d2f4fff42fcae7a60358b26ad343afc15a0098be32301557c53cf580b9b4f2d",
+        "data_stage/stage07_rebuild/aim2_v2/coverage/municipality_year_coverage.parquet": "c0a9ac050a5eef0b7e0881c9c8568f3fe5a0945429eaaa5f8793a3504377a099",
+        "data_stage/stage07_rebuild/aim2_v2/travel/pair_year_routes.parquet": "e3e332752a6adecc500b432884d87171d93dc064230669ba62e93dce34a6d2ad",
+        "data_stage/supplement/malha/BR_Municipios_2022.dbf": "3d9a97c7fabc0ca715faae848adf5cae2409205eb9046ad036b33520aef1f0e3",
+        "data_stage/supplement/malha/BR_Municipios_2022.prj": "c9b61f7c5c0d268153118af4183b06d943c1652e94e1201f513a6dcf0ab06567",
+        "data_stage/supplement/malha/BR_Municipios_2022.shp": "eecdf7378666b2ac7a480c0aa388c387131a05d504663b34d0122634bdf165ad",
+        "data_stage/supplement/malha/BR_Municipios_2022.shx": "21e2d2319ade3befc8e0a6f46a7187180c75bd58dd22edde0e344d66ad23049a",
+        "reports/stage07/aim1_v2/aim1_descriptive_audit.json": "99ff4a0eb1a75aa575d94636df0f16e81aa419b4b6474ca16139bb82d475f992",
+        "reports/stage07/aim1_v2/attempt3/aim1_uptake_audit.json": "1ce239862691d9b009f58d9393ea4f5c32faffb714bbe6ce80f745e46848a84a",
+        "reports/stage07/aim2_v2/coverage_audit.json": "def7152332675f873bd541f21ba1dbf987a951e24700d56cca4dbd452623bca7",
+        "reports/stage07/aim2_v2/equity_audit.json": "865a4d41778427f30c4080e0a7e6babebcf80630233d6915519e1af75958e978",
+        "reports/stage07/aim2_v2/equity_quintile_standardised_rates.csv": "f115fc2ab22f2692d95b585932e8021a539c4db693a3a79393e110937a0a7f97",
+        "reports/stage07/aim2_v2/travel_audit.json": "81f403e90e28267a5a23b976e235514db51f2f2428a29ea86bee15e2a300c562",
+        "reports/stage07/aim2_v3/primary_family_audit.json": "4e96098c9dc41eaf5126b26766dc110c4d13167af0713e595697c1eac611b6ec",
+        "reports/stage07/aim3_v2/network_audit.json": "88787a9357722548f621b21638cc98c76ae5378c56d8cec3ccc22acb829af12e",
+        "reports/stage07/aim3_v2/potential_access/audit.json": "2526925f8110e0af0269ac78c02074752b1d6761712b262b669cb6549d02451e",
+        "reports/stage07/aim3_v2/resilience/audit.json": "9b370f0abb9db5be6363436376182ce59ca47d308163f85f63cf42f8034b56f8",
+        "reports/stage07/aim3_v2/service_area/audit.json": "6cf59a9d540808b84c0cffcd3a24019e5cef154673492b534c73ea17ec2c18bc",
+        "reports/stage07/rc_v1/frozen_policy_timeline_evidence.md": "b4351f069e5cdceb378a0da015382df77d1ab3e211ff940937b9e5933f577ed3",
+        "reports/stage07/stage03_v2_cohort_qc.json": "f80007cf31b31bfff08e3fede27d7a6df499826eaae92583d9c57e00835359b3"
+      },
+      "status": "PASS",
+      "suppression_status": "preserved_or_not_applicable"
+    },
+    "figure_4_national_regional_coverage_source_data.csv": {
+      "columns": [
+        "scope",
+        "year",
+        "status",
+        "adult_anchor_denominator",
+        "adult_population_share_120",
+        "adult_population_share_180",
+        "adult_population_anchor_coverage",
+        "reason",
+        "missing_frozen_input"
+      ],
+      "evidence_level": [
+        "descriptive"
+      ],
+      "presentation_transform": {
+        "aggregation_rule": "No row exclusion or aggregation.",
+        "column_exclusions": [],
+        "suppression_rule": "No additional display suppression."
+      },
+      "registry_ids": [
+        "coverage.2021_adult_share_120",
+        "coverage.2021_adult_share_180",
+        "coverage.2025_adult_share_120",
+        "coverage.2025_adult_share_180",
+        "coverage.anchor_coverage_all_years"
+      ],
+      "rows": 6,
+      "sha256": "2840dc5fb99bc31282ab41a2d019939373c4287e029298a6b0f460da2c605830",
+      "source_artifact_hashes": {
+        "data_analytic/stage07_rebuild/aim3_v2/network/aim3_patient_flow_edges_display_v2.csv": "f571d5641c01ba003e330a274be21098fa3d97fe316abf49f3330c8f5dfc5bc4",
+        "data_analytic/stage07_rebuild/aim3_v2/network/aim3_residence_projection_leiden_v2.parquet": "3016cf6fbd86e4b1a2dbd8c1ce4e941b5e18abc78799224a41e065debfbdcad1",
+        "data_analytic/stage07_rebuild/aim3_v2/network/aim3_target_metrics_v2.parquet": "374e15163c404aa19bf8453d170490862689d4b0db1c5d34b0e6dea8f075e1b8",
+        "data_analytic/stage07_rebuild/aim3_v2/resilience/aim3_resilience_random_benchmark_v2.parquet": "b9d0c4d90483362d19d95c4f3adf64a698e097a8fe8394040fd55fcc10431dd4",
+        "data_analytic/stage07_rebuild/aim3_v2/resilience/aim3_resilience_sequential_display_v2.csv": "c187c0857fbb8a084f8c7e383b4afa8c4151caf7e2f4a454593cfabeb24f6563",
+        "data_analytic/stage07_rebuild/aim3_v2/service_area/aim3_service_area_residence_display_v2.csv": "823850cac6eef1cf4275e1d39aa26753488b5f7f5a80c9b0a093e6e83525d4fe",
+        "data_analytic/stage07_rebuild/aim4_v2_corrected/brglm2/aim4_brglm2_design_v2.json": "79fb7b785b174ca351db09096d0b9fdbe7344cfd22b13637b7e55cf0b44ffd4a",
+        "data_analytic/stage07_rebuild/aim4_v3_stabilized/brglm2/aim4_brglm2_bootstrap_merged_v3.csv.gz": "6a80b034858dbbbfd8174b3aafdebc4057b21efb8a9a9da71877b90c731f0f53",
+        "data_analytic/stage07_rebuild/aim4_v3_stabilized/brglm2/aim4_brglm2_final_qc_v3.json": "bbd9eec3b1c94be3d36c4de292e55dde137f2aab51f8317b486f48e15e45cf9b",
+        "data_analytic/stage07_rebuild/aim4_v3_stabilized/brglm2/aim4_brglm2_point_estimate_v3.json": "e2df6ea1d29254b561f089eabb82eda2a7828083c988c198113aae490ca9ba07",
+        "data_analytic/stage07_rebuild/stage06_v2/run1/stage06_v2_qc.json": "d27d02c19ee554c0fca680219851295fc4f3f03ffa524b76813d4c0e3cc256db",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_annual_rates.parquet": "ae41851963ed76e3604914fb9443fef294ff987ac53a1c94d048c76c8580b50a",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_first_observed_by_year.parquet": "afe4b117cc001c40863effbdbf6b2a798c2510f2648a4653a2aca5efdd62e87a",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_hospital_continuity.parquet": "528628b255700c3c5a266029ef99a9c863d86aef97ad08e0d26f7905e3adcd01",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_monthly_national.parquet": "6d2f4fff42fcae7a60358b26ad343afc15a0098be32301557c53cf580b9b4f2d",
+        "data_stage/stage07_rebuild/aim2_v2/coverage/municipality_year_coverage.parquet": "c0a9ac050a5eef0b7e0881c9c8568f3fe5a0945429eaaa5f8793a3504377a099",
+        "data_stage/stage07_rebuild/aim2_v2/travel/pair_year_routes.parquet": "e3e332752a6adecc500b432884d87171d93dc064230669ba62e93dce34a6d2ad",
+        "data_stage/supplement/malha/BR_Municipios_2022.dbf": "3d9a97c7fabc0ca715faae848adf5cae2409205eb9046ad036b33520aef1f0e3",
+        "data_stage/supplement/malha/BR_Municipios_2022.prj": "c9b61f7c5c0d268153118af4183b06d943c1652e94e1201f513a6dcf0ab06567",
+        "data_stage/supplement/malha/BR_Municipios_2022.shp": "eecdf7378666b2ac7a480c0aa388c387131a05d504663b34d0122634bdf165ad",
+        "data_stage/supplement/malha/BR_Municipios_2022.shx": "21e2d2319ade3befc8e0a6f46a7187180c75bd58dd22edde0e344d66ad23049a",
+        "reports/stage07/aim1_v2/aim1_descriptive_audit.json": "99ff4a0eb1a75aa575d94636df0f16e81aa419b4b6474ca16139bb82d475f992",
+        "reports/stage07/aim1_v2/attempt3/aim1_uptake_audit.json": "1ce239862691d9b009f58d9393ea4f5c32faffb714bbe6ce80f745e46848a84a",
+        "reports/stage07/aim2_v2/coverage_audit.json": "def7152332675f873bd541f21ba1dbf987a951e24700d56cca4dbd452623bca7",
+        "reports/stage07/aim2_v2/equity_audit.json": "865a4d41778427f30c4080e0a7e6babebcf80630233d6915519e1af75958e978",
+        "reports/stage07/aim2_v2/equity_quintile_standardised_rates.csv": "f115fc2ab22f2692d95b585932e8021a539c4db693a3a79393e110937a0a7f97",
+        "reports/stage07/aim2_v2/travel_audit.json": "81f403e90e28267a5a23b976e235514db51f2f2428a29ea86bee15e2a300c562",
+        "reports/stage07/aim2_v3/primary_family_audit.json": "4e96098c9dc41eaf5126b26766dc110c4d13167af0713e595697c1eac611b6ec",
+        "reports/stage07/aim3_v2/network_audit.json": "88787a9357722548f621b21638cc98c76ae5378c56d8cec3ccc22acb829af12e",
+        "reports/stage07/aim3_v2/potential_access/audit.json": "2526925f8110e0af0269ac78c02074752b1d6761712b262b669cb6549d02451e",
+        "reports/stage07/aim3_v2/resilience/audit.json": "9b370f0abb9db5be6363436376182ce59ca47d308163f85f63cf42f8034b56f8",
+        "reports/stage07/aim3_v2/service_area/audit.json": "6cf59a9d540808b84c0cffcd3a24019e5cef154673492b534c73ea17ec2c18bc",
+        "reports/stage07/rc_v1/frozen_policy_timeline_evidence.md": "b4351f069e5cdceb378a0da015382df77d1ab3e211ff940937b9e5933f577ed3",
+        "reports/stage07/stage03_v2_cohort_qc.json": "f80007cf31b31bfff08e3fede27d7a6df499826eaae92583d9c57e00835359b3"
+      },
+      "status": "PASS",
+      "suppression_status": "preserved_or_not_applicable"
+    },
+    "figure_4_vulnerability_gap_source_data.csv": {
+      "columns": [
+        "scope",
+        "status",
+        "reason",
+        "missing_frozen_input"
+      ],
+      "evidence_level": [
+        "descriptive"
+      ],
+      "presentation_transform": {
+        "aggregation_rule": "No row exclusion or aggregation.",
+        "column_exclusions": [],
+        "suppression_rule": "No additional display suppression."
+      },
+      "registry_ids": [
+        "coverage.2021_adult_share_120",
+        "coverage.2021_adult_share_180",
+        "coverage.2025_adult_share_120",
+        "coverage.2025_adult_share_180",
+        "coverage.anchor_coverage_all_years"
+      ],
+      "rows": 1,
+      "sha256": "465f8a0f4dd298da3f84d2360a022059884dbd187203b631f99bc96557ec3c64",
+      "source_artifact_hashes": {
+        "data_analytic/stage07_rebuild/aim3_v2/network/aim3_patient_flow_edges_display_v2.csv": "f571d5641c01ba003e330a274be21098fa3d97fe316abf49f3330c8f5dfc5bc4",
+        "data_analytic/stage07_rebuild/aim3_v2/network/aim3_residence_projection_leiden_v2.parquet": "3016cf6fbd86e4b1a2dbd8c1ce4e941b5e18abc78799224a41e065debfbdcad1",
+        "data_analytic/stage07_rebuild/aim3_v2/network/aim3_target_metrics_v2.parquet": "374e15163c404aa19bf8453d170490862689d4b0db1c5d34b0e6dea8f075e1b8",
+        "data_analytic/stage07_rebuild/aim3_v2/resilience/aim3_resilience_random_benchmark_v2.parquet": "b9d0c4d90483362d19d95c4f3adf64a698e097a8fe8394040fd55fcc10431dd4",
+        "data_analytic/stage07_rebuild/aim3_v2/resilience/aim3_resilience_sequential_display_v2.csv": "c187c0857fbb8a084f8c7e383b4afa8c4151caf7e2f4a454593cfabeb24f6563",
+        "data_analytic/stage07_rebuild/aim3_v2/service_area/aim3_service_area_residence_display_v2.csv": "823850cac6eef1cf4275e1d39aa26753488b5f7f5a80c9b0a093e6e83525d4fe",
+        "data_analytic/stage07_rebuild/aim4_v2_corrected/brglm2/aim4_brglm2_design_v2.json": "79fb7b785b174ca351db09096d0b9fdbe7344cfd22b13637b7e55cf0b44ffd4a",
+        "data_analytic/stage07_rebuild/aim4_v3_stabilized/brglm2/aim4_brglm2_bootstrap_merged_v3.csv.gz": "6a80b034858dbbbfd8174b3aafdebc4057b21efb8a9a9da71877b90c731f0f53",
+        "data_analytic/stage07_rebuild/aim4_v3_stabilized/brglm2/aim4_brglm2_final_qc_v3.json": "bbd9eec3b1c94be3d36c4de292e55dde137f2aab51f8317b486f48e15e45cf9b",
+        "data_analytic/stage07_rebuild/aim4_v3_stabilized/brglm2/aim4_brglm2_point_estimate_v3.json": "e2df6ea1d29254b561f089eabb82eda2a7828083c988c198113aae490ca9ba07",
+        "data_analytic/stage07_rebuild/stage06_v2/run1/stage06_v2_qc.json": "d27d02c19ee554c0fca680219851295fc4f3f03ffa524b76813d4c0e3cc256db",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_annual_rates.parquet": "ae41851963ed76e3604914fb9443fef294ff987ac53a1c94d048c76c8580b50a",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_first_observed_by_year.parquet": "afe4b117cc001c40863effbdbf6b2a798c2510f2648a4653a2aca5efdd62e87a",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_hospital_continuity.parquet": "528628b255700c3c5a266029ef99a9c863d86aef97ad08e0d26f7905e3adcd01",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_monthly_national.parquet": "6d2f4fff42fcae7a60358b26ad343afc15a0098be32301557c53cf580b9b4f2d",
+        "data_stage/stage07_rebuild/aim2_v2/coverage/municipality_year_coverage.parquet": "c0a9ac050a5eef0b7e0881c9c8568f3fe5a0945429eaaa5f8793a3504377a099",
+        "data_stage/stage07_rebuild/aim2_v2/travel/pair_year_routes.parquet": "e3e332752a6adecc500b432884d87171d93dc064230669ba62e93dce34a6d2ad",
+        "data_stage/supplement/malha/BR_Municipios_2022.dbf": "3d9a97c7fabc0ca715faae848adf5cae2409205eb9046ad036b33520aef1f0e3",
+        "data_stage/supplement/malha/BR_Municipios_2022.prj": "c9b61f7c5c0d268153118af4183b06d943c1652e94e1201f513a6dcf0ab06567",
+        "data_stage/supplement/malha/BR_Municipios_2022.shp": "eecdf7378666b2ac7a480c0aa388c387131a05d504663b34d0122634bdf165ad",
+        "data_stage/supplement/malha/BR_Municipios_2022.shx": "21e2d2319ade3befc8e0a6f46a7187180c75bd58dd22edde0e344d66ad23049a",
+        "reports/stage07/aim1_v2/aim1_descriptive_audit.json": "99ff4a0eb1a75aa575d94636df0f16e81aa419b4b6474ca16139bb82d475f992",
+        "reports/stage07/aim1_v2/attempt3/aim1_uptake_audit.json": "1ce239862691d9b009f58d9393ea4f5c32faffb714bbe6ce80f745e46848a84a",
+        "reports/stage07/aim2_v2/coverage_audit.json": "def7152332675f873bd541f21ba1dbf987a951e24700d56cca4dbd452623bca7",
+        "reports/stage07/aim2_v2/equity_audit.json": "865a4d41778427f30c4080e0a7e6babebcf80630233d6915519e1af75958e978",
+        "reports/stage07/aim2_v2/equity_quintile_standardised_rates.csv": "f115fc2ab22f2692d95b585932e8021a539c4db693a3a79393e110937a0a7f97",
+        "reports/stage07/aim2_v2/travel_audit.json": "81f403e90e28267a5a23b976e235514db51f2f2428a29ea86bee15e2a300c562",
+        "reports/stage07/aim2_v3/primary_family_audit.json": "4e96098c9dc41eaf5126b26766dc110c4d13167af0713e595697c1eac611b6ec",
+        "reports/stage07/aim3_v2/network_audit.json": "88787a9357722548f621b21638cc98c76ae5378c56d8cec3ccc22acb829af12e",
+        "reports/stage07/aim3_v2/potential_access/audit.json": "2526925f8110e0af0269ac78c02074752b1d6761712b262b669cb6549d02451e",
+        "reports/stage07/aim3_v2/resilience/audit.json": "9b370f0abb9db5be6363436376182ce59ca47d308163f85f63cf42f8034b56f8",
+        "reports/stage07/aim3_v2/service_area/audit.json": "6cf59a9d540808b84c0cffcd3a24019e5cef154673492b534c73ea17ec2c18bc",
+        "reports/stage07/rc_v1/frozen_policy_timeline_evidence.md": "b4351f069e5cdceb378a0da015382df77d1ab3e211ff940937b9e5933f577ed3",
+        "reports/stage07/stage03_v2_cohort_qc.json": "f80007cf31b31bfff08e3fede27d7a6df499826eaae92583d9c57e00835359b3"
+      },
+      "status": "PASS",
+      "suppression_status": "preserved_or_not_applicable"
+    },
+    "figure_5_centrality_source_data.csv": {
+      "columns": [
+        "source_dataset",
+        "node",
+        "weighted_betweenness_inverse_flow_cost",
+        "layer",
+        "cohort",
+        "year",
+        "source_artifact",
+        "source_sha256",
+        "in_strength_display"
+      ],
+      "evidence_level": [
+        "descriptive"
+      ],
+      "presentation_transform": {
+        "aggregation_rule": "No row exclusion; frozen centrality rows retained.",
+        "column_exclusions": [
+          "in_strength"
+        ],
+        "suppression_rule": "in_strength_display replaces 1-4 with '<5'; zero and counts >=5 remain explicit."
+      },
+      "registry_ids": [
+        "network.pooled_projection_nodes",
+        "network.pooled_projection_edges"
+      ],
+      "rows": 5321,
+      "sha256": "b640ef68d88fd91d4aa27ecfc1fba4970b960535596080ac735c4426ab6730a7",
+      "source_artifact_hashes": {
+        "data_analytic/stage07_rebuild/aim3_v2/network/aim3_patient_flow_edges_display_v2.csv": "f571d5641c01ba003e330a274be21098fa3d97fe316abf49f3330c8f5dfc5bc4",
+        "data_analytic/stage07_rebuild/aim3_v2/network/aim3_residence_projection_leiden_v2.parquet": "3016cf6fbd86e4b1a2dbd8c1ce4e941b5e18abc78799224a41e065debfbdcad1",
+        "data_analytic/stage07_rebuild/aim3_v2/network/aim3_target_metrics_v2.parquet": "374e15163c404aa19bf8453d170490862689d4b0db1c5d34b0e6dea8f075e1b8",
+        "data_analytic/stage07_rebuild/aim3_v2/resilience/aim3_resilience_random_benchmark_v2.parquet": "b9d0c4d90483362d19d95c4f3adf64a698e097a8fe8394040fd55fcc10431dd4",
+        "data_analytic/stage07_rebuild/aim3_v2/resilience/aim3_resilience_sequential_display_v2.csv": "c187c0857fbb8a084f8c7e383b4afa8c4151caf7e2f4a454593cfabeb24f6563",
+        "data_analytic/stage07_rebuild/aim3_v2/service_area/aim3_service_area_residence_display_v2.csv": "823850cac6eef1cf4275e1d39aa26753488b5f7f5a80c9b0a093e6e83525d4fe",
+        "data_analytic/stage07_rebuild/aim4_v2_corrected/brglm2/aim4_brglm2_design_v2.json": "79fb7b785b174ca351db09096d0b9fdbe7344cfd22b13637b7e55cf0b44ffd4a",
+        "data_analytic/stage07_rebuild/aim4_v3_stabilized/brglm2/aim4_brglm2_bootstrap_merged_v3.csv.gz": "6a80b034858dbbbfd8174b3aafdebc4057b21efb8a9a9da71877b90c731f0f53",
+        "data_analytic/stage07_rebuild/aim4_v3_stabilized/brglm2/aim4_brglm2_final_qc_v3.json": "bbd9eec3b1c94be3d36c4de292e55dde137f2aab51f8317b486f48e15e45cf9b",
+        "data_analytic/stage07_rebuild/aim4_v3_stabilized/brglm2/aim4_brglm2_point_estimate_v3.json": "e2df6ea1d29254b561f089eabb82eda2a7828083c988c198113aae490ca9ba07",
+        "data_analytic/stage07_rebuild/stage06_v2/run1/stage06_v2_qc.json": "d27d02c19ee554c0fca680219851295fc4f3f03ffa524b76813d4c0e3cc256db",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_annual_rates.parquet": "ae41851963ed76e3604914fb9443fef294ff987ac53a1c94d048c76c8580b50a",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_first_observed_by_year.parquet": "afe4b117cc001c40863effbdbf6b2a798c2510f2648a4653a2aca5efdd62e87a",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_hospital_continuity.parquet": "528628b255700c3c5a266029ef99a9c863d86aef97ad08e0d26f7905e3adcd01",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_monthly_national.parquet": "6d2f4fff42fcae7a60358b26ad343afc15a0098be32301557c53cf580b9b4f2d",
+        "data_stage/stage07_rebuild/aim2_v2/coverage/municipality_year_coverage.parquet": "c0a9ac050a5eef0b7e0881c9c8568f3fe5a0945429eaaa5f8793a3504377a099",
+        "data_stage/stage07_rebuild/aim2_v2/travel/pair_year_routes.parquet": "e3e332752a6adecc500b432884d87171d93dc064230669ba62e93dce34a6d2ad",
+        "data_stage/supplement/malha/BR_Municipios_2022.dbf": "3d9a97c7fabc0ca715faae848adf5cae2409205eb9046ad036b33520aef1f0e3",
+        "data_stage/supplement/malha/BR_Municipios_2022.prj": "c9b61f7c5c0d268153118af4183b06d943c1652e94e1201f513a6dcf0ab06567",
+        "data_stage/supplement/malha/BR_Municipios_2022.shp": "eecdf7378666b2ac7a480c0aa388c387131a05d504663b34d0122634bdf165ad",
+        "data_stage/supplement/malha/BR_Municipios_2022.shx": "21e2d2319ade3befc8e0a6f46a7187180c75bd58dd22edde0e344d66ad23049a",
+        "reports/stage07/aim1_v2/aim1_descriptive_audit.json": "99ff4a0eb1a75aa575d94636df0f16e81aa419b4b6474ca16139bb82d475f992",
+        "reports/stage07/aim1_v2/attempt3/aim1_uptake_audit.json": "1ce239862691d9b009f58d9393ea4f5c32faffb714bbe6ce80f745e46848a84a",
+        "reports/stage07/aim2_v2/coverage_audit.json": "def7152332675f873bd541f21ba1dbf987a951e24700d56cca4dbd452623bca7",
+        "reports/stage07/aim2_v2/equity_audit.json": "865a4d41778427f30c4080e0a7e6babebcf80630233d6915519e1af75958e978",
+        "reports/stage07/aim2_v2/equity_quintile_standardised_rates.csv": "f115fc2ab22f2692d95b585932e8021a539c4db693a3a79393e110937a0a7f97",
+        "reports/stage07/aim2_v2/travel_audit.json": "81f403e90e28267a5a23b976e235514db51f2f2428a29ea86bee15e2a300c562",
+        "reports/stage07/aim2_v3/primary_family_audit.json": "4e96098c9dc41eaf5126b26766dc110c4d13167af0713e595697c1eac611b6ec",
+        "reports/stage07/aim3_v2/network_audit.json": "88787a9357722548f621b21638cc98c76ae5378c56d8cec3ccc22acb829af12e",
+        "reports/stage07/aim3_v2/potential_access/audit.json": "2526925f8110e0af0269ac78c02074752b1d6761712b262b669cb6549d02451e",
+        "reports/stage07/aim3_v2/resilience/audit.json": "9b370f0abb9db5be6363436376182ce59ca47d308163f85f63cf42f8034b56f8",
+        "reports/stage07/aim3_v2/service_area/audit.json": "6cf59a9d540808b84c0cffcd3a24019e5cef154673492b534c73ea17ec2c18bc",
+        "reports/stage07/rc_v1/frozen_policy_timeline_evidence.md": "b4351f069e5cdceb378a0da015382df77d1ab3e211ff940937b9e5933f577ed3",
+        "reports/stage07/stage03_v2_cohort_qc.json": "f80007cf31b31bfff08e3fede27d7a6df499826eaae92583d9c57e00835359b3"
+      },
+      "status": "PASS",
+      "suppression_status": "preserved_or_not_applicable"
+    },
+    "figure_5_service_area_source_data.csv": {
+      "columns": [
+        "source_dataset",
+        "cohort",
+        "year",
+        "res_municipio",
+        "observed_treatment",
+        "self_sufficiency",
+        "n_destinations",
+        "destination_hhi",
+        "destination_diversity_entropy",
+        "main_destination",
+        "main_destination_share",
+        "cross_municipality_share",
+        "cross_state_share",
+        "adult_population",
+        "potential_coverage_120",
+        "potential_coverage_180",
+        "ivs",
+        "n_aih_display",
+        "source_artifact",
+        "source_sha256"
+      ],
+      "evidence_level": [
+        "descriptive"
+      ],
+      "presentation_transform": {
+        "aggregation_rule": "No row exclusion or aggregation.",
+        "column_exclusions": [],
+        "suppression_rule": "No additional display suppression."
+      },
+      "registry_ids": [
+        "network.pooled_projection_nodes",
+        "network.pooled_projection_edges"
+      ],
+      "rows": 63503,
+      "sha256": "ae5d48d40b0f7811bd282aeff924310f99f974775894347e62c369d8f9d6afef",
+      "source_artifact_hashes": {
+        "data_analytic/stage07_rebuild/aim3_v2/network/aim3_patient_flow_edges_display_v2.csv": "f571d5641c01ba003e330a274be21098fa3d97fe316abf49f3330c8f5dfc5bc4",
+        "data_analytic/stage07_rebuild/aim3_v2/network/aim3_residence_projection_leiden_v2.parquet": "3016cf6fbd86e4b1a2dbd8c1ce4e941b5e18abc78799224a41e065debfbdcad1",
+        "data_analytic/stage07_rebuild/aim3_v2/network/aim3_target_metrics_v2.parquet": "374e15163c404aa19bf8453d170490862689d4b0db1c5d34b0e6dea8f075e1b8",
+        "data_analytic/stage07_rebuild/aim3_v2/resilience/aim3_resilience_random_benchmark_v2.parquet": "b9d0c4d90483362d19d95c4f3adf64a698e097a8fe8394040fd55fcc10431dd4",
+        "data_analytic/stage07_rebuild/aim3_v2/resilience/aim3_resilience_sequential_display_v2.csv": "c187c0857fbb8a084f8c7e383b4afa8c4151caf7e2f4a454593cfabeb24f6563",
+        "data_analytic/stage07_rebuild/aim3_v2/service_area/aim3_service_area_residence_display_v2.csv": "823850cac6eef1cf4275e1d39aa26753488b5f7f5a80c9b0a093e6e83525d4fe",
+        "data_analytic/stage07_rebuild/aim4_v2_corrected/brglm2/aim4_brglm2_design_v2.json": "79fb7b785b174ca351db09096d0b9fdbe7344cfd22b13637b7e55cf0b44ffd4a",
+        "data_analytic/stage07_rebuild/aim4_v3_stabilized/brglm2/aim4_brglm2_bootstrap_merged_v3.csv.gz": "6a80b034858dbbbfd8174b3aafdebc4057b21efb8a9a9da71877b90c731f0f53",
+        "data_analytic/stage07_rebuild/aim4_v3_stabilized/brglm2/aim4_brglm2_final_qc_v3.json": "bbd9eec3b1c94be3d36c4de292e55dde137f2aab51f8317b486f48e15e45cf9b",
+        "data_analytic/stage07_rebuild/aim4_v3_stabilized/brglm2/aim4_brglm2_point_estimate_v3.json": "e2df6ea1d29254b561f089eabb82eda2a7828083c988c198113aae490ca9ba07",
+        "data_analytic/stage07_rebuild/stage06_v2/run1/stage06_v2_qc.json": "d27d02c19ee554c0fca680219851295fc4f3f03ffa524b76813d4c0e3cc256db",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_annual_rates.parquet": "ae41851963ed76e3604914fb9443fef294ff987ac53a1c94d048c76c8580b50a",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_first_observed_by_year.parquet": "afe4b117cc001c40863effbdbf6b2a798c2510f2648a4653a2aca5efdd62e87a",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_hospital_continuity.parquet": "528628b255700c3c5a266029ef99a9c863d86aef97ad08e0d26f7905e3adcd01",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_monthly_national.parquet": "6d2f4fff42fcae7a60358b26ad343afc15a0098be32301557c53cf580b9b4f2d",
+        "data_stage/stage07_rebuild/aim2_v2/coverage/municipality_year_coverage.parquet": "c0a9ac050a5eef0b7e0881c9c8568f3fe5a0945429eaaa5f8793a3504377a099",
+        "data_stage/stage07_rebuild/aim2_v2/travel/pair_year_routes.parquet": "e3e332752a6adecc500b432884d87171d93dc064230669ba62e93dce34a6d2ad",
+        "data_stage/supplement/malha/BR_Municipios_2022.dbf": "3d9a97c7fabc0ca715faae848adf5cae2409205eb9046ad036b33520aef1f0e3",
+        "data_stage/supplement/malha/BR_Municipios_2022.prj": "c9b61f7c5c0d268153118af4183b06d943c1652e94e1201f513a6dcf0ab06567",
+        "data_stage/supplement/malha/BR_Municipios_2022.shp": "eecdf7378666b2ac7a480c0aa388c387131a05d504663b34d0122634bdf165ad",
+        "data_stage/supplement/malha/BR_Municipios_2022.shx": "21e2d2319ade3befc8e0a6f46a7187180c75bd58dd22edde0e344d66ad23049a",
+        "reports/stage07/aim1_v2/aim1_descriptive_audit.json": "99ff4a0eb1a75aa575d94636df0f16e81aa419b4b6474ca16139bb82d475f992",
+        "reports/stage07/aim1_v2/attempt3/aim1_uptake_audit.json": "1ce239862691d9b009f58d9393ea4f5c32faffb714bbe6ce80f745e46848a84a",
+        "reports/stage07/aim2_v2/coverage_audit.json": "def7152332675f873bd541f21ba1dbf987a951e24700d56cca4dbd452623bca7",
+        "reports/stage07/aim2_v2/equity_audit.json": "865a4d41778427f30c4080e0a7e6babebcf80630233d6915519e1af75958e978",
+        "reports/stage07/aim2_v2/equity_quintile_standardised_rates.csv": "f115fc2ab22f2692d95b585932e8021a539c4db693a3a79393e110937a0a7f97",
+        "reports/stage07/aim2_v2/travel_audit.json": "81f403e90e28267a5a23b976e235514db51f2f2428a29ea86bee15e2a300c562",
+        "reports/stage07/aim2_v3/primary_family_audit.json": "4e96098c9dc41eaf5126b26766dc110c4d13167af0713e595697c1eac611b6ec",
+        "reports/stage07/aim3_v2/network_audit.json": "88787a9357722548f621b21638cc98c76ae5378c56d8cec3ccc22acb829af12e",
+        "reports/stage07/aim3_v2/potential_access/audit.json": "2526925f8110e0af0269ac78c02074752b1d6761712b262b669cb6549d02451e",
+        "reports/stage07/aim3_v2/resilience/audit.json": "9b370f0abb9db5be6363436376182ce59ca47d308163f85f63cf42f8034b56f8",
+        "reports/stage07/aim3_v2/service_area/audit.json": "6cf59a9d540808b84c0cffcd3a24019e5cef154673492b534c73ea17ec2c18bc",
+        "reports/stage07/rc_v1/frozen_policy_timeline_evidence.md": "b4351f069e5cdceb378a0da015382df77d1ab3e211ff940937b9e5933f577ed3",
+        "reports/stage07/stage03_v2_cohort_qc.json": "f80007cf31b31bfff08e3fede27d7a6df499826eaae92583d9c57e00835359b3"
+      },
+      "status": "PASS",
+      "suppression_status": "preserved_or_not_applicable"
+    },
+    "figure_5_suppressed_network_edges_source_data.csv": {
+      "columns": [
+        "source_dataset",
+        "cohort",
+        "year",
+        "res_municipio",
+        "SP_CNES",
+        "layer",
+        "target_node",
+        "treat_municipio",
+        "n_aih_display",
+        "source_artifact",
+        "source_sha256"
+      ],
+      "evidence_level": [
+        "descriptive"
+      ],
+      "presentation_transform": {
+        "aggregation_rule": "No row exclusion; frozen display-edge rows retained.",
+        "column_exclusions": [
+          "n_aih"
+        ],
+        "suppression_rule": "n_aih_display is cross-checked against raw n_aih then raw n_aih is removed."
+      },
+      "registry_ids": [
+        "network.pooled_projection_nodes",
+        "network.pooled_projection_edges"
+      ],
+      "rows": 87177,
+      "sha256": "1707826ea789a1e367773929f9641e5ccc55dac143679001c82b907ed35dd4c7",
+      "source_artifact_hashes": {
+        "data_analytic/stage07_rebuild/aim3_v2/network/aim3_patient_flow_edges_display_v2.csv": "f571d5641c01ba003e330a274be21098fa3d97fe316abf49f3330c8f5dfc5bc4",
+        "data_analytic/stage07_rebuild/aim3_v2/network/aim3_residence_projection_leiden_v2.parquet": "3016cf6fbd86e4b1a2dbd8c1ce4e941b5e18abc78799224a41e065debfbdcad1",
+        "data_analytic/stage07_rebuild/aim3_v2/network/aim3_target_metrics_v2.parquet": "374e15163c404aa19bf8453d170490862689d4b0db1c5d34b0e6dea8f075e1b8",
+        "data_analytic/stage07_rebuild/aim3_v2/resilience/aim3_resilience_random_benchmark_v2.parquet": "b9d0c4d90483362d19d95c4f3adf64a698e097a8fe8394040fd55fcc10431dd4",
+        "data_analytic/stage07_rebuild/aim3_v2/resilience/aim3_resilience_sequential_display_v2.csv": "c187c0857fbb8a084f8c7e383b4afa8c4151caf7e2f4a454593cfabeb24f6563",
+        "data_analytic/stage07_rebuild/aim3_v2/service_area/aim3_service_area_residence_display_v2.csv": "823850cac6eef1cf4275e1d39aa26753488b5f7f5a80c9b0a093e6e83525d4fe",
+        "data_analytic/stage07_rebuild/aim4_v2_corrected/brglm2/aim4_brglm2_design_v2.json": "79fb7b785b174ca351db09096d0b9fdbe7344cfd22b13637b7e55cf0b44ffd4a",
+        "data_analytic/stage07_rebuild/aim4_v3_stabilized/brglm2/aim4_brglm2_bootstrap_merged_v3.csv.gz": "6a80b034858dbbbfd8174b3aafdebc4057b21efb8a9a9da71877b90c731f0f53",
+        "data_analytic/stage07_rebuild/aim4_v3_stabilized/brglm2/aim4_brglm2_final_qc_v3.json": "bbd9eec3b1c94be3d36c4de292e55dde137f2aab51f8317b486f48e15e45cf9b",
+        "data_analytic/stage07_rebuild/aim4_v3_stabilized/brglm2/aim4_brglm2_point_estimate_v3.json": "e2df6ea1d29254b561f089eabb82eda2a7828083c988c198113aae490ca9ba07",
+        "data_analytic/stage07_rebuild/stage06_v2/run1/stage06_v2_qc.json": "d27d02c19ee554c0fca680219851295fc4f3f03ffa524b76813d4c0e3cc256db",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_annual_rates.parquet": "ae41851963ed76e3604914fb9443fef294ff987ac53a1c94d048c76c8580b50a",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_first_observed_by_year.parquet": "afe4b117cc001c40863effbdbf6b2a798c2510f2648a4653a2aca5efdd62e87a",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_hospital_continuity.parquet": "528628b255700c3c5a266029ef99a9c863d86aef97ad08e0d26f7905e3adcd01",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_monthly_national.parquet": "6d2f4fff42fcae7a60358b26ad343afc15a0098be32301557c53cf580b9b4f2d",
+        "data_stage/stage07_rebuild/aim2_v2/coverage/municipality_year_coverage.parquet": "c0a9ac050a5eef0b7e0881c9c8568f3fe5a0945429eaaa5f8793a3504377a099",
+        "data_stage/stage07_rebuild/aim2_v2/travel/pair_year_routes.parquet": "e3e332752a6adecc500b432884d87171d93dc064230669ba62e93dce34a6d2ad",
+        "data_stage/supplement/malha/BR_Municipios_2022.dbf": "3d9a97c7fabc0ca715faae848adf5cae2409205eb9046ad036b33520aef1f0e3",
+        "data_stage/supplement/malha/BR_Municipios_2022.prj": "c9b61f7c5c0d268153118af4183b06d943c1652e94e1201f513a6dcf0ab06567",
+        "data_stage/supplement/malha/BR_Municipios_2022.shp": "eecdf7378666b2ac7a480c0aa388c387131a05d504663b34d0122634bdf165ad",
+        "data_stage/supplement/malha/BR_Municipios_2022.shx": "21e2d2319ade3befc8e0a6f46a7187180c75bd58dd22edde0e344d66ad23049a",
+        "reports/stage07/aim1_v2/aim1_descriptive_audit.json": "99ff4a0eb1a75aa575d94636df0f16e81aa419b4b6474ca16139bb82d475f992",
+        "reports/stage07/aim1_v2/attempt3/aim1_uptake_audit.json": "1ce239862691d9b009f58d9393ea4f5c32faffb714bbe6ce80f745e46848a84a",
+        "reports/stage07/aim2_v2/coverage_audit.json": "def7152332675f873bd541f21ba1dbf987a951e24700d56cca4dbd452623bca7",
+        "reports/stage07/aim2_v2/equity_audit.json": "865a4d41778427f30c4080e0a7e6babebcf80630233d6915519e1af75958e978",
+        "reports/stage07/aim2_v2/equity_quintile_standardised_rates.csv": "f115fc2ab22f2692d95b585932e8021a539c4db693a3a79393e110937a0a7f97",
+        "reports/stage07/aim2_v2/travel_audit.json": "81f403e90e28267a5a23b976e235514db51f2f2428a29ea86bee15e2a300c562",
+        "reports/stage07/aim2_v3/primary_family_audit.json": "4e96098c9dc41eaf5126b26766dc110c4d13167af0713e595697c1eac611b6ec",
+        "reports/stage07/aim3_v2/network_audit.json": "88787a9357722548f621b21638cc98c76ae5378c56d8cec3ccc22acb829af12e",
+        "reports/stage07/aim3_v2/potential_access/audit.json": "2526925f8110e0af0269ac78c02074752b1d6761712b262b669cb6549d02451e",
+        "reports/stage07/aim3_v2/resilience/audit.json": "9b370f0abb9db5be6363436376182ce59ca47d308163f85f63cf42f8034b56f8",
+        "reports/stage07/aim3_v2/service_area/audit.json": "6cf59a9d540808b84c0cffcd3a24019e5cef154673492b534c73ea17ec2c18bc",
+        "reports/stage07/rc_v1/frozen_policy_timeline_evidence.md": "b4351f069e5cdceb378a0da015382df77d1ab3e211ff940937b9e5933f577ed3",
+        "reports/stage07/stage03_v2_cohort_qc.json": "f80007cf31b31bfff08e3fede27d7a6df499826eaae92583d9c57e00835359b3"
+      },
+      "status": "PASS",
+      "suppression_status": "preserved_or_not_applicable"
+    },
+    "figure_6_adjusted_point_estimates_source_data.csv": {
+      "columns": [
+        "estimator",
+        "metric",
+        "value",
+        "associational_status",
+        "formal_interval_status",
+        "bootstrap_status",
+        "source_artifact",
+        "source_sha256"
+      ],
+      "evidence_level": [
+        "associational"
+      ],
+      "presentation_transform": {
+        "aggregation_rule": "No row exclusion or aggregation.",
+        "column_exclusions": [],
+        "suppression_rule": "No additional display suppression."
+      },
+      "registry_ids": [
+        "aim4.analysis_rows",
+        "aim4.death_events",
+        "aim4.hospitals",
+        "aim4.bootstrap_status",
+        "aim4.as_mean_valid_replicates",
+        "aim4.mpl_jeffreys_valid_replicates"
+      ],
+      "rows": 8,
+      "sha256": "177a19cc82773bce9f0de80f371293f1239644b4c7e240cab0e9303872f905ba",
+      "source_artifact_hashes": {
+        "data_analytic/stage07_rebuild/aim3_v2/network/aim3_patient_flow_edges_display_v2.csv": "f571d5641c01ba003e330a274be21098fa3d97fe316abf49f3330c8f5dfc5bc4",
+        "data_analytic/stage07_rebuild/aim3_v2/network/aim3_residence_projection_leiden_v2.parquet": "3016cf6fbd86e4b1a2dbd8c1ce4e941b5e18abc78799224a41e065debfbdcad1",
+        "data_analytic/stage07_rebuild/aim3_v2/network/aim3_target_metrics_v2.parquet": "374e15163c404aa19bf8453d170490862689d4b0db1c5d34b0e6dea8f075e1b8",
+        "data_analytic/stage07_rebuild/aim3_v2/resilience/aim3_resilience_random_benchmark_v2.parquet": "b9d0c4d90483362d19d95c4f3adf64a698e097a8fe8394040fd55fcc10431dd4",
+        "data_analytic/stage07_rebuild/aim3_v2/resilience/aim3_resilience_sequential_display_v2.csv": "c187c0857fbb8a084f8c7e383b4afa8c4151caf7e2f4a454593cfabeb24f6563",
+        "data_analytic/stage07_rebuild/aim3_v2/service_area/aim3_service_area_residence_display_v2.csv": "823850cac6eef1cf4275e1d39aa26753488b5f7f5a80c9b0a093e6e83525d4fe",
+        "data_analytic/stage07_rebuild/aim4_v2_corrected/brglm2/aim4_brglm2_design_v2.json": "79fb7b785b174ca351db09096d0b9fdbe7344cfd22b13637b7e55cf0b44ffd4a",
+        "data_analytic/stage07_rebuild/aim4_v3_stabilized/brglm2/aim4_brglm2_bootstrap_merged_v3.csv.gz": "6a80b034858dbbbfd8174b3aafdebc4057b21efb8a9a9da71877b90c731f0f53",
+        "data_analytic/stage07_rebuild/aim4_v3_stabilized/brglm2/aim4_brglm2_final_qc_v3.json": "bbd9eec3b1c94be3d36c4de292e55dde137f2aab51f8317b486f48e15e45cf9b",
+        "data_analytic/stage07_rebuild/aim4_v3_stabilized/brglm2/aim4_brglm2_point_estimate_v3.json": "e2df6ea1d29254b561f089eabb82eda2a7828083c988c198113aae490ca9ba07",
+        "data_analytic/stage07_rebuild/stage06_v2/run1/stage06_v2_qc.json": "d27d02c19ee554c0fca680219851295fc4f3f03ffa524b76813d4c0e3cc256db",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_annual_rates.parquet": "ae41851963ed76e3604914fb9443fef294ff987ac53a1c94d048c76c8580b50a",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_first_observed_by_year.parquet": "afe4b117cc001c40863effbdbf6b2a798c2510f2648a4653a2aca5efdd62e87a",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_hospital_continuity.parquet": "528628b255700c3c5a266029ef99a9c863d86aef97ad08e0d26f7905e3adcd01",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_monthly_national.parquet": "6d2f4fff42fcae7a60358b26ad343afc15a0098be32301557c53cf580b9b4f2d",
+        "data_stage/stage07_rebuild/aim2_v2/coverage/municipality_year_coverage.parquet": "c0a9ac050a5eef0b7e0881c9c8568f3fe5a0945429eaaa5f8793a3504377a099",
+        "data_stage/stage07_rebuild/aim2_v2/travel/pair_year_routes.parquet": "e3e332752a6adecc500b432884d87171d93dc064230669ba62e93dce34a6d2ad",
+        "data_stage/supplement/malha/BR_Municipios_2022.dbf": "3d9a97c7fabc0ca715faae848adf5cae2409205eb9046ad036b33520aef1f0e3",
+        "data_stage/supplement/malha/BR_Municipios_2022.prj": "c9b61f7c5c0d268153118af4183b06d943c1652e94e1201f513a6dcf0ab06567",
+        "data_stage/supplement/malha/BR_Municipios_2022.shp": "eecdf7378666b2ac7a480c0aa388c387131a05d504663b34d0122634bdf165ad",
+        "data_stage/supplement/malha/BR_Municipios_2022.shx": "21e2d2319ade3befc8e0a6f46a7187180c75bd58dd22edde0e344d66ad23049a",
+        "reports/stage07/aim1_v2/aim1_descriptive_audit.json": "99ff4a0eb1a75aa575d94636df0f16e81aa419b4b6474ca16139bb82d475f992",
+        "reports/stage07/aim1_v2/attempt3/aim1_uptake_audit.json": "1ce239862691d9b009f58d9393ea4f5c32faffb714bbe6ce80f745e46848a84a",
+        "reports/stage07/aim2_v2/coverage_audit.json": "def7152332675f873bd541f21ba1dbf987a951e24700d56cca4dbd452623bca7",
+        "reports/stage07/aim2_v2/equity_audit.json": "865a4d41778427f30c4080e0a7e6babebcf80630233d6915519e1af75958e978",
+        "reports/stage07/aim2_v2/equity_quintile_standardised_rates.csv": "f115fc2ab22f2692d95b585932e8021a539c4db693a3a79393e110937a0a7f97",
+        "reports/stage07/aim2_v2/travel_audit.json": "81f403e90e28267a5a23b976e235514db51f2f2428a29ea86bee15e2a300c562",
+        "reports/stage07/aim2_v3/primary_family_audit.json": "4e96098c9dc41eaf5126b26766dc110c4d13167af0713e595697c1eac611b6ec",
+        "reports/stage07/aim3_v2/network_audit.json": "88787a9357722548f621b21638cc98c76ae5378c56d8cec3ccc22acb829af12e",
+        "reports/stage07/aim3_v2/potential_access/audit.json": "2526925f8110e0af0269ac78c02074752b1d6761712b262b669cb6549d02451e",
+        "reports/stage07/aim3_v2/resilience/audit.json": "9b370f0abb9db5be6363436376182ce59ca47d308163f85f63cf42f8034b56f8",
+        "reports/stage07/aim3_v2/service_area/audit.json": "6cf59a9d540808b84c0cffcd3a24019e5cef154673492b534c73ea17ec2c18bc",
+        "reports/stage07/rc_v1/frozen_policy_timeline_evidence.md": "b4351f069e5cdceb378a0da015382df77d1ab3e211ff940937b9e5933f577ed3",
+        "reports/stage07/stage03_v2_cohort_qc.json": "f80007cf31b31bfff08e3fede27d7a6df499826eaae92583d9c57e00835359b3"
+      },
+      "status": "PASS",
+      "suppression_status": "preserved_or_not_applicable"
+    },
+    "figure_6_bootstrap_validity_source_data.csv": {
+      "columns": [
+        "result_id",
+        "display_label",
+        "value",
+        "value_type",
+        "unit",
+        "denominator_value",
+        "denominator_unit",
+        "evidence_level",
+        "limitation",
+        "missing_status",
+        "suppression_status",
+        "source_artifact",
+        "source_sha256",
+        "bootstrap_merged_rows",
+        "formal_interval_status",
+        "gate_status"
+      ],
+      "evidence_level": [
+        "associational"
+      ],
+      "presentation_transform": {
+        "aggregation_rule": "No row exclusion or aggregation.",
+        "column_exclusions": [],
+        "suppression_rule": "No additional display suppression."
+      },
+      "registry_ids": [
+        "aim4.analysis_rows",
+        "aim4.death_events",
+        "aim4.hospitals",
+        "aim4.bootstrap_status",
+        "aim4.as_mean_valid_replicates",
+        "aim4.mpl_jeffreys_valid_replicates"
+      ],
+      "rows": 3,
+      "sha256": "1e61869f9d508b40dfc40e932b2cd700f483461a1af98adcdb4e95011c3995c0",
+      "source_artifact_hashes": {
+        "data_analytic/stage07_rebuild/aim3_v2/network/aim3_patient_flow_edges_display_v2.csv": "f571d5641c01ba003e330a274be21098fa3d97fe316abf49f3330c8f5dfc5bc4",
+        "data_analytic/stage07_rebuild/aim3_v2/network/aim3_residence_projection_leiden_v2.parquet": "3016cf6fbd86e4b1a2dbd8c1ce4e941b5e18abc78799224a41e065debfbdcad1",
+        "data_analytic/stage07_rebuild/aim3_v2/network/aim3_target_metrics_v2.parquet": "374e15163c404aa19bf8453d170490862689d4b0db1c5d34b0e6dea8f075e1b8",
+        "data_analytic/stage07_rebuild/aim3_v2/resilience/aim3_resilience_random_benchmark_v2.parquet": "b9d0c4d90483362d19d95c4f3adf64a698e097a8fe8394040fd55fcc10431dd4",
+        "data_analytic/stage07_rebuild/aim3_v2/resilience/aim3_resilience_sequential_display_v2.csv": "c187c0857fbb8a084f8c7e383b4afa8c4151caf7e2f4a454593cfabeb24f6563",
+        "data_analytic/stage07_rebuild/aim3_v2/service_area/aim3_service_area_residence_display_v2.csv": "823850cac6eef1cf4275e1d39aa26753488b5f7f5a80c9b0a093e6e83525d4fe",
+        "data_analytic/stage07_rebuild/aim4_v2_corrected/brglm2/aim4_brglm2_design_v2.json": "79fb7b785b174ca351db09096d0b9fdbe7344cfd22b13637b7e55cf0b44ffd4a",
+        "data_analytic/stage07_rebuild/aim4_v3_stabilized/brglm2/aim4_brglm2_bootstrap_merged_v3.csv.gz": "6a80b034858dbbbfd8174b3aafdebc4057b21efb8a9a9da71877b90c731f0f53",
+        "data_analytic/stage07_rebuild/aim4_v3_stabilized/brglm2/aim4_brglm2_final_qc_v3.json": "bbd9eec3b1c94be3d36c4de292e55dde137f2aab51f8317b486f48e15e45cf9b",
+        "data_analytic/stage07_rebuild/aim4_v3_stabilized/brglm2/aim4_brglm2_point_estimate_v3.json": "e2df6ea1d29254b561f089eabb82eda2a7828083c988c198113aae490ca9ba07",
+        "data_analytic/stage07_rebuild/stage06_v2/run1/stage06_v2_qc.json": "d27d02c19ee554c0fca680219851295fc4f3f03ffa524b76813d4c0e3cc256db",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_annual_rates.parquet": "ae41851963ed76e3604914fb9443fef294ff987ac53a1c94d048c76c8580b50a",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_first_observed_by_year.parquet": "afe4b117cc001c40863effbdbf6b2a798c2510f2648a4653a2aca5efdd62e87a",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_hospital_continuity.parquet": "528628b255700c3c5a266029ef99a9c863d86aef97ad08e0d26f7905e3adcd01",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_monthly_national.parquet": "6d2f4fff42fcae7a60358b26ad343afc15a0098be32301557c53cf580b9b4f2d",
+        "data_stage/stage07_rebuild/aim2_v2/coverage/municipality_year_coverage.parquet": "c0a9ac050a5eef0b7e0881c9c8568f3fe5a0945429eaaa5f8793a3504377a099",
+        "data_stage/stage07_rebuild/aim2_v2/travel/pair_year_routes.parquet": "e3e332752a6adecc500b432884d87171d93dc064230669ba62e93dce34a6d2ad",
+        "data_stage/supplement/malha/BR_Municipios_2022.dbf": "3d9a97c7fabc0ca715faae848adf5cae2409205eb9046ad036b33520aef1f0e3",
+        "data_stage/supplement/malha/BR_Municipios_2022.prj": "c9b61f7c5c0d268153118af4183b06d943c1652e94e1201f513a6dcf0ab06567",
+        "data_stage/supplement/malha/BR_Municipios_2022.shp": "eecdf7378666b2ac7a480c0aa388c387131a05d504663b34d0122634bdf165ad",
+        "data_stage/supplement/malha/BR_Municipios_2022.shx": "21e2d2319ade3befc8e0a6f46a7187180c75bd58dd22edde0e344d66ad23049a",
+        "reports/stage07/aim1_v2/aim1_descriptive_audit.json": "99ff4a0eb1a75aa575d94636df0f16e81aa419b4b6474ca16139bb82d475f992",
+        "reports/stage07/aim1_v2/attempt3/aim1_uptake_audit.json": "1ce239862691d9b009f58d9393ea4f5c32faffb714bbe6ce80f745e46848a84a",
+        "reports/stage07/aim2_v2/coverage_audit.json": "def7152332675f873bd541f21ba1dbf987a951e24700d56cca4dbd452623bca7",
+        "reports/stage07/aim2_v2/equity_audit.json": "865a4d41778427f30c4080e0a7e6babebcf80630233d6915519e1af75958e978",
+        "reports/stage07/aim2_v2/equity_quintile_standardised_rates.csv": "f115fc2ab22f2692d95b585932e8021a539c4db693a3a79393e110937a0a7f97",
+        "reports/stage07/aim2_v2/travel_audit.json": "81f403e90e28267a5a23b976e235514db51f2f2428a29ea86bee15e2a300c562",
+        "reports/stage07/aim2_v3/primary_family_audit.json": "4e96098c9dc41eaf5126b26766dc110c4d13167af0713e595697c1eac611b6ec",
+        "reports/stage07/aim3_v2/network_audit.json": "88787a9357722548f621b21638cc98c76ae5378c56d8cec3ccc22acb829af12e",
+        "reports/stage07/aim3_v2/potential_access/audit.json": "2526925f8110e0af0269ac78c02074752b1d6761712b262b669cb6549d02451e",
+        "reports/stage07/aim3_v2/resilience/audit.json": "9b370f0abb9db5be6363436376182ce59ca47d308163f85f63cf42f8034b56f8",
+        "reports/stage07/aim3_v2/service_area/audit.json": "6cf59a9d540808b84c0cffcd3a24019e5cef154673492b534c73ea17ec2c18bc",
+        "reports/stage07/rc_v1/frozen_policy_timeline_evidence.md": "b4351f069e5cdceb378a0da015382df77d1ab3e211ff940937b9e5933f577ed3",
+        "reports/stage07/stage03_v2_cohort_qc.json": "f80007cf31b31bfff08e3fede27d7a6df499826eaae92583d9c57e00835359b3"
+      },
+      "status": "PASS",
+      "suppression_status": "preserved_or_not_applicable"
+    },
+    "figure_6_sensitivity_status_source_data.csv": {
+      "columns": [
+        "analysis_component",
+        "status",
+        "boundary"
+      ],
+      "evidence_level": [
+        "associational"
+      ],
+      "presentation_transform": {
+        "aggregation_rule": "No row exclusion or aggregation.",
+        "column_exclusions": [],
+        "suppression_rule": "No additional display suppression."
+      },
+      "registry_ids": [
+        "aim4.analysis_rows",
+        "aim4.death_events",
+        "aim4.hospitals",
+        "aim4.bootstrap_status",
+        "aim4.as_mean_valid_replicates",
+        "aim4.mpl_jeffreys_valid_replicates"
+      ],
+      "rows": 3,
+      "sha256": "91f93dcf1fbfe12777d1d8cc36dfce73510dc474acf9f1b108ba9cd9856cb25e",
+      "source_artifact_hashes": {
+        "data_analytic/stage07_rebuild/aim3_v2/network/aim3_patient_flow_edges_display_v2.csv": "f571d5641c01ba003e330a274be21098fa3d97fe316abf49f3330c8f5dfc5bc4",
+        "data_analytic/stage07_rebuild/aim3_v2/network/aim3_residence_projection_leiden_v2.parquet": "3016cf6fbd86e4b1a2dbd8c1ce4e941b5e18abc78799224a41e065debfbdcad1",
+        "data_analytic/stage07_rebuild/aim3_v2/network/aim3_target_metrics_v2.parquet": "374e15163c404aa19bf8453d170490862689d4b0db1c5d34b0e6dea8f075e1b8",
+        "data_analytic/stage07_rebuild/aim3_v2/resilience/aim3_resilience_random_benchmark_v2.parquet": "b9d0c4d90483362d19d95c4f3adf64a698e097a8fe8394040fd55fcc10431dd4",
+        "data_analytic/stage07_rebuild/aim3_v2/resilience/aim3_resilience_sequential_display_v2.csv": "c187c0857fbb8a084f8c7e383b4afa8c4151caf7e2f4a454593cfabeb24f6563",
+        "data_analytic/stage07_rebuild/aim3_v2/service_area/aim3_service_area_residence_display_v2.csv": "823850cac6eef1cf4275e1d39aa26753488b5f7f5a80c9b0a093e6e83525d4fe",
+        "data_analytic/stage07_rebuild/aim4_v2_corrected/brglm2/aim4_brglm2_design_v2.json": "79fb7b785b174ca351db09096d0b9fdbe7344cfd22b13637b7e55cf0b44ffd4a",
+        "data_analytic/stage07_rebuild/aim4_v3_stabilized/brglm2/aim4_brglm2_bootstrap_merged_v3.csv.gz": "6a80b034858dbbbfd8174b3aafdebc4057b21efb8a9a9da71877b90c731f0f53",
+        "data_analytic/stage07_rebuild/aim4_v3_stabilized/brglm2/aim4_brglm2_final_qc_v3.json": "bbd9eec3b1c94be3d36c4de292e55dde137f2aab51f8317b486f48e15e45cf9b",
+        "data_analytic/stage07_rebuild/aim4_v3_stabilized/brglm2/aim4_brglm2_point_estimate_v3.json": "e2df6ea1d29254b561f089eabb82eda2a7828083c988c198113aae490ca9ba07",
+        "data_analytic/stage07_rebuild/stage06_v2/run1/stage06_v2_qc.json": "d27d02c19ee554c0fca680219851295fc4f3f03ffa524b76813d4c0e3cc256db",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_annual_rates.parquet": "ae41851963ed76e3604914fb9443fef294ff987ac53a1c94d048c76c8580b50a",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_first_observed_by_year.parquet": "afe4b117cc001c40863effbdbf6b2a798c2510f2648a4653a2aca5efdd62e87a",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_hospital_continuity.parquet": "528628b255700c3c5a266029ef99a9c863d86aef97ad08e0d26f7905e3adcd01",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_monthly_national.parquet": "6d2f4fff42fcae7a60358b26ad343afc15a0098be32301557c53cf580b9b4f2d",
+        "data_stage/stage07_rebuild/aim2_v2/coverage/municipality_year_coverage.parquet": "c0a9ac050a5eef0b7e0881c9c8568f3fe5a0945429eaaa5f8793a3504377a099",
+        "data_stage/stage07_rebuild/aim2_v2/travel/pair_year_routes.parquet": "e3e332752a6adecc500b432884d87171d93dc064230669ba62e93dce34a6d2ad",
+        "data_stage/supplement/malha/BR_Municipios_2022.dbf": "3d9a97c7fabc0ca715faae848adf5cae2409205eb9046ad036b33520aef1f0e3",
+        "data_stage/supplement/malha/BR_Municipios_2022.prj": "c9b61f7c5c0d268153118af4183b06d943c1652e94e1201f513a6dcf0ab06567",
+        "data_stage/supplement/malha/BR_Municipios_2022.shp": "eecdf7378666b2ac7a480c0aa388c387131a05d504663b34d0122634bdf165ad",
+        "data_stage/supplement/malha/BR_Municipios_2022.shx": "21e2d2319ade3befc8e0a6f46a7187180c75bd58dd22edde0e344d66ad23049a",
+        "reports/stage07/aim1_v2/aim1_descriptive_audit.json": "99ff4a0eb1a75aa575d94636df0f16e81aa419b4b6474ca16139bb82d475f992",
+        "reports/stage07/aim1_v2/attempt3/aim1_uptake_audit.json": "1ce239862691d9b009f58d9393ea4f5c32faffb714bbe6ce80f745e46848a84a",
+        "reports/stage07/aim2_v2/coverage_audit.json": "def7152332675f873bd541f21ba1dbf987a951e24700d56cca4dbd452623bca7",
+        "reports/stage07/aim2_v2/equity_audit.json": "865a4d41778427f30c4080e0a7e6babebcf80630233d6915519e1af75958e978",
+        "reports/stage07/aim2_v2/equity_quintile_standardised_rates.csv": "f115fc2ab22f2692d95b585932e8021a539c4db693a3a79393e110937a0a7f97",
+        "reports/stage07/aim2_v2/travel_audit.json": "81f403e90e28267a5a23b976e235514db51f2f2428a29ea86bee15e2a300c562",
+        "reports/stage07/aim2_v3/primary_family_audit.json": "4e96098c9dc41eaf5126b26766dc110c4d13167af0713e595697c1eac611b6ec",
+        "reports/stage07/aim3_v2/network_audit.json": "88787a9357722548f621b21638cc98c76ae5378c56d8cec3ccc22acb829af12e",
+        "reports/stage07/aim3_v2/potential_access/audit.json": "2526925f8110e0af0269ac78c02074752b1d6761712b262b669cb6549d02451e",
+        "reports/stage07/aim3_v2/resilience/audit.json": "9b370f0abb9db5be6363436376182ce59ca47d308163f85f63cf42f8034b56f8",
+        "reports/stage07/aim3_v2/service_area/audit.json": "6cf59a9d540808b84c0cffcd3a24019e5cef154673492b534c73ea17ec2c18bc",
+        "reports/stage07/rc_v1/frozen_policy_timeline_evidence.md": "b4351f069e5cdceb378a0da015382df77d1ab3e211ff940937b9e5933f577ed3",
+        "reports/stage07/stage03_v2_cohort_qc.json": "f80007cf31b31bfff08e3fede27d7a6df499826eaae92583d9c57e00835359b3"
+      },
+      "status": "PASS",
+      "suppression_status": "preserved_or_not_applicable"
+    },
+    "figure_7_random_benchmark_source_data.csv": {
+      "columns": [
+        "source_dataset",
+        "threshold_minutes",
+        "requested_k",
+        "n_removed",
+        "random_replicates",
+        "random_seed",
+        "random_newly_uncovered_mean",
+        "random_newly_uncovered_p2_5",
+        "random_newly_uncovered_p97_5",
+        "targeted_newly_uncovered_complete_case",
+        "targeted_minus_random_mean",
+        "source_artifact",
+        "source_sha256"
+      ],
+      "evidence_level": [
+        "descriptive"
+      ],
+      "presentation_transform": {
+        "aggregation_rule": "No row exclusion or aggregation.",
+        "column_exclusions": [],
+        "suppression_rule": "No additional display suppression."
+      },
+      "registry_ids": [
+        "resilience.random_replicates"
+      ],
+      "rows": 8,
+      "sha256": "c75d5c89d1168e7ee868925ee4447c9c6f87b4f25c216e11fce109a632e4abf3",
+      "source_artifact_hashes": {
+        "data_analytic/stage07_rebuild/aim3_v2/network/aim3_patient_flow_edges_display_v2.csv": "f571d5641c01ba003e330a274be21098fa3d97fe316abf49f3330c8f5dfc5bc4",
+        "data_analytic/stage07_rebuild/aim3_v2/network/aim3_residence_projection_leiden_v2.parquet": "3016cf6fbd86e4b1a2dbd8c1ce4e941b5e18abc78799224a41e065debfbdcad1",
+        "data_analytic/stage07_rebuild/aim3_v2/network/aim3_target_metrics_v2.parquet": "374e15163c404aa19bf8453d170490862689d4b0db1c5d34b0e6dea8f075e1b8",
+        "data_analytic/stage07_rebuild/aim3_v2/resilience/aim3_resilience_random_benchmark_v2.parquet": "b9d0c4d90483362d19d95c4f3adf64a698e097a8fe8394040fd55fcc10431dd4",
+        "data_analytic/stage07_rebuild/aim3_v2/resilience/aim3_resilience_sequential_display_v2.csv": "c187c0857fbb8a084f8c7e383b4afa8c4151caf7e2f4a454593cfabeb24f6563",
+        "data_analytic/stage07_rebuild/aim3_v2/service_area/aim3_service_area_residence_display_v2.csv": "823850cac6eef1cf4275e1d39aa26753488b5f7f5a80c9b0a093e6e83525d4fe",
+        "data_analytic/stage07_rebuild/aim4_v2_corrected/brglm2/aim4_brglm2_design_v2.json": "79fb7b785b174ca351db09096d0b9fdbe7344cfd22b13637b7e55cf0b44ffd4a",
+        "data_analytic/stage07_rebuild/aim4_v3_stabilized/brglm2/aim4_brglm2_bootstrap_merged_v3.csv.gz": "6a80b034858dbbbfd8174b3aafdebc4057b21efb8a9a9da71877b90c731f0f53",
+        "data_analytic/stage07_rebuild/aim4_v3_stabilized/brglm2/aim4_brglm2_final_qc_v3.json": "bbd9eec3b1c94be3d36c4de292e55dde137f2aab51f8317b486f48e15e45cf9b",
+        "data_analytic/stage07_rebuild/aim4_v3_stabilized/brglm2/aim4_brglm2_point_estimate_v3.json": "e2df6ea1d29254b561f089eabb82eda2a7828083c988c198113aae490ca9ba07",
+        "data_analytic/stage07_rebuild/stage06_v2/run1/stage06_v2_qc.json": "d27d02c19ee554c0fca680219851295fc4f3f03ffa524b76813d4c0e3cc256db",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_annual_rates.parquet": "ae41851963ed76e3604914fb9443fef294ff987ac53a1c94d048c76c8580b50a",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_first_observed_by_year.parquet": "afe4b117cc001c40863effbdbf6b2a798c2510f2648a4653a2aca5efdd62e87a",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_hospital_continuity.parquet": "528628b255700c3c5a266029ef99a9c863d86aef97ad08e0d26f7905e3adcd01",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_monthly_national.parquet": "6d2f4fff42fcae7a60358b26ad343afc15a0098be32301557c53cf580b9b4f2d",
+        "data_stage/stage07_rebuild/aim2_v2/coverage/municipality_year_coverage.parquet": "c0a9ac050a5eef0b7e0881c9c8568f3fe5a0945429eaaa5f8793a3504377a099",
+        "data_stage/stage07_rebuild/aim2_v2/travel/pair_year_routes.parquet": "e3e332752a6adecc500b432884d87171d93dc064230669ba62e93dce34a6d2ad",
+        "data_stage/supplement/malha/BR_Municipios_2022.dbf": "3d9a97c7fabc0ca715faae848adf5cae2409205eb9046ad036b33520aef1f0e3",
+        "data_stage/supplement/malha/BR_Municipios_2022.prj": "c9b61f7c5c0d268153118af4183b06d943c1652e94e1201f513a6dcf0ab06567",
+        "data_stage/supplement/malha/BR_Municipios_2022.shp": "eecdf7378666b2ac7a480c0aa388c387131a05d504663b34d0122634bdf165ad",
+        "data_stage/supplement/malha/BR_Municipios_2022.shx": "21e2d2319ade3befc8e0a6f46a7187180c75bd58dd22edde0e344d66ad23049a",
+        "reports/stage07/aim1_v2/aim1_descriptive_audit.json": "99ff4a0eb1a75aa575d94636df0f16e81aa419b4b6474ca16139bb82d475f992",
+        "reports/stage07/aim1_v2/attempt3/aim1_uptake_audit.json": "1ce239862691d9b009f58d9393ea4f5c32faffb714bbe6ce80f745e46848a84a",
+        "reports/stage07/aim2_v2/coverage_audit.json": "def7152332675f873bd541f21ba1dbf987a951e24700d56cca4dbd452623bca7",
+        "reports/stage07/aim2_v2/equity_audit.json": "865a4d41778427f30c4080e0a7e6babebcf80630233d6915519e1af75958e978",
+        "reports/stage07/aim2_v2/equity_quintile_standardised_rates.csv": "f115fc2ab22f2692d95b585932e8021a539c4db693a3a79393e110937a0a7f97",
+        "reports/stage07/aim2_v2/travel_audit.json": "81f403e90e28267a5a23b976e235514db51f2f2428a29ea86bee15e2a300c562",
+        "reports/stage07/aim2_v3/primary_family_audit.json": "4e96098c9dc41eaf5126b26766dc110c4d13167af0713e595697c1eac611b6ec",
+        "reports/stage07/aim3_v2/network_audit.json": "88787a9357722548f621b21638cc98c76ae5378c56d8cec3ccc22acb829af12e",
+        "reports/stage07/aim3_v2/potential_access/audit.json": "2526925f8110e0af0269ac78c02074752b1d6761712b262b669cb6549d02451e",
+        "reports/stage07/aim3_v2/resilience/audit.json": "9b370f0abb9db5be6363436376182ce59ca47d308163f85f63cf42f8034b56f8",
+        "reports/stage07/aim3_v2/service_area/audit.json": "6cf59a9d540808b84c0cffcd3a24019e5cef154673492b534c73ea17ec2c18bc",
+        "reports/stage07/rc_v1/frozen_policy_timeline_evidence.md": "b4351f069e5cdceb378a0da015382df77d1ab3e211ff940937b9e5933f577ed3",
+        "reports/stage07/stage03_v2_cohort_qc.json": "f80007cf31b31bfff08e3fede27d7a6df499826eaae92583d9c57e00835359b3"
+      },
+      "status": "PASS",
+      "suppression_status": "preserved_or_not_applicable"
+    },
+    "figure_7_targeted_removal_source_data.csv": {
+      "columns": [
+        "source_dataset",
+        "threshold_minutes",
+        "scenario",
+        "n_removed",
+        "removed_service_municipio",
+        "newly_uncovered_complete_case",
+        "newly_uncovered_upper_bound",
+        "adult_population_complete_case",
+        "adult_population_missing_anchor",
+        "adult_population_covered",
+        "adult_population_uncovered",
+        "adult_population_uncovered_upper_bound",
+        "n_complete_case_municipality_year",
+        "n_missing_anchor_municipality_year",
+        "newly_uncovered_complete_case_display",
+        "newly_uncovered_upper_bound_display",
+        "source_artifact",
+        "source_sha256"
+      ],
+      "evidence_level": [
+        "descriptive"
+      ],
+      "presentation_transform": {
+        "aggregation_rule": "No row exclusion or aggregation.",
+        "column_exclusions": [],
+        "suppression_rule": "No additional display suppression."
+      },
+      "registry_ids": [
+        "resilience.random_replicates"
+      ],
+      "rows": 408,
+      "sha256": "67590396f5ad30250ad42a084cfef87ecf138763f4401d9e53e98769e9ac09d5",
+      "source_artifact_hashes": {
+        "data_analytic/stage07_rebuild/aim3_v2/network/aim3_patient_flow_edges_display_v2.csv": "f571d5641c01ba003e330a274be21098fa3d97fe316abf49f3330c8f5dfc5bc4",
+        "data_analytic/stage07_rebuild/aim3_v2/network/aim3_residence_projection_leiden_v2.parquet": "3016cf6fbd86e4b1a2dbd8c1ce4e941b5e18abc78799224a41e065debfbdcad1",
+        "data_analytic/stage07_rebuild/aim3_v2/network/aim3_target_metrics_v2.parquet": "374e15163c404aa19bf8453d170490862689d4b0db1c5d34b0e6dea8f075e1b8",
+        "data_analytic/stage07_rebuild/aim3_v2/resilience/aim3_resilience_random_benchmark_v2.parquet": "b9d0c4d90483362d19d95c4f3adf64a698e097a8fe8394040fd55fcc10431dd4",
+        "data_analytic/stage07_rebuild/aim3_v2/resilience/aim3_resilience_sequential_display_v2.csv": "c187c0857fbb8a084f8c7e383b4afa8c4151caf7e2f4a454593cfabeb24f6563",
+        "data_analytic/stage07_rebuild/aim3_v2/service_area/aim3_service_area_residence_display_v2.csv": "823850cac6eef1cf4275e1d39aa26753488b5f7f5a80c9b0a093e6e83525d4fe",
+        "data_analytic/stage07_rebuild/aim4_v2_corrected/brglm2/aim4_brglm2_design_v2.json": "79fb7b785b174ca351db09096d0b9fdbe7344cfd22b13637b7e55cf0b44ffd4a",
+        "data_analytic/stage07_rebuild/aim4_v3_stabilized/brglm2/aim4_brglm2_bootstrap_merged_v3.csv.gz": "6a80b034858dbbbfd8174b3aafdebc4057b21efb8a9a9da71877b90c731f0f53",
+        "data_analytic/stage07_rebuild/aim4_v3_stabilized/brglm2/aim4_brglm2_final_qc_v3.json": "bbd9eec3b1c94be3d36c4de292e55dde137f2aab51f8317b486f48e15e45cf9b",
+        "data_analytic/stage07_rebuild/aim4_v3_stabilized/brglm2/aim4_brglm2_point_estimate_v3.json": "e2df6ea1d29254b561f089eabb82eda2a7828083c988c198113aae490ca9ba07",
+        "data_analytic/stage07_rebuild/stage06_v2/run1/stage06_v2_qc.json": "d27d02c19ee554c0fca680219851295fc4f3f03ffa524b76813d4c0e3cc256db",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_annual_rates.parquet": "ae41851963ed76e3604914fb9443fef294ff987ac53a1c94d048c76c8580b50a",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_first_observed_by_year.parquet": "afe4b117cc001c40863effbdbf6b2a798c2510f2648a4653a2aca5efdd62e87a",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_hospital_continuity.parquet": "528628b255700c3c5a266029ef99a9c863d86aef97ad08e0d26f7905e3adcd01",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_monthly_national.parquet": "6d2f4fff42fcae7a60358b26ad343afc15a0098be32301557c53cf580b9b4f2d",
+        "data_stage/stage07_rebuild/aim2_v2/coverage/municipality_year_coverage.parquet": "c0a9ac050a5eef0b7e0881c9c8568f3fe5a0945429eaaa5f8793a3504377a099",
+        "data_stage/stage07_rebuild/aim2_v2/travel/pair_year_routes.parquet": "e3e332752a6adecc500b432884d87171d93dc064230669ba62e93dce34a6d2ad",
+        "data_stage/supplement/malha/BR_Municipios_2022.dbf": "3d9a97c7fabc0ca715faae848adf5cae2409205eb9046ad036b33520aef1f0e3",
+        "data_stage/supplement/malha/BR_Municipios_2022.prj": "c9b61f7c5c0d268153118af4183b06d943c1652e94e1201f513a6dcf0ab06567",
+        "data_stage/supplement/malha/BR_Municipios_2022.shp": "eecdf7378666b2ac7a480c0aa388c387131a05d504663b34d0122634bdf165ad",
+        "data_stage/supplement/malha/BR_Municipios_2022.shx": "21e2d2319ade3befc8e0a6f46a7187180c75bd58dd22edde0e344d66ad23049a",
+        "reports/stage07/aim1_v2/aim1_descriptive_audit.json": "99ff4a0eb1a75aa575d94636df0f16e81aa419b4b6474ca16139bb82d475f992",
+        "reports/stage07/aim1_v2/attempt3/aim1_uptake_audit.json": "1ce239862691d9b009f58d9393ea4f5c32faffb714bbe6ce80f745e46848a84a",
+        "reports/stage07/aim2_v2/coverage_audit.json": "def7152332675f873bd541f21ba1dbf987a951e24700d56cca4dbd452623bca7",
+        "reports/stage07/aim2_v2/equity_audit.json": "865a4d41778427f30c4080e0a7e6babebcf80630233d6915519e1af75958e978",
+        "reports/stage07/aim2_v2/equity_quintile_standardised_rates.csv": "f115fc2ab22f2692d95b585932e8021a539c4db693a3a79393e110937a0a7f97",
+        "reports/stage07/aim2_v2/travel_audit.json": "81f403e90e28267a5a23b976e235514db51f2f2428a29ea86bee15e2a300c562",
+        "reports/stage07/aim2_v3/primary_family_audit.json": "4e96098c9dc41eaf5126b26766dc110c4d13167af0713e595697c1eac611b6ec",
+        "reports/stage07/aim3_v2/network_audit.json": "88787a9357722548f621b21638cc98c76ae5378c56d8cec3ccc22acb829af12e",
+        "reports/stage07/aim3_v2/potential_access/audit.json": "2526925f8110e0af0269ac78c02074752b1d6761712b262b669cb6549d02451e",
+        "reports/stage07/aim3_v2/resilience/audit.json": "9b370f0abb9db5be6363436376182ce59ca47d308163f85f63cf42f8034b56f8",
+        "reports/stage07/aim3_v2/service_area/audit.json": "6cf59a9d540808b84c0cffcd3a24019e5cef154673492b534c73ea17ec2c18bc",
+        "reports/stage07/rc_v1/frozen_policy_timeline_evidence.md": "b4351f069e5cdceb378a0da015382df77d1ab3e211ff940937b9e5933f577ed3",
+        "reports/stage07/stage03_v2_cohort_qc.json": "f80007cf31b31bfff08e3fede27d7a6df499826eaae92583d9c57e00835359b3"
+      },
+      "status": "PASS",
+      "suppression_status": "preserved_or_not_applicable"
+    },
+    "table_1_source_data.csv": {
+      "columns": [
+        "result_id",
+        "display_label",
+        "value",
+        "value_type",
+        "unit",
+        "denominator_value",
+        "denominator_unit",
+        "evidence_level",
+        "limitation",
+        "missing_status",
+        "suppression_status",
+        "source_artifact",
+        "source_sha256"
+      ],
+      "evidence_level": [
+        "associational",
+        "descriptive"
+      ],
+      "presentation_transform": {
+        "aggregation_rule": "No row exclusion or aggregation.",
+        "column_exclusions": [],
+        "suppression_rule": "No additional display suppression."
+      },
+      "registry_ids": [
+        "cohort.a_unique_aih",
+        "cohort.b_final_unique_aih",
+        "uptake.hospitals_ever_observed",
+        "aim4.analysis_rows",
+        "aim4.hospitals"
+      ],
+      "rows": 5,
+      "sha256": "99fffd5aa6261820207bac284e102647c6b1bc484f674d1178c6d02241edbfc0",
+      "source_artifact_hashes": {
+        "data_analytic/stage07_rebuild/aim3_v2/network/aim3_patient_flow_edges_display_v2.csv": "f571d5641c01ba003e330a274be21098fa3d97fe316abf49f3330c8f5dfc5bc4",
+        "data_analytic/stage07_rebuild/aim3_v2/network/aim3_residence_projection_leiden_v2.parquet": "3016cf6fbd86e4b1a2dbd8c1ce4e941b5e18abc78799224a41e065debfbdcad1",
+        "data_analytic/stage07_rebuild/aim3_v2/network/aim3_target_metrics_v2.parquet": "374e15163c404aa19bf8453d170490862689d4b0db1c5d34b0e6dea8f075e1b8",
+        "data_analytic/stage07_rebuild/aim3_v2/resilience/aim3_resilience_random_benchmark_v2.parquet": "b9d0c4d90483362d19d95c4f3adf64a698e097a8fe8394040fd55fcc10431dd4",
+        "data_analytic/stage07_rebuild/aim3_v2/resilience/aim3_resilience_sequential_display_v2.csv": "c187c0857fbb8a084f8c7e383b4afa8c4151caf7e2f4a454593cfabeb24f6563",
+        "data_analytic/stage07_rebuild/aim3_v2/service_area/aim3_service_area_residence_display_v2.csv": "823850cac6eef1cf4275e1d39aa26753488b5f7f5a80c9b0a093e6e83525d4fe",
+        "data_analytic/stage07_rebuild/aim4_v2_corrected/brglm2/aim4_brglm2_design_v2.json": "79fb7b785b174ca351db09096d0b9fdbe7344cfd22b13637b7e55cf0b44ffd4a",
+        "data_analytic/stage07_rebuild/aim4_v3_stabilized/brglm2/aim4_brglm2_bootstrap_merged_v3.csv.gz": "6a80b034858dbbbfd8174b3aafdebc4057b21efb8a9a9da71877b90c731f0f53",
+        "data_analytic/stage07_rebuild/aim4_v3_stabilized/brglm2/aim4_brglm2_final_qc_v3.json": "bbd9eec3b1c94be3d36c4de292e55dde137f2aab51f8317b486f48e15e45cf9b",
+        "data_analytic/stage07_rebuild/aim4_v3_stabilized/brglm2/aim4_brglm2_point_estimate_v3.json": "e2df6ea1d29254b561f089eabb82eda2a7828083c988c198113aae490ca9ba07",
+        "data_analytic/stage07_rebuild/stage06_v2/run1/stage06_v2_qc.json": "d27d02c19ee554c0fca680219851295fc4f3f03ffa524b76813d4c0e3cc256db",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_annual_rates.parquet": "ae41851963ed76e3604914fb9443fef294ff987ac53a1c94d048c76c8580b50a",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_first_observed_by_year.parquet": "afe4b117cc001c40863effbdbf6b2a798c2510f2648a4653a2aca5efdd62e87a",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_hospital_continuity.parquet": "528628b255700c3c5a266029ef99a9c863d86aef97ad08e0d26f7905e3adcd01",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_monthly_national.parquet": "6d2f4fff42fcae7a60358b26ad343afc15a0098be32301557c53cf580b9b4f2d",
+        "data_stage/stage07_rebuild/aim2_v2/coverage/municipality_year_coverage.parquet": "c0a9ac050a5eef0b7e0881c9c8568f3fe5a0945429eaaa5f8793a3504377a099",
+        "data_stage/stage07_rebuild/aim2_v2/travel/pair_year_routes.parquet": "e3e332752a6adecc500b432884d87171d93dc064230669ba62e93dce34a6d2ad",
+        "data_stage/supplement/malha/BR_Municipios_2022.dbf": "3d9a97c7fabc0ca715faae848adf5cae2409205eb9046ad036b33520aef1f0e3",
+        "data_stage/supplement/malha/BR_Municipios_2022.prj": "c9b61f7c5c0d268153118af4183b06d943c1652e94e1201f513a6dcf0ab06567",
+        "data_stage/supplement/malha/BR_Municipios_2022.shp": "eecdf7378666b2ac7a480c0aa388c387131a05d504663b34d0122634bdf165ad",
+        "data_stage/supplement/malha/BR_Municipios_2022.shx": "21e2d2319ade3befc8e0a6f46a7187180c75bd58dd22edde0e344d66ad23049a",
+        "reports/stage07/aim1_v2/aim1_descriptive_audit.json": "99ff4a0eb1a75aa575d94636df0f16e81aa419b4b6474ca16139bb82d475f992",
+        "reports/stage07/aim1_v2/attempt3/aim1_uptake_audit.json": "1ce239862691d9b009f58d9393ea4f5c32faffb714bbe6ce80f745e46848a84a",
+        "reports/stage07/aim2_v2/coverage_audit.json": "def7152332675f873bd541f21ba1dbf987a951e24700d56cca4dbd452623bca7",
+        "reports/stage07/aim2_v2/equity_audit.json": "865a4d41778427f30c4080e0a7e6babebcf80630233d6915519e1af75958e978",
+        "reports/stage07/aim2_v2/equity_quintile_standardised_rates.csv": "f115fc2ab22f2692d95b585932e8021a539c4db693a3a79393e110937a0a7f97",
+        "reports/stage07/aim2_v2/travel_audit.json": "81f403e90e28267a5a23b976e235514db51f2f2428a29ea86bee15e2a300c562",
+        "reports/stage07/aim2_v3/primary_family_audit.json": "4e96098c9dc41eaf5126b26766dc110c4d13167af0713e595697c1eac611b6ec",
+        "reports/stage07/aim3_v2/network_audit.json": "88787a9357722548f621b21638cc98c76ae5378c56d8cec3ccc22acb829af12e",
+        "reports/stage07/aim3_v2/potential_access/audit.json": "2526925f8110e0af0269ac78c02074752b1d6761712b262b669cb6549d02451e",
+        "reports/stage07/aim3_v2/resilience/audit.json": "9b370f0abb9db5be6363436376182ce59ca47d308163f85f63cf42f8034b56f8",
+        "reports/stage07/aim3_v2/service_area/audit.json": "6cf59a9d540808b84c0cffcd3a24019e5cef154673492b534c73ea17ec2c18bc",
+        "reports/stage07/rc_v1/frozen_policy_timeline_evidence.md": "b4351f069e5cdceb378a0da015382df77d1ab3e211ff940937b9e5933f577ed3",
+        "reports/stage07/stage03_v2_cohort_qc.json": "f80007cf31b31bfff08e3fede27d7a6df499826eaae92583d9c57e00835359b3"
+      },
+      "status": "PASS",
+      "suppression_status": "preserved_or_not_applicable"
+    },
+    "table_2_source_data.csv": {
+      "columns": [
+        "result_id",
+        "display_label",
+        "value",
+        "value_type",
+        "unit",
+        "denominator_value",
+        "denominator_unit",
+        "evidence_level",
+        "limitation",
+        "missing_status",
+        "suppression_status",
+        "source_artifact",
+        "source_sha256"
+      ],
+      "evidence_level": [
+        "associational",
+        "descriptive"
+      ],
+      "presentation_transform": {
+        "aggregation_rule": "No row exclusion or aggregation.",
+        "column_exclusions": [],
+        "suppression_rule": "No additional display suppression."
+      },
+      "registry_ids": [
+        "uptake.hospitals_ever_observed",
+        "uptake.left_censored_202101",
+        "uptake.first_observed_2021",
+        "uptake.first_observed_2022",
+        "uptake.first_observed_2023",
+        "uptake.first_observed_2024",
+        "uptake.first_observed_2025",
+        "maintenance.first_completed_12m",
+        "uptake.model_status"
+      ],
+      "rows": 9,
+      "sha256": "84c30975e147728a6d6cb82bbac832407d579cb11749b6d1b01ba5fccf678ad0",
+      "source_artifact_hashes": {
+        "data_analytic/stage07_rebuild/aim3_v2/network/aim3_patient_flow_edges_display_v2.csv": "f571d5641c01ba003e330a274be21098fa3d97fe316abf49f3330c8f5dfc5bc4",
+        "data_analytic/stage07_rebuild/aim3_v2/network/aim3_residence_projection_leiden_v2.parquet": "3016cf6fbd86e4b1a2dbd8c1ce4e941b5e18abc78799224a41e065debfbdcad1",
+        "data_analytic/stage07_rebuild/aim3_v2/network/aim3_target_metrics_v2.parquet": "374e15163c404aa19bf8453d170490862689d4b0db1c5d34b0e6dea8f075e1b8",
+        "data_analytic/stage07_rebuild/aim3_v2/resilience/aim3_resilience_random_benchmark_v2.parquet": "b9d0c4d90483362d19d95c4f3adf64a698e097a8fe8394040fd55fcc10431dd4",
+        "data_analytic/stage07_rebuild/aim3_v2/resilience/aim3_resilience_sequential_display_v2.csv": "c187c0857fbb8a084f8c7e383b4afa8c4151caf7e2f4a454593cfabeb24f6563",
+        "data_analytic/stage07_rebuild/aim3_v2/service_area/aim3_service_area_residence_display_v2.csv": "823850cac6eef1cf4275e1d39aa26753488b5f7f5a80c9b0a093e6e83525d4fe",
+        "data_analytic/stage07_rebuild/aim4_v2_corrected/brglm2/aim4_brglm2_design_v2.json": "79fb7b785b174ca351db09096d0b9fdbe7344cfd22b13637b7e55cf0b44ffd4a",
+        "data_analytic/stage07_rebuild/aim4_v3_stabilized/brglm2/aim4_brglm2_bootstrap_merged_v3.csv.gz": "6a80b034858dbbbfd8174b3aafdebc4057b21efb8a9a9da71877b90c731f0f53",
+        "data_analytic/stage07_rebuild/aim4_v3_stabilized/brglm2/aim4_brglm2_final_qc_v3.json": "bbd9eec3b1c94be3d36c4de292e55dde137f2aab51f8317b486f48e15e45cf9b",
+        "data_analytic/stage07_rebuild/aim4_v3_stabilized/brglm2/aim4_brglm2_point_estimate_v3.json": "e2df6ea1d29254b561f089eabb82eda2a7828083c988c198113aae490ca9ba07",
+        "data_analytic/stage07_rebuild/stage06_v2/run1/stage06_v2_qc.json": "d27d02c19ee554c0fca680219851295fc4f3f03ffa524b76813d4c0e3cc256db",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_annual_rates.parquet": "ae41851963ed76e3604914fb9443fef294ff987ac53a1c94d048c76c8580b50a",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_first_observed_by_year.parquet": "afe4b117cc001c40863effbdbf6b2a798c2510f2648a4653a2aca5efdd62e87a",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_hospital_continuity.parquet": "528628b255700c3c5a266029ef99a9c863d86aef97ad08e0d26f7905e3adcd01",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_monthly_national.parquet": "6d2f4fff42fcae7a60358b26ad343afc15a0098be32301557c53cf580b9b4f2d",
+        "data_stage/stage07_rebuild/aim2_v2/coverage/municipality_year_coverage.parquet": "c0a9ac050a5eef0b7e0881c9c8568f3fe5a0945429eaaa5f8793a3504377a099",
+        "data_stage/stage07_rebuild/aim2_v2/travel/pair_year_routes.parquet": "e3e332752a6adecc500b432884d87171d93dc064230669ba62e93dce34a6d2ad",
+        "data_stage/supplement/malha/BR_Municipios_2022.dbf": "3d9a97c7fabc0ca715faae848adf5cae2409205eb9046ad036b33520aef1f0e3",
+        "data_stage/supplement/malha/BR_Municipios_2022.prj": "c9b61f7c5c0d268153118af4183b06d943c1652e94e1201f513a6dcf0ab06567",
+        "data_stage/supplement/malha/BR_Municipios_2022.shp": "eecdf7378666b2ac7a480c0aa388c387131a05d504663b34d0122634bdf165ad",
+        "data_stage/supplement/malha/BR_Municipios_2022.shx": "21e2d2319ade3befc8e0a6f46a7187180c75bd58dd22edde0e344d66ad23049a",
+        "reports/stage07/aim1_v2/aim1_descriptive_audit.json": "99ff4a0eb1a75aa575d94636df0f16e81aa419b4b6474ca16139bb82d475f992",
+        "reports/stage07/aim1_v2/attempt3/aim1_uptake_audit.json": "1ce239862691d9b009f58d9393ea4f5c32faffb714bbe6ce80f745e46848a84a",
+        "reports/stage07/aim2_v2/coverage_audit.json": "def7152332675f873bd541f21ba1dbf987a951e24700d56cca4dbd452623bca7",
+        "reports/stage07/aim2_v2/equity_audit.json": "865a4d41778427f30c4080e0a7e6babebcf80630233d6915519e1af75958e978",
+        "reports/stage07/aim2_v2/equity_quintile_standardised_rates.csv": "f115fc2ab22f2692d95b585932e8021a539c4db693a3a79393e110937a0a7f97",
+        "reports/stage07/aim2_v2/travel_audit.json": "81f403e90e28267a5a23b976e235514db51f2f2428a29ea86bee15e2a300c562",
+        "reports/stage07/aim2_v3/primary_family_audit.json": "4e96098c9dc41eaf5126b26766dc110c4d13167af0713e595697c1eac611b6ec",
+        "reports/stage07/aim3_v2/network_audit.json": "88787a9357722548f621b21638cc98c76ae5378c56d8cec3ccc22acb829af12e",
+        "reports/stage07/aim3_v2/potential_access/audit.json": "2526925f8110e0af0269ac78c02074752b1d6761712b262b669cb6549d02451e",
+        "reports/stage07/aim3_v2/resilience/audit.json": "9b370f0abb9db5be6363436376182ce59ca47d308163f85f63cf42f8034b56f8",
+        "reports/stage07/aim3_v2/service_area/audit.json": "6cf59a9d540808b84c0cffcd3a24019e5cef154673492b534c73ea17ec2c18bc",
+        "reports/stage07/rc_v1/frozen_policy_timeline_evidence.md": "b4351f069e5cdceb378a0da015382df77d1ab3e211ff940937b9e5933f577ed3",
+        "reports/stage07/stage03_v2_cohort_qc.json": "f80007cf31b31bfff08e3fede27d7a6df499826eaae92583d9c57e00835359b3"
+      },
+      "status": "PASS",
+      "suppression_status": "preserved_or_not_applicable"
+    },
+    "table_3_source_data.csv": {
+      "columns": [
+        "result_id",
+        "display_label",
+        "value",
+        "value_type",
+        "unit",
+        "denominator_value",
+        "denominator_unit",
+        "evidence_level",
+        "limitation",
+        "missing_status",
+        "suppression_status",
+        "source_artifact",
+        "source_sha256"
+      ],
+      "evidence_level": [
+        "associational",
+        "descriptive"
+      ],
+      "presentation_transform": {
+        "aggregation_rule": "No row exclusion or aggregation.",
+        "column_exclusions": [],
+        "suppression_rule": "No additional display suppression."
+      },
+      "registry_ids": [
+        "equity.ivs_rii",
+        "equity.ivs_sii_per_100k",
+        "travel.flow_weighted_median_min",
+        "travel.flow_weighted_p90_min",
+        "travel.flow_weighted_share_gt120",
+        "coverage.2021_adult_share_120",
+        "coverage.2021_adult_share_180",
+        "coverage.2025_adult_share_120",
+        "coverage.2025_adult_share_180",
+        "coverage.anchor_coverage_all_years",
+        "aim2.primary_family_status",
+        "network.pooled_projection_nodes",
+        "network.pooled_projection_edges",
+        "potential_access.complete_matrix_rows",
+        "potential_access.reachable_rows",
+        "service_area.ivs_selected_municipalities"
+      ],
+      "rows": 16,
+      "sha256": "9a06e63ecc33c279e77fc0c4fc6b4359fbcf765ad0f21fd34e22de7a31b2ac05",
+      "source_artifact_hashes": {
+        "data_analytic/stage07_rebuild/aim3_v2/network/aim3_patient_flow_edges_display_v2.csv": "f571d5641c01ba003e330a274be21098fa3d97fe316abf49f3330c8f5dfc5bc4",
+        "data_analytic/stage07_rebuild/aim3_v2/network/aim3_residence_projection_leiden_v2.parquet": "3016cf6fbd86e4b1a2dbd8c1ce4e941b5e18abc78799224a41e065debfbdcad1",
+        "data_analytic/stage07_rebuild/aim3_v2/network/aim3_target_metrics_v2.parquet": "374e15163c404aa19bf8453d170490862689d4b0db1c5d34b0e6dea8f075e1b8",
+        "data_analytic/stage07_rebuild/aim3_v2/resilience/aim3_resilience_random_benchmark_v2.parquet": "b9d0c4d90483362d19d95c4f3adf64a698e097a8fe8394040fd55fcc10431dd4",
+        "data_analytic/stage07_rebuild/aim3_v2/resilience/aim3_resilience_sequential_display_v2.csv": "c187c0857fbb8a084f8c7e383b4afa8c4151caf7e2f4a454593cfabeb24f6563",
+        "data_analytic/stage07_rebuild/aim3_v2/service_area/aim3_service_area_residence_display_v2.csv": "823850cac6eef1cf4275e1d39aa26753488b5f7f5a80c9b0a093e6e83525d4fe",
+        "data_analytic/stage07_rebuild/aim4_v2_corrected/brglm2/aim4_brglm2_design_v2.json": "79fb7b785b174ca351db09096d0b9fdbe7344cfd22b13637b7e55cf0b44ffd4a",
+        "data_analytic/stage07_rebuild/aim4_v3_stabilized/brglm2/aim4_brglm2_bootstrap_merged_v3.csv.gz": "6a80b034858dbbbfd8174b3aafdebc4057b21efb8a9a9da71877b90c731f0f53",
+        "data_analytic/stage07_rebuild/aim4_v3_stabilized/brglm2/aim4_brglm2_final_qc_v3.json": "bbd9eec3b1c94be3d36c4de292e55dde137f2aab51f8317b486f48e15e45cf9b",
+        "data_analytic/stage07_rebuild/aim4_v3_stabilized/brglm2/aim4_brglm2_point_estimate_v3.json": "e2df6ea1d29254b561f089eabb82eda2a7828083c988c198113aae490ca9ba07",
+        "data_analytic/stage07_rebuild/stage06_v2/run1/stage06_v2_qc.json": "d27d02c19ee554c0fca680219851295fc4f3f03ffa524b76813d4c0e3cc256db",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_annual_rates.parquet": "ae41851963ed76e3604914fb9443fef294ff987ac53a1c94d048c76c8580b50a",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_first_observed_by_year.parquet": "afe4b117cc001c40863effbdbf6b2a798c2510f2648a4653a2aca5efdd62e87a",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_hospital_continuity.parquet": "528628b255700c3c5a266029ef99a9c863d86aef97ad08e0d26f7905e3adcd01",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_monthly_national.parquet": "6d2f4fff42fcae7a60358b26ad343afc15a0098be32301557c53cf580b9b4f2d",
+        "data_stage/stage07_rebuild/aim2_v2/coverage/municipality_year_coverage.parquet": "c0a9ac050a5eef0b7e0881c9c8568f3fe5a0945429eaaa5f8793a3504377a099",
+        "data_stage/stage07_rebuild/aim2_v2/travel/pair_year_routes.parquet": "e3e332752a6adecc500b432884d87171d93dc064230669ba62e93dce34a6d2ad",
+        "data_stage/supplement/malha/BR_Municipios_2022.dbf": "3d9a97c7fabc0ca715faae848adf5cae2409205eb9046ad036b33520aef1f0e3",
+        "data_stage/supplement/malha/BR_Municipios_2022.prj": "c9b61f7c5c0d268153118af4183b06d943c1652e94e1201f513a6dcf0ab06567",
+        "data_stage/supplement/malha/BR_Municipios_2022.shp": "eecdf7378666b2ac7a480c0aa388c387131a05d504663b34d0122634bdf165ad",
+        "data_stage/supplement/malha/BR_Municipios_2022.shx": "21e2d2319ade3befc8e0a6f46a7187180c75bd58dd22edde0e344d66ad23049a",
+        "reports/stage07/aim1_v2/aim1_descriptive_audit.json": "99ff4a0eb1a75aa575d94636df0f16e81aa419b4b6474ca16139bb82d475f992",
+        "reports/stage07/aim1_v2/attempt3/aim1_uptake_audit.json": "1ce239862691d9b009f58d9393ea4f5c32faffb714bbe6ce80f745e46848a84a",
+        "reports/stage07/aim2_v2/coverage_audit.json": "def7152332675f873bd541f21ba1dbf987a951e24700d56cca4dbd452623bca7",
+        "reports/stage07/aim2_v2/equity_audit.json": "865a4d41778427f30c4080e0a7e6babebcf80630233d6915519e1af75958e978",
+        "reports/stage07/aim2_v2/equity_quintile_standardised_rates.csv": "f115fc2ab22f2692d95b585932e8021a539c4db693a3a79393e110937a0a7f97",
+        "reports/stage07/aim2_v2/travel_audit.json": "81f403e90e28267a5a23b976e235514db51f2f2428a29ea86bee15e2a300c562",
+        "reports/stage07/aim2_v3/primary_family_audit.json": "4e96098c9dc41eaf5126b26766dc110c4d13167af0713e595697c1eac611b6ec",
+        "reports/stage07/aim3_v2/network_audit.json": "88787a9357722548f621b21638cc98c76ae5378c56d8cec3ccc22acb829af12e",
+        "reports/stage07/aim3_v2/potential_access/audit.json": "2526925f8110e0af0269ac78c02074752b1d6761712b262b669cb6549d02451e",
+        "reports/stage07/aim3_v2/resilience/audit.json": "9b370f0abb9db5be6363436376182ce59ca47d308163f85f63cf42f8034b56f8",
+        "reports/stage07/aim3_v2/service_area/audit.json": "6cf59a9d540808b84c0cffcd3a24019e5cef154673492b534c73ea17ec2c18bc",
+        "reports/stage07/rc_v1/frozen_policy_timeline_evidence.md": "b4351f069e5cdceb378a0da015382df77d1ab3e211ff940937b9e5933f577ed3",
+        "reports/stage07/stage03_v2_cohort_qc.json": "f80007cf31b31bfff08e3fede27d7a6df499826eaae92583d9c57e00835359b3"
+      },
+      "status": "PASS",
+      "suppression_status": "preserved_or_not_applicable"
+    },
+    "table_4_source_data.csv": {
+      "columns": [
+        "result_id",
+        "display_label",
+        "value",
+        "value_type",
+        "unit",
+        "denominator_value",
+        "denominator_unit",
+        "evidence_level",
+        "limitation",
+        "missing_status",
+        "suppression_status",
+        "source_artifact",
+        "source_sha256"
+      ],
+      "evidence_level": [
+        "associational"
+      ],
+      "presentation_transform": {
+        "aggregation_rule": "No row exclusion or aggregation.",
+        "column_exclusions": [],
+        "suppression_rule": "No additional display suppression."
+      },
+      "registry_ids": [
+        "aim4.analysis_rows",
+        "aim4.death_events",
+        "aim4.hospitals",
+        "aim4.bootstrap_status",
+        "aim4.as_mean_valid_replicates",
+        "aim4.mpl_jeffreys_valid_replicates",
+        "stage06.final_status"
+      ],
+      "rows": 7,
+      "sha256": "abfe2cfafe161f8e11467855d6671adfd136442f4d3a451e7ace27e973ec1298",
+      "source_artifact_hashes": {
+        "data_analytic/stage07_rebuild/aim3_v2/network/aim3_patient_flow_edges_display_v2.csv": "f571d5641c01ba003e330a274be21098fa3d97fe316abf49f3330c8f5dfc5bc4",
+        "data_analytic/stage07_rebuild/aim3_v2/network/aim3_residence_projection_leiden_v2.parquet": "3016cf6fbd86e4b1a2dbd8c1ce4e941b5e18abc78799224a41e065debfbdcad1",
+        "data_analytic/stage07_rebuild/aim3_v2/network/aim3_target_metrics_v2.parquet": "374e15163c404aa19bf8453d170490862689d4b0db1c5d34b0e6dea8f075e1b8",
+        "data_analytic/stage07_rebuild/aim3_v2/resilience/aim3_resilience_random_benchmark_v2.parquet": "b9d0c4d90483362d19d95c4f3adf64a698e097a8fe8394040fd55fcc10431dd4",
+        "data_analytic/stage07_rebuild/aim3_v2/resilience/aim3_resilience_sequential_display_v2.csv": "c187c0857fbb8a084f8c7e383b4afa8c4151caf7e2f4a454593cfabeb24f6563",
+        "data_analytic/stage07_rebuild/aim3_v2/service_area/aim3_service_area_residence_display_v2.csv": "823850cac6eef1cf4275e1d39aa26753488b5f7f5a80c9b0a093e6e83525d4fe",
+        "data_analytic/stage07_rebuild/aim4_v2_corrected/brglm2/aim4_brglm2_design_v2.json": "79fb7b785b174ca351db09096d0b9fdbe7344cfd22b13637b7e55cf0b44ffd4a",
+        "data_analytic/stage07_rebuild/aim4_v3_stabilized/brglm2/aim4_brglm2_bootstrap_merged_v3.csv.gz": "6a80b034858dbbbfd8174b3aafdebc4057b21efb8a9a9da71877b90c731f0f53",
+        "data_analytic/stage07_rebuild/aim4_v3_stabilized/brglm2/aim4_brglm2_final_qc_v3.json": "bbd9eec3b1c94be3d36c4de292e55dde137f2aab51f8317b486f48e15e45cf9b",
+        "data_analytic/stage07_rebuild/aim4_v3_stabilized/brglm2/aim4_brglm2_point_estimate_v3.json": "e2df6ea1d29254b561f089eabb82eda2a7828083c988c198113aae490ca9ba07",
+        "data_analytic/stage07_rebuild/stage06_v2/run1/stage06_v2_qc.json": "d27d02c19ee554c0fca680219851295fc4f3f03ffa524b76813d4c0e3cc256db",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_annual_rates.parquet": "ae41851963ed76e3604914fb9443fef294ff987ac53a1c94d048c76c8580b50a",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_first_observed_by_year.parquet": "afe4b117cc001c40863effbdbf6b2a798c2510f2648a4653a2aca5efdd62e87a",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_hospital_continuity.parquet": "528628b255700c3c5a266029ef99a9c863d86aef97ad08e0d26f7905e3adcd01",
+        "data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_monthly_national.parquet": "6d2f4fff42fcae7a60358b26ad343afc15a0098be32301557c53cf580b9b4f2d",
+        "data_stage/stage07_rebuild/aim2_v2/coverage/municipality_year_coverage.parquet": "c0a9ac050a5eef0b7e0881c9c8568f3fe5a0945429eaaa5f8793a3504377a099",
+        "data_stage/stage07_rebuild/aim2_v2/travel/pair_year_routes.parquet": "e3e332752a6adecc500b432884d87171d93dc064230669ba62e93dce34a6d2ad",
+        "data_stage/supplement/malha/BR_Municipios_2022.dbf": "3d9a97c7fabc0ca715faae848adf5cae2409205eb9046ad036b33520aef1f0e3",
+        "data_stage/supplement/malha/BR_Municipios_2022.prj": "c9b61f7c5c0d268153118af4183b06d943c1652e94e1201f513a6dcf0ab06567",
+        "data_stage/supplement/malha/BR_Municipios_2022.shp": "eecdf7378666b2ac7a480c0aa388c387131a05d504663b34d0122634bdf165ad",
+        "data_stage/supplement/malha/BR_Municipios_2022.shx": "21e2d2319ade3befc8e0a6f46a7187180c75bd58dd22edde0e344d66ad23049a",
+        "reports/stage07/aim1_v2/aim1_descriptive_audit.json": "99ff4a0eb1a75aa575d94636df0f16e81aa419b4b6474ca16139bb82d475f992",
+        "reports/stage07/aim1_v2/attempt3/aim1_uptake_audit.json": "1ce239862691d9b009f58d9393ea4f5c32faffb714bbe6ce80f745e46848a84a",
+        "reports/stage07/aim2_v2/coverage_audit.json": "def7152332675f873bd541f21ba1dbf987a951e24700d56cca4dbd452623bca7",
+        "reports/stage07/aim2_v2/equity_audit.json": "865a4d41778427f30c4080e0a7e6babebcf80630233d6915519e1af75958e978",
+        "reports/stage07/aim2_v2/equity_quintile_standardised_rates.csv": "f115fc2ab22f2692d95b585932e8021a539c4db693a3a79393e110937a0a7f97",
+        "reports/stage07/aim2_v2/travel_audit.json": "81f403e90e28267a5a23b976e235514db51f2f2428a29ea86bee15e2a300c562",
+        "reports/stage07/aim2_v3/primary_family_audit.json": "4e96098c9dc41eaf5126b26766dc110c4d13167af0713e595697c1eac611b6ec",
+        "reports/stage07/aim3_v2/network_audit.json": "88787a9357722548f621b21638cc98c76ae5378c56d8cec3ccc22acb829af12e",
+        "reports/stage07/aim3_v2/potential_access/audit.json": "2526925f8110e0af0269ac78c02074752b1d6761712b262b669cb6549d02451e",
+        "reports/stage07/aim3_v2/resilience/audit.json": "9b370f0abb9db5be6363436376182ce59ca47d308163f85f63cf42f8034b56f8",
+        "reports/stage07/aim3_v2/service_area/audit.json": "6cf59a9d540808b84c0cffcd3a24019e5cef154673492b534c73ea17ec2c18bc",
+        "reports/stage07/rc_v1/frozen_policy_timeline_evidence.md": "b4351f069e5cdceb378a0da015382df77d1ab3e211ff940937b9e5933f577ed3",
+        "reports/stage07/stage03_v2_cohort_qc.json": "f80007cf31b31bfff08e3fede27d7a6df499826eaae92583d9c57e00835359b3"
+      },
+      "status": "PASS",
+      "suppression_status": "preserved_or_not_applicable"
+    }
+  },
+  "registry_invalidation_fingerprint": "258d8aa4a32ca6aeb7b67f4db83b0f7218d99d5ebdcbbc7c2d09770203bbc1f2",
+  "registry_sha256": "f29e8a49d24cac473dd70727f22f323ff421e103b67b384eaf83e20221c66351",
+  "schema_version": "stage07_figure_table_source_data_manifest_rc_v1_2"
+}

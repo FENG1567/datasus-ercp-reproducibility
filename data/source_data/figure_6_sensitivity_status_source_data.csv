@@ -1,0 +1,4 @@
+analysis_component,status,boundary
+adjusted_point_estimates,ASSOCIATIONAL_SUPPORTIVE_ONLY,No causal interpretation.
+bootstrap_intervals,NOT_EVALUATED,618/617 valid replicates cannot produce accepted formal inference.
+bootstrap_gate,DOWNGRADE,Prespecified gate failed; no rerun or relaxation.

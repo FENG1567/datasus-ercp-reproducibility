@@ -1,0 +1,10 @@
+# Versions verified in the local Python 3.12.13 environment used during release packaging.
+# This is only a partial record and is not claimed to be the original remote analysis lock.
+PyYAML==6.0.2
+pytest==8.3.5
+pandas==2.3.3
+numpy==2.5.2
+pyarrow==25.0.1
+openpyxl==3.1.5
+dbfread==2.0.7
+pyreaddbc==2.0.4

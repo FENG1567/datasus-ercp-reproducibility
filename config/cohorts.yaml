@@ -1,0 +1,67 @@
+schema_version: "1.0"
+normalization:
+  procedure_codes: "digits only, left-pad to 10 characters"
+  diagnosis_codes: "uppercase alphanumeric with punctuation removed"
+unique_aih_key: ["competence_month", "SP_CNES", "SP_NAIH"]
+rd_join_key: ["competence_month", "CNES", "N_AIH"]
+ercp_procedure_code: "0407030255"
+
+cohorts:
+  implementation_all_indications:
+    label: "A"
+    purpose: "technology adoption, maintenance, provider geography, and supportive network analyses"
+    inclusion:
+      - "2021-01 <= competence_month <= 2025-12"
+      - "at least one SIH-SP row with normalized SP_PROCREA == 0407030255"
+    counting_unit: "one unique AIH after collapsing all matching SP detail rows"
+    age_scope: "all ages for system implementation; adult-only sensitivity"
+    evidence_role: "supportive for a choledocholithiasis-titled paper"
+  choledocholithiasis_strict_adult:
+    label: "B"
+    purpose: "primary patient access, equity, network, and clinical outcome analyses"
+    parent: "implementation_all_indications"
+    age: ">=18 years at admission"
+    diagnosis_source_primary:
+      - "DIAG_PRINC"
+      - "DIAG_SECUN when populated"
+      - "DIAGSEC1 through DIAGSEC9 when present and semantically valid"
+    diagnosis_codes: ["K803", "K804", "K805"]
+    excluded_primary_indications: ["C23", "C24"]
+    exclusion_rule: "exclude if a C23/C24 code is principal; retain secondary malignancy only in a flagged sensitivity analysis"
+
+sensitivity_cohorts:
+  - id: "B_plus_sp_diagnosis"
+    change: "allow SP_CIDPRI and SP_CIDSEC to establish K803/K804/K805"
+  - id: "B_any_k80"
+    change: "any valid K80 diagnosis; explicitly less specific"
+  - id: "B_extended_biliary"
+    change: "pre-specified K80 plus cholangitis/obstruction combinations after ontology review"
+  - id: "A_adult_only"
+    change: "restrict cohort A to age >=18"
+  - id: "B_emergency_only"
+    change: "restrict cohort B to emergency admissions"
+  - id: "A_without_malignancy"
+    change: "exclude any C23/C24 diagnosis from cohort A"
+
+deduplication:
+  sp:
+    collapse_by: ["competence_month", "SP_CNES", "SP_NAIH"]
+    retain:
+      - "procedure_presence"
+      - "matching_detail_row_count"
+      - "sum_SP_QTD_ATO_for_audit_only"
+      - "distinct_SP_ATOPROF_count"
+      - "distinct_SP_PF_CBO_count"
+    forbidden_count_units: ["SP detail rows", "SP_QTD_ATO", "SP_VALATO"]
+  rd:
+    rule: "never silently choose among duplicate RD candidates"
+    gate: "duplicate-key frequency, IDENT distribution, dates, and diagnostic concordance must be audited before a deterministic tie-breaker is versioned"
+  cross_month:
+    rule: "same N_AIH seen in multiple competence months is retained as separate month-keyed records but flagged; admission/discharge dates are used to diagnose resubmission"
+
+linkage_gates:
+  overall_match_rate_min: 0.98
+  state_month_match_rate_min: 0.95
+  unexplained_many_to_many_rate_max: 0.001
+  action_on_failure: "FIX linkage; if irreparable, exclude affected partitions and report; never impute outcomes across unmatched records"
+

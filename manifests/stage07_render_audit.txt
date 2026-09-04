@@ -1,0 +1,16 @@
+schema_version=stage07_render_audit_rc_v1_2
+timestamp=2026-09-01T12:00:58+0800
+status=PASS
+backend=R_only
+contract_sha256=a0648662bdd5bd02dd330acc294f8d0a79037b3ea30e96f583d91f616938a107
+source_manifest_sha256=096c8cbd7825c6f762490c744036835d704d7e8467b0eb74676bee0dffbdbfb9
+figure_count=7
+tables=4
+figure_formats=svg,pdf,tiff_600dpi
+table_formats=svg,pdf,tiff_600dpi,csv
+data_raw_access=none
+privacy=No suppressed <5 value was imputed; known-flow summaries explicitly disclose omitted suppressed strata.
+Figure_4=Maps, regional coverage, and vulnerability gaps remain NOT_EVALUATED because the frozen contract supplies no geometry, region mapping, or municipality-level IVS join.
+Figure_5=No spatial network layout was fabricated because frozen node coordinates are absent; non-spatial observed hub, service-area modal-destination-share, and centrality distributions are shown.
+Figure_6=Bootstrap gate DOWNGRADE; no accepted confidence intervals; associational point estimates only.
+Figure_7=Random envelope is not a confidence interval; resilience is a structural stress test, not a real-world counterfactual.

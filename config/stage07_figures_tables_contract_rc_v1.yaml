@@ -1,0 +1,492 @@
+schema_version: stage07_figures_tables_contract_rc_v1
+candidate_version: rc_v1
+status: FROZEN_CONTRACT
+scope: "Seven main figures and four main tables; contract only, before any figure/table input generation or rendering."
+release_rules:
+  plotting_backend: R
+  backend_exclusivity: "R only for drawing, previewing, export, and visual QA; no Python graphics device."
+  registry_linkage: "Every displayed value must resolve to the immutable rc_v1 registry or a listed hash-locked policy artifact; plotting code may not redefine cohorts, filters, estimands, or suppression."
+  data_raw: read_only
+  thread_limit: 8
+  no_credentials_in_outputs: true
+  privacy_gate: "No unsuppressed displayed cell count below 5; maps and network displays use pre-specified aggregation or suppression."
+  shared_inputs:
+    - path: config/stage07_release_blueprint_v1.yaml
+      sha256: cdcb38448c747ce748c46fc185a88b30da3a700a4cfb82a95dd57e8d63bddfae
+      role: frozen_7fig_4table_blueprint
+    - path: config/stage07_result_registry_spec_rc_v1.json
+      sha256: c02f755788685f69e2a02fc4e5870b59107e40c48191718829b1e9e88b565ae7
+      role: registry_specification_and_result_locator_contract
+  fixed_terminology:
+    first_observed_coded_use: "first observed coded use"
+    observed_uptake: "observed uptake"
+    patient_flow_network: "patient-flow network"
+    reimbursement: "SUS reimbursement in December-2025 BRL; not cost"
+    resilience: "structural stress test simulation; not a real-world counterfactual"
+  universal_prohibited_causal_phrasing:
+    - causal
+    - policy effect
+    - treatment effect
+    - caused
+    - causes
+    - effect of hub removal
+  universal_qa_gates:
+    - registry_id_exists_and_allowed_consumer
+    - input_sha256_matches_frozen_artifact
+    - R_only_backend
+    - source_data_rows_reconcile_to_registry
+    - denominators_units_windows_and_evidence_level_visible
+    - no_unsuppressed_cell_below_5
+    - terminology_and_noncausal_wording_check
+    - final_exports_svg_pdf_tiff_600dpi
+
+figures:
+  - id: Figure_1
+    title: "Policy, coding, cohort, and observation-window timeline"
+    core_conclusion: "The January 2021 boundary is an observation-window and left-censoring boundary, so observed uptake and first observed coded use must not be read as a national implementation start."
+    archetype: schematic-led composite
+    hero_support_panel_map:
+      hero: "a: hash-locked policy and SIGTAP/CID evidence timeline"
+      support:
+        - "b: 2021-2025 source-data window with January-2021 left-censoring"
+        - "c: Cohort A and Cohort B construction using the unique-AIH unit"
+    evidence_level: descriptive
+    registry_result_ids:
+      - cohort.a_unique_aih
+      - cohort.b_final_unique_aih
+      - uptake.left_censored_202101
+      - uptake.hospitals_ever_observed
+    inputs:
+      - path: reports/policy_timeline_evidence.md
+        sha256: b4351f069e5cdceb378a0da015382df77d1ab3e211ff940937b9e5933f577ed3
+        role: local_policy_evidence
+        frozen_copy_required_before_render: true
+        frozen_copy_target: reports/stage07/rc_v1/frozen_policy_timeline_evidence.md
+        server_path_status: "This local artifact must be uploaded as a hash-verified frozen copy before rendering; do not cite a server path that does not yet exist."
+      - path: reports/stage07/stage03_v2_cohort_qc.json
+        sha256: f80007cf31b31bfff08e3fede27d7a6df499826eaae92583d9c57e00835359b3
+        role: cohort_counts
+      - path: reports/stage07/aim1_v2/aim1_descriptive_audit.json
+        sha256: 99ff4a0eb1a75aa575d94636df0f16e81aa419b4b6474ca16139bb82d475f992
+        role: observation_boundary_and_uptake_counts
+      - path: data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_first_observed_by_year.parquet
+        sha256: afe4b117cc001c40863effbdbf6b2a798c2510f2648a4653a2aca5efdd62e87a
+        role: frozen_non_audit_first_observed_uptake_display_input
+    backend: R
+    final_dimensions_mm: {width: 183, height: 120}
+    exports: {svg: Figure_1.svg, pdf: Figure_1.pdf, tiff_600dpi: Figure_1.tiff}
+    statistics_intervals: "Descriptive timeline and counts only; label the January-2021 left-censoring count and the unique-AIH cohort definitions; no causal or model-derived interval."
+    fixed_terms_required: ["first observed coded use", "observed uptake"]
+    prohibited_causal_phrasing: ["implementation effect", "policy effect", "caused adoption"]
+    interpretation_risks:
+      - "A policy or code date may be mistaken for nationwide implementation."
+      - "Cohort A billing records may be mistaken for disease-adjudicated cases."
+    source_data_outputs: [figure_1_policy_timeline_source_data.csv, figure_1_cohort_funnel_source_data.csv]
+    qa_gates: [policy_hash_matches_before_render, left_censoring_annotation_present, unique_AIH_unit_present, registry_counts_reconcile]
+
+  - id: Figure_2
+    title: "National observed uptake, diffusion, and service maintenance"
+    core_conclusion: "National observed uptake expanded over the observation window, while maintenance must be interpreted within its eligible-hospital risk set rather than as confirmed service capacity."
+    archetype: asymmetric_mixed_modality_figure
+    hero_support_panel_map:
+      hero: "a: monthly unique-AIH volume and population-standardised observed-uptake rate"
+      support:
+        - "b: hospital and municipality first observed coded use by year, retaining the January-2021 left-censoring label"
+        - "c: maintenance states among eligible hospitals with risk-set denominator"
+    evidence_level: descriptive
+    registry_result_ids: [uptake.hospitals_ever_observed, uptake.left_censored_202101, uptake.first_observed_2021, uptake.first_observed_2022, uptake.first_observed_2023, uptake.first_observed_2024, uptake.first_observed_2025, maintenance.first_completed_12m]
+    inputs:
+      - path: reports/stage07/aim1_v2/aim1_descriptive_audit.json
+        sha256: 99ff4a0eb1a75aa575d94636df0f16e81aa419b4b6474ca16139bb82d475f992
+        role: uptake_first_use_and_maintenance_audit
+      - path: reports/stage07/aim1_v2/attempt3/aim1_uptake_audit.json
+        sha256: 1ce239862691d9b009f58d9393ea4f5c32faffb714bbe6ce80f745e46848a84a
+        role: uptake_model_technical_status_not_primary_figure_inference
+      - path: data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_monthly_national.parquet
+        sha256: 6d2f4fff42fcae7a60358b26ad343afc15a0098be32301557c53cf580b9b4f2d
+        role: frozen_monthly_unique_AIH_and_active_provider_series
+      - path: data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_annual_rates.parquet
+        sha256: ae41851963ed76e3604914fb9443fef294ff987ac53a1c94d048c76c8580b50a
+        role: frozen_annual_population_standardised_rates
+      - path: data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_first_observed_by_year.parquet
+        sha256: afe4b117cc001c40863effbdbf6b2a798c2510f2648a4653a2aca5efdd62e87a
+        role: frozen_first_observed_by_year_display
+      - path: data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_hospital_continuity.parquet
+        sha256: 528628b255700c3c5a266029ef99a9c863d86aef97ad08e0d26f7905e3adcd01
+        role: frozen_hospital_continuity_and_maintenance_risk_set
+    backend: R
+    final_dimensions_mm: {width: 183, height: 125}
+    exports: {svg: Figure_2.svg, pdf: Figure_2.pdf, tiff_600dpi: Figure_2.tiff}
+    statistics_intervals: "Monthly rates show the frozen confidence-interval definition from the registry-linked input; all maintenance percentages show the eligible-hospital risk-set denominator."
+    fixed_terms_required: ["observed uptake", "first observed coded use"]
+    prohibited_causal_phrasing: ["adoption caused by policy", "service capacity established"]
+    interpretation_risks: ["First observed coded use may be misread as true adoption.", "Maintenance from billing continuity may be misread as audited capacity."]
+    source_data_outputs: [figure_2_monthly_uptake_source_data.csv, figure_2_first_observed_source_data.csv, figure_2_maintenance_source_data.csv]
+    qa_gates: [monthly_rate_ci_definition_present, january_2021_left_censoring_visible, maintenance_risk_set_denominator_visible, registry_counts_reconcile]
+
+  - id: Figure_3
+    title: "Equity gradients and realised travel burden"
+    core_conclusion: "Ecological equity gradients and realised flow-weighted road-time burden describe patterned treated use and travel, but neither identifies individual socioeconomic effects nor population access."
+    archetype: quantitative_grid
+    hero_support_panel_map:
+      hero: "a: directly standardised municipal rates by IVS and supplementary-insurance strata"
+      support:
+        - "b: frozen SII/RII ecological contrasts with confidence intervals"
+        - "c: flow-weighted realised road-time distribution and 120-minute threshold"
+    evidence_level: associational
+    registry_result_ids: [equity.ivs_rii, equity.ivs_sii_per_100k, travel.flow_weighted_median_min, travel.flow_weighted_p90_min, travel.flow_weighted_share_gt120]
+    inputs:
+      - path: reports/stage07/aim2_v2/equity_audit.json
+        sha256: 865a4d41778427f30c4080e0a7e6babebcf80630233d6915519e1af75958e978
+        role: frozen_ecological_equity_results
+      - path: reports/stage07/aim2_v2/travel_audit.json
+        sha256: 81f403e90e28267a5a23b976e235514db51f2f2428a29ea86bee15e2a300c562
+        role: realised_flow_weighted_route_summary
+      - path: reports/stage07/aim2_v2/equity_quintile_standardised_rates.csv
+        sha256: f115fc2ab22f2692d95b585932e8021a539c4db693a3a79393e110937a0a7f97
+        role: frozen_equity_rate_display_data
+      - path: data_stage/stage07_rebuild/aim2_v2/travel/pair_year_routes.parquet
+        sha256: e3e332752a6adecc500b432884d87171d93dc064230669ba62e93dce34a6d2ad
+        role: frozen_realised_route_level_input_for_flow_weighted_display
+    backend: R
+    final_dimensions_mm: {width: 183, height: 120}
+    exports: {svg: Figure_3.svg, pdf: Figure_3.pdf, tiff_600dpi: Figure_3.tiff}
+    statistics_intervals: "Direct standardisation and frozen SII/RII 95% confidence intervals; flow-weighted median, p90, and share over 120 minutes use routed cohort-B AIHs only."
+    fixed_terms_required: ["observed uptake", "realised travel burden"]
+    prohibited_causal_phrasing: ["vulnerability causes lower uptake", "insurance effect", "travel barrier effect"]
+    interpretation_risks: ["IVS is ecological, not individual exposure.", "Routed treated flows are not direct patient travel, unmet need, or potential access."]
+    source_data_outputs: [figure_3_equity_source_data.csv, figure_3_travel_source_data.csv]
+    qa_gates: [ecological_exposure_label_present, standardisation_and_CI_definition_present, flow_weighting_denominator_visible, no_population_access_claim]
+
+  - id: Figure_4
+    title: "Potential population access within 120 and 180 minutes"
+    core_conclusion: "Modelled potential road-network access improved across the observed period, but it remains distinct from realised access, capacity, quality, and need."
+    archetype: asymmetric_mixed_modality_figure
+    hero_support_panel_map:
+      hero: "a: paired annual adult-population maps for 120- and cumulative 180-minute potential access"
+      support:
+        - "b: national and regional population-weighted coverage over time"
+        - "c: coverage gap by vulnerability stratum with anchored-denominator annotation"
+    evidence_level: descriptive
+    registry_result_ids: [coverage.2021_adult_share_120, coverage.2021_adult_share_180, coverage.2025_adult_share_120, coverage.2025_adult_share_180, coverage.anchor_coverage_all_years, aim2.primary_family_status]
+    inputs:
+      - path: reports/stage07/aim2_v2/coverage_audit.json
+        sha256: def7152332675f873bd541f21ba1dbf987a951e24700d56cca4dbd452623bca7
+        role: frozen_potential_access_coverage_audit
+      - path: reports/stage07/aim2_v3/primary_family_audit.json
+        sha256: 4e96098c9dc41eaf5126b26766dc110c4d13167af0713e595697c1eac611b6ec
+        role: inferential_family_status_for_downgrade_annotation
+      - path: data_stage/stage07_rebuild/aim2_v2/coverage/municipality_year_coverage.parquet
+        sha256: c0a9ac050a5eef0b7e0881c9c8568f3fe5a0945429eaaa5f8793a3504377a099
+        role: frozen_municipality_year_coverage_display_input
+      - path: data_stage/supplement/malha/BR_Municipios_2022.shp
+        sha256: eecdf7378666b2ac7a480c0aa388c387131a05d504663b34d0122634bdf165ad
+        role: frozen_Brazil_municipality_geometry
+      - path: data_stage/supplement/malha/BR_Municipios_2022.dbf
+        sha256: 3d9a97c7fabc0ca715faae848adf5cae2409205eb9046ad036b33520aef1f0e3
+        role: frozen_Brazil_municipality_geometry_attributes
+      - path: data_stage/supplement/malha/BR_Municipios_2022.shx
+        sha256: 21e2d2319ade3befc8e0a6f46a7187180c75bd58dd22edde0e344d66ad23049a
+        role: frozen_Brazil_municipality_geometry_index
+      - path: data_stage/supplement/malha/BR_Municipios_2022.prj
+        sha256: c9b61f7c5c0d268153118af4183b06d943c1652e94e1201f513a6dcf0ab06567
+        role: frozen_Brazil_municipality_geometry_projection
+    backend: R
+    final_dimensions_mm: {width: 183, height: 135}
+    exports: {svg: Figure_4.svg, pdf: Figure_4.pdf, tiff_600dpi: Figure_4.tiff}
+    statistics_intervals: "Use adult-population anchored denominators; 180-minute coverage is the frozen cumulative union of raw 120- and 180-minute contours; show 2025 anchor limitation and do not use downgraded Aim 2 v3 model predictions as accepted inference."
+    fixed_terms_required: ["potential population access", "adult population", "modelled road-network reach"]
+    prohibited_causal_phrasing: ["access improvement caused", "realised access", "coverage effect"]
+    interpretation_risks: ["Potential access may be conflated with realised use or capacity.", "Non-nested geometry and missing anchors can be hidden.", "Aim 2 v3 DOWNGRADE could be obscured."]
+    source_data_outputs: [figure_4_municipality_coverage_source_data.csv, figure_4_national_regional_coverage_source_data.csv, figure_4_vulnerability_gap_source_data.csv]
+    qa_gates: [anchor_coverage_visible, cumulative_180_rule_visible, 2025_anchor_limit_visible, aim2_v3_DOWNGRADE_visible, maps_use_prespecified_aggregation_or_suppression]
+
+  - id: Figure_5
+    title: "Intermunicipal patient-flow network and referral communities"
+    core_conclusion: "The patient-flow network reveals observed referral concentration and community structure, without treating cross-municipal flow as evidence of poor access or inappropriate referral."
+    archetype: asymmetric_mixed_modality_figure
+    hero_support_panel_map:
+      hero: "a: privacy-suppressed national patient-flow network"
+      support:
+        - "b: community or service-area structure"
+        - "c: hub concentration and centrality distribution"
+    evidence_level: descriptive
+    registry_result_ids: [network.pooled_projection_nodes, network.pooled_projection_edges, potential_access.complete_matrix_rows, potential_access.reachable_rows, service_area.ivs_selected_municipalities]
+    inputs:
+      - path: reports/stage07/aim3_v2/network_audit.json
+        sha256: 88787a9357722548f621b21638cc98c76ae5378c56d8cec3ccc22acb829af12e
+        role: pooled_network_projection_audit
+      - path: reports/stage07/aim3_v2/potential_access/audit.json
+        sha256: 2526925f8110e0af0269ac78c02074752b1d6761712b262b669cb6549d02451e
+        role: potential_access_matrix_audit
+      - path: reports/stage07/aim3_v2/service_area/audit.json
+        sha256: 6cf59a9d540808b84c0cffcd3a24019e5cef154673492b534c73ea17ec2c18bc
+        role: service_area_context_audit
+      - path: data_analytic/stage07_rebuild/aim3_v2/network/aim3_patient_flow_edges_display_v2.csv
+        sha256: f571d5641c01ba003e330a274be21098fa3d97fe316abf49f3330c8f5dfc5bc4
+        role: frozen_privacy_suppressed_network_display_edges
+      - path: data_analytic/stage07_rebuild/aim3_v2/network/aim3_residence_projection_leiden_v2.parquet
+        sha256: 3016cf6fbd86e4b1a2dbd8c1ce4e941b5e18abc78799224a41e065debfbdcad1
+        role: frozen_Leiden_community_projection
+      - path: data_analytic/stage07_rebuild/aim3_v2/network/aim3_target_metrics_v2.parquet
+        sha256: 374e15163c404aa19bf8453d170490862689d4b0db1c5d34b0e6dea8f075e1b8
+        role: frozen_target_centrality_metrics
+      - path: data_analytic/stage07_rebuild/aim3_v2/service_area/aim3_service_area_residence_display_v2.csv
+        sha256: 823850cac6eef1cf4275e1d39aa26753488b5f7f5a80c9b0a093e6e83525d4fe
+        role: frozen_privacy_suppressed_service_area_display
+    backend: R
+    final_dimensions_mm: {width: 183, height: 130}
+    exports: {svg: Figure_5.svg, pdf: Figure_5.pdf, tiff_600dpi: Figure_5.tiff}
+    statistics_intervals: "Network summaries are descriptive pooled projection and service-area metrics; retain all pre-specified suppression and state that potential-access matrix reachability is not observed use or capacity."
+    fixed_terms_required: ["patient-flow network", "observed treated flows", "service-area structure"]
+    prohibited_causal_phrasing: ["cross-municipal flow proves poor access", "referral failure", "network effect"]
+    interpretation_risks: ["Network nodes or edges could disclose small cells.", "Projection edges are not patient-to-patient links.", "Cross-municipal travel can be an appropriate referral pattern."]
+    source_data_outputs: [figure_5_suppressed_network_edges_source_data.csv, figure_5_service_area_source_data.csv, figure_5_centrality_source_data.csv]
+    qa_gates: [network_suppression_pass, node_edge_definition_visible, service_area_context_visible, no_cross_municipal_equals_poor_access_claim]
+
+  - id: Figure_6
+    title: "Hospital volume, maturity, centrality, and in-hospital outcomes"
+    core_conclusion: "Adjusted hospital-attribute and in-hospital-outcome estimates are associational point estimates only because the prespecified Aim 4 bootstrap validity gate is DOWNGRADE and its intervals are not accepted formal inference."
+    archetype: quantitative_grid
+    hero_support_panel_map:
+      hero: "a: adjusted point estimates labelled associational, with no accepted bootstrap confidence intervals"
+      support:
+        - "b: AS_mean versus MPL_Jeffreys convergence and valid-replicate yield display"
+        - "c: pre-specified sensitivity or heterogeneity display only if estimable, otherwise NOT_EVALUATED"
+    evidence_level: associational_with_bootstrap_DOWNGRADE
+    registry_result_ids: [aim4.analysis_rows, aim4.death_events, aim4.hospitals, aim4.bootstrap_status, aim4.as_mean_valid_replicates, aim4.mpl_jeffreys_valid_replicates]
+    inputs:
+      - path: data_analytic/stage07_rebuild/aim4_v2_corrected/brglm2/aim4_brglm2_design_v2.json
+        sha256: 79fb7b785b174ca351db09096d0b9fdbe7344cfd22b13637b7e55cf0b44ffd4a
+        role: frozen_complete_context_design_counts
+      - path: data_analytic/stage07_rebuild/aim4_v3_stabilized/brglm2/aim4_brglm2_final_qc_v3.json
+        sha256: bbd9eec3b1c94be3d36c4de292e55dde137f2aab51f8317b486f48e15e45cf9b
+        role: bootstrap_validity_gate
+      - path: data_analytic/stage07_rebuild/aim4_v3_stabilized/brglm2/aim4_brglm2_point_estimate_v3.json
+        sha256: e2df6ea1d29254b561f089eabb82eda2a7828083c988c198113aae490ca9ba07
+        role: frozen_associational_point_estimates
+      - path: data_analytic/stage07_rebuild/aim4_v3_stabilized/brglm2/aim4_brglm2_bootstrap_merged_v3.csv.gz
+        sha256: 6a80b034858dbbbfd8174b3aafdebc4057b21efb8a9a9da71877b90c731f0f53
+        role: frozen_bootstrap_concordance_and_validity_input_not_accepted_CI
+    backend: R
+    final_dimensions_mm: {width: 183, height: 120}
+    exports: {svg: Figure_6.svg, pdf: Figure_6.pdf, tiff_600dpi: Figure_6.tiff}
+    statistics_intervals: "Never label bootstrap quantiles as accepted 95% confidence intervals: AS_mean has 618/2000 and MPL_Jeffreys 617/2000 valid replicates, so the frozen bootstrap validity gate is DOWNGRADE; sensitivity/heterogeneity unavailable under the frozen estimand is NOT_EVALUATED, not a null result."
+    fixed_terms_required: ["associational", "bootstrap validity gate", "DOWNGRADE", "NOT_EVALUATED"]
+    prohibited_causal_phrasing: ["volume reduces mortality", "maturity improves outcome", "centrality effect", "accepted confidence interval"]
+    interpretation_risks: ["Low valid-bootstrap yield could be hidden behind polished uncertainty bands.", "Residual confounding and referral selection can be ignored.", "NOT_EVALUATED may be misread as no effect."]
+    source_data_outputs: [figure_6_adjusted_point_estimates_source_data.csv, figure_6_bootstrap_validity_source_data.csv, figure_6_sensitivity_status_source_data.csv]
+    qa_gates: [aim4_bootstrap_status_EQUALS_DOWNGRADE_visible, no_accepted_bootstrap_CI, associational_label_visible, valid_replicate_yield_visible, NOT_EVALUATED_not_shown_as_null]
+
+  - id: Figure_7
+    title: "Network resilience under observed hub removal versus random removal"
+    core_conclusion: "Observed hub-removal scenarios describe structural dependence relative to a 1,000-replicate random-removal benchmark and are a stress test, not a real-world intervention counterfactual."
+    archetype: quantitative_grid
+    hero_support_panel_map:
+      hero: "a: targeted sequential observed-hub removal trajectory"
+      support:
+        - "b: 1,000-replicate random-removal benchmark envelope"
+        - "c: population losing potential access and connectivity changes"
+    evidence_level: descriptive_simulation
+    registry_result_ids: [resilience.random_replicates, potential_access.complete_matrix_rows, potential_access.reachable_rows]
+    inputs:
+      - path: reports/stage07/aim3_v2/resilience/audit.json
+        sha256: 9b370f0abb9db5be6363436376182ce59ca47d308163f85f63cf42f8034b56f8
+        role: frozen_resilience_stress_test_audit
+      - path: reports/stage07/aim3_v2/potential_access/audit.json
+        sha256: 2526925f8110e0af0269ac78c02074752b1d6761712b262b669cb6549d02451e
+        role: potential_access_context_for_connectivity_loss
+      - path: data_analytic/stage07_rebuild/aim3_v2/resilience/aim3_resilience_sequential_display_v2.csv
+        sha256: c187c0857fbb8a084f8c7e383b4afa8c4151caf7e2f4a454593cfabeb24f6563
+        role: frozen_targeted_sequential_hub_removal_display
+      - path: data_analytic/stage07_rebuild/aim3_v2/resilience/aim3_resilience_random_benchmark_v2.parquet
+        sha256: b9d0c4d90483362d19d95c4f3adf64a698e097a8fe8394040fd55fcc10431dd4
+        role: frozen_random_removal_benchmark
+    backend: R
+    final_dimensions_mm: {width: 183, height: 120}
+    exports: {svg: Figure_7.svg, pdf: Figure_7.pdf, tiff_600dpi: Figure_7.tiff}
+    statistics_intervals: "The random envelope is an empirical 1,000-replicate simulation benchmark, not a confidence interval or effect estimate; label targeted removal as an observed-hub structural stress test."
+    fixed_terms_required: ["structural stress test", "random-removal benchmark", "potential access"]
+    prohibited_causal_phrasing: ["removal causes loss", "intervention effect", "counterfactual impact"]
+    interpretation_risks: ["Random envelope may be misread as inferential confidence interval.", "Hub removal could be misread as a feasible real-world intervention."]
+    source_data_outputs: [figure_7_targeted_removal_source_data.csv, figure_7_random_benchmark_source_data.csv]
+    qa_gates: [random_replicates_EQUALS_1000, stress_test_label_visible, not_real_world_counterfactual_visible, random_envelope_not_called_CI]
+
+tables:
+  - id: Table_1
+    title: "Cohort, hospital, municipality, and regional characteristics"
+    core_conclusion: "The descriptive table defines the two administrative cohorts and their observation units, with missingness, suppression, geography, and time window made explicit."
+    archetype: quantitative_grid
+    hero_support_panel_map: {hero: "a: cohort and unique-AIH characteristics", support: ["b: hospital, municipality, and regional characteristics", "c: missingness and suppression footnotes"]}
+    evidence_level: descriptive
+    registry_result_ids: [cohort.a_unique_aih, cohort.b_final_unique_aih, uptake.hospitals_ever_observed, aim4.analysis_rows, aim4.hospitals]
+    inputs:
+      - path: reports/stage07/stage03_v2_cohort_qc.json
+        sha256: f80007cf31b31bfff08e3fede27d7a6df499826eaae92583d9c57e00835359b3
+        role: cohort_funnel
+      - path: reports/stage07/aim1_v2/aim1_descriptive_audit.json
+        sha256: 99ff4a0eb1a75aa575d94636df0f16e81aa419b4b6474ca16139bb82d475f992
+        role: hospital_observed_uptake_count
+      - path: data_analytic/stage07_rebuild/aim4_v2_corrected/brglm2/aim4_brglm2_design_v2.json
+        sha256: 79fb7b785b174ca351db09096d0b9fdbe7344cfd22b13637b7e55cf0b44ffd4a
+        role: complete_context_characteristics
+      - path: data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_monthly_national.parquet
+        sha256: 6d2f4fff42fcae7a60358b26ad343afc15a0098be32301557c53cf580b9b4f2d
+        role: frozen_non_audit_cohort_time_window_and_volume_input
+      - path: data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_first_observed_by_year.parquet
+        sha256: afe4b117cc001c40863effbdbf6b2a798c2510f2648a4653a2aca5efdd62e87a
+        role: frozen_non_audit_observed_hospital_input
+    backend: R
+    final_dimensions_mm: {width: 183, height: 105}
+    exports: {svg: Table_1.svg, pdf: Table_1.pdf, tiff_600dpi: Table_1.tiff, csv: Table_1.csv}
+    statistics_intervals: "Descriptive counts, percentages, and prespecified summary statistics; footnotes state Cohort A/B, unique AIH, provider versus residence municipality, missingness, suppression, and the 2021-2025 window."
+    fixed_terms_required: ["unique AIH", "provider municipality", "residence municipality"]
+    prohibited_causal_phrasing: ["representative causal cohort", "population effect"]
+    interpretation_risks: ["Administrative cohort definition could be obscured.", "Small-cell suppression or missingness could be omitted."]
+    source_data_outputs: [table_1_source_data.csv]
+    qa_gates: [required_footnotes_present, all_denominators_visible, missingness_visible, suppression_pass, registry_counts_reconcile]
+
+  - id: Table_2
+    title: "Observed uptake and maintenance of therapeutic ERCP"
+    core_conclusion: "Observed uptake and maintenance are reported with their observation boundary, eligible risk set, and model status, without converting first observed coded use into a causal implementation metric."
+    archetype: quantitative_grid
+    hero_support_panel_map: {hero: "a: uptake and first-observed-use summaries", support: ["b: maintenance risk-set summaries", "c: technical model-status note"]}
+    evidence_level: descriptive_and_associational_status
+    registry_result_ids: [uptake.hospitals_ever_observed, uptake.left_censored_202101, uptake.first_observed_2021, uptake.first_observed_2022, uptake.first_observed_2023, uptake.first_observed_2024, uptake.first_observed_2025, maintenance.first_completed_12m, uptake.model_status]
+    inputs:
+      - path: reports/stage07/aim1_v2/aim1_descriptive_audit.json
+        sha256: 99ff4a0eb1a75aa575d94636df0f16e81aa419b4b6474ca16139bb82d475f992
+        role: uptake_and_maintenance
+      - path: reports/stage07/aim1_v2/attempt3/aim1_uptake_audit.json
+        sha256: 1ce239862691d9b009f58d9393ea4f5c32faffb714bbe6ce80f745e46848a84a
+        role: associational_model_status
+      - path: data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_monthly_national.parquet
+        sha256: 6d2f4fff42fcae7a60358b26ad343afc15a0098be32301557c53cf580b9b4f2d
+        role: frozen_monthly_observed_uptake_input
+      - path: data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_annual_rates.parquet
+        sha256: ae41851963ed76e3604914fb9443fef294ff987ac53a1c94d048c76c8580b50a
+        role: frozen_annual_rate_input
+      - path: data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_first_observed_by_year.parquet
+        sha256: afe4b117cc001c40863effbdbf6b2a798c2510f2648a4653a2aca5efdd62e87a
+        role: frozen_first_observed_input
+      - path: data_stage/stage07_rebuild/aim1_v2/descriptive/aim1_hospital_continuity.parquet
+        sha256: 528628b255700c3c5a266029ef99a9c863d86aef97ad08e0d26f7905e3adcd01
+        role: frozen_maintenance_risk_set_input
+    backend: R
+    final_dimensions_mm: {width: 183, height: 105}
+    exports: {svg: Table_2.svg, pdf: Table_2.pdf, tiff_600dpi: Table_2.tiff, csv: Table_2.csv}
+    statistics_intervals: "State eligible-hospital risk set, January-2021 left-censoring, adjustment set, and descriptive versus associational evidence label; retain PASS_WITH_WARNING as technical status rather than causal evidence."
+    fixed_terms_required: ["observed uptake", "first observed coded use", "left-censoring"]
+    prohibited_causal_phrasing: ["policy effect", "true adoption", "maintenance causes"]
+    interpretation_risks: ["The 2021 boundary and risk-set denominator may disappear in a compact table.", "Model status may be misrepresented as causal evidence."]
+    source_data_outputs: [table_2_source_data.csv]
+    qa_gates: [eligible_hospital_risk_set_visible, left_censoring_visible, adjustment_set_visible, descriptive_associational_label_visible]
+
+  - id: Table_3
+    title: "Equity, travel time, potential access, and patient-flow concentration"
+    core_conclusion: "Ecological equity, realised routed travel, modelled potential access, and patient-flow concentration are complementary descriptive or associational measures with non-interchangeable denominators and interpretations."
+    archetype: quantitative_grid
+    hero_support_panel_map: {hero: "a: equity and travel summaries", support: ["b: potential-access coverage and anchor coverage", "c: patient-flow and service-area summaries"]}
+    evidence_level: descriptive_and_associational
+    registry_result_ids: [equity.ivs_rii, equity.ivs_sii_per_100k, travel.flow_weighted_median_min, travel.flow_weighted_p90_min, travel.flow_weighted_share_gt120, coverage.2021_adult_share_120, coverage.2021_adult_share_180, coverage.2025_adult_share_120, coverage.2025_adult_share_180, coverage.anchor_coverage_all_years, aim2.primary_family_status, network.pooled_projection_nodes, network.pooled_projection_edges, potential_access.complete_matrix_rows, potential_access.reachable_rows, service_area.ivs_selected_municipalities]
+    inputs:
+      - path: reports/stage07/aim2_v2/equity_audit.json
+        sha256: 865a4d41778427f30c4080e0a7e6babebcf80630233d6915519e1af75958e978
+        role: ecological_equity
+      - path: reports/stage07/aim2_v2/travel_audit.json
+        sha256: 81f403e90e28267a5a23b976e235514db51f2f2428a29ea86bee15e2a300c562
+        role: realised_travel
+      - path: reports/stage07/aim2_v2/coverage_audit.json
+        sha256: def7152332675f873bd541f21ba1dbf987a951e24700d56cca4dbd452623bca7
+        role: potential_access
+      - path: reports/stage07/aim2_v3/primary_family_audit.json
+        sha256: 4e96098c9dc41eaf5126b26766dc110c4d13167af0713e595697c1eac611b6ec
+        role: aim2_v3_downGRADE_status
+      - path: reports/stage07/aim3_v2/network_audit.json
+        sha256: 88787a9357722548f621b21638cc98c76ae5378c56d8cec3ccc22acb829af12e
+        role: patient_flow_network
+      - path: reports/stage07/aim3_v2/potential_access/audit.json
+        sha256: 2526925f8110e0af0269ac78c02074752b1d6761712b262b669cb6549d02451e
+        role: potential_access_matrix
+      - path: reports/stage07/aim3_v2/service_area/audit.json
+        sha256: 6cf59a9d540808b84c0cffcd3a24019e5cef154673492b534c73ea17ec2c18bc
+        role: service_area_context
+      - path: reports/stage07/aim2_v2/equity_quintile_standardised_rates.csv
+        sha256: f115fc2ab22f2692d95b585932e8021a539c4db693a3a79393e110937a0a7f97
+        role: frozen_equity_display_rows
+      - path: data_stage/stage07_rebuild/aim2_v2/travel/pair_year_routes.parquet
+        sha256: e3e332752a6adecc500b432884d87171d93dc064230669ba62e93dce34a6d2ad
+        role: frozen_route_level_flow_weighted_input
+      - path: data_stage/stage07_rebuild/aim2_v2/coverage/municipality_year_coverage.parquet
+        sha256: c0a9ac050a5eef0b7e0881c9c8568f3fe5a0945429eaaa5f8793a3504377a099
+        role: frozen_potential_access_coverage_input
+      - path: data_analytic/stage07_rebuild/aim3_v2/network/aim3_patient_flow_edges_display_v2.csv
+        sha256: f571d5641c01ba003e330a274be21098fa3d97fe316abf49f3330c8f5dfc5bc4
+        role: frozen_privacy_suppressed_patient_flow_network_input
+      - path: data_analytic/stage07_rebuild/aim3_v2/network/aim3_target_metrics_v2.parquet
+        sha256: 374e15163c404aa19bf8453d170490862689d4b0db1c5d34b0e6dea8f075e1b8
+        role: frozen_network_concentration_input
+      - path: data_analytic/stage07_rebuild/aim3_v2/service_area/aim3_service_area_residence_display_v2.csv
+        sha256: 823850cac6eef1cf4275e1d39aa26753488b5f7f5a80c9b0a093e6e83525d4fe
+        role: frozen_privacy_suppressed_service_area_input
+    backend: R
+    final_dimensions_mm: {width: 183, height: 130}
+    exports: {svg: Table_3.svg, pdf: Table_3.pdf, tiff_600dpi: Table_3.tiff, csv: Table_3.csv}
+    statistics_intervals: "State denominators, adult population, flow weighting, coverage-model assumptions, IVS ecological exposure, privacy suppression, cumulative 180-minute rule, and Aim 2 v3 DOWNGRADE; do not present its probability-invalid coverage predictions as formal inference."
+    fixed_terms_required: ["patient-flow network", "potential access", "adult population", "flow weighting"]
+    prohibited_causal_phrasing: ["equity effect", "travel barrier causes", "coverage caused uptake"]
+    interpretation_risks: ["Measures may be wrongly treated as interchangeable access measures.", "Aim 2 v3 downgrade might be omitted.", "Ecological IVS may be overinterpreted."]
+    source_data_outputs: [table_3_source_data.csv]
+    qa_gates: [denominators_visible, adult_population_anchor_coverage_visible, flow_weighting_visible, privacy_suppression_pass, aim2_v3_DOWNGRADE_visible, no_probability_invalid_inference]
+
+  - id: Table_4
+    title: "Adjusted hospital-level attributes and in-hospital outcome associations"
+    core_conclusion: "Hospital-attribute associations are reported with complete-context cohort and outcome-event counts, while Aim 4 bootstrap DOWNGRADE and Stage 6 quasi-causal NOT_EVALUATED limitations explicitly preclude formal causal or accepted-interval claims."
+    archetype: quantitative_grid
+    hero_support_panel_map: {hero: "a: adjusted point-estimate association rows with bootstrap status", support: ["b: bootstrap valid-replicate counts", "c: explicit non-result limitations for Stage 6 quasi-causal and negative-control items"]}
+    evidence_level: associational_with_downGRADE
+    registry_result_ids: [aim4.analysis_rows, aim4.death_events, aim4.hospitals, aim4.bootstrap_status, aim4.as_mean_valid_replicates, aim4.mpl_jeffreys_valid_replicates, stage06.final_status]
+    not_presented_as_results:
+      - "Stage 6 quasi-causal estimates: NOT_EVALUATED because no pre-first-observed-use hospital-months were available."
+      - "Legacy negative controls and robustness effects: NOT_EVALUATED; not null findings and not table result rows."
+      - "Aim 4 bootstrap quantiles: not accepted formal confidence intervals because the bootstrap validity gate is DOWNGRADE."
+    inputs:
+      - path: data_analytic/stage07_rebuild/aim4_v2_corrected/brglm2/aim4_brglm2_design_v2.json
+        sha256: 79fb7b785b174ca351db09096d0b9fdbe7344cfd22b13637b7e55cf0b44ffd4a
+        role: primary_complete_context_design
+      - path: data_analytic/stage07_rebuild/aim4_v3_stabilized/brglm2/aim4_brglm2_final_qc_v3.json
+        sha256: bbd9eec3b1c94be3d36c4de292e55dde137f2aab51f8317b486f48e15e45cf9b
+        role: bootstrap_validity_status
+      - path: data_analytic/stage07_rebuild/stage06_v2/run1/stage06_v2_qc.json
+        sha256: d27d02c19ee554c0fca680219851295fc4f3f03ffa524b76813d4c0e3cc256db
+        role: stage06_quasi_causal_downGRADE_status
+      - path: data_analytic/stage07_rebuild/aim4_v3_stabilized/brglm2/aim4_brglm2_point_estimate_v3.json
+        sha256: e2df6ea1d29254b561f089eabb82eda2a7828083c988c198113aae490ca9ba07
+        role: frozen_adjusted_associational_point_estimates
+      - path: data_analytic/stage07_rebuild/aim4_v3_stabilized/brglm2/aim4_brglm2_bootstrap_merged_v3.csv.gz
+        sha256: 6a80b034858dbbbfd8174b3aafdebc4057b21efb8a9a9da71877b90c731f0f53
+        role: frozen_bootstrap_yield_and_concordance_input_not_accepted_CI
+    backend: R
+    final_dimensions_mm: {width: 183, height: 105}
+    exports: {svg: Table_4.svg, pdf: Table_4.pdf, tiff_600dpi: Table_4.tiff, csv: Table_4.csv}
+    statistics_intervals: "Footnotes state Cohort B, complete-context sample, outcome events, provider-UF adjustment, brglm2 method, cluster bootstrap, associational evidence, Aim 4 bootstrap DOWNGRADE, and that Stage 6 quasi-causal/negative-control items are NOT_EVALUATED rather than results."
+    fixed_terms_required: ["associational", "bootstrap validity gate", "DOWNGRADE", "NOT_EVALUATED"]
+    prohibited_causal_phrasing: ["causal effect", "quasi-causal result", "accepted confidence interval", "volume reduces mortality"]
+    interpretation_risks: ["Bootstrap failure could be disguised as conventional uncertainty.", "Unavailable formal-interval items might be shown as null effects.", "Residual confounding and referral selection could be ignored."]
+    source_data_outputs: [table_4_source_data.csv]
+    qa_gates: [aim4_bootstrap_DOWNGRADE_visible, no_accepted_bootstrap_CI, stage06_COMPLETE_WITH_QUASI_CAUSAL_DOWNGRADE_visible, NOT_EVALUATED_not_result_rows, complete_context_and_adjustment_set_visible]
+
+acceptance_contract:
+  expected_figures: 7
+  expected_tables: 4
+  every_deliverable_required_fields: [id, title, core_conclusion, archetype, hero_support_panel_map, evidence_level, registry_result_ids, inputs, backend, final_dimensions_mm, exports, statistics_intervals, fixed_terms_required, prohibited_causal_phrasing, interpretation_risks, source_data_outputs, qa_gates]
+  pre_render_requirements:
+    - "Create registry-linked frozen input datasets in a new rc_v1 release directory; this contract does not authorize their creation."
+    - "For Figure 1, upload the local policy artifact to its declared frozen target and verify the SHA-256 before rendering."
+    - "Run the selected R-only figure source through the nature-figure static validator and inspect final-size R-rendered SVG/PDF/TIFF outputs."
+  forbidden_reinterpretations:
+    - "Do not call SUS reimbursement a cost."
+    - "Do not equate potential access with realised access, capacity, quality, or need."
+    - "Do not equate cross-municipal flow with poor access."
+    - "Do not describe resilience stress-test simulation as an intervention counterfactual."
+    - "Do not convert descriptive or associational estimates into causal claims."

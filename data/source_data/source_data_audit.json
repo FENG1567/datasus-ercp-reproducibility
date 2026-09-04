@@ -1,0 +1,221 @@
+{
+  "checks": {
+    "all_input_hashes": "PASS",
+    "contract_hash": "PASS",
+    "not_evaluated_boundaries": "PASS",
+    "privacy": "PASS",
+    "registry_ids_and_consumers": "PASS",
+    "row_count_reconciliation": "PASS"
+  },
+  "contract_sha256": "a0648662bdd5bd02dd330acc294f8d0a79037b3ea30e96f583d91f616938a107",
+  "outputs": [
+    {
+      "after_rows": 4,
+      "aggregation_rule": "No row exclusion or aggregation.",
+      "before_rows": 4,
+      "column_exclusions": [],
+      "output": "figure_1_policy_timeline_source_data.csv",
+      "status": "PASS",
+      "suppression_rule": "No additional display suppression."
+    },
+    {
+      "after_rows": 4,
+      "aggregation_rule": "No row exclusion or aggregation.",
+      "before_rows": 4,
+      "column_exclusions": [],
+      "output": "figure_1_cohort_funnel_source_data.csv",
+      "status": "PASS",
+      "suppression_rule": "No additional display suppression."
+    },
+    {
+      "after_rows": 130,
+      "aggregation_rule": "No row exclusion or aggregation.",
+      "before_rows": 130,
+      "column_exclusions": [],
+      "output": "figure_2_monthly_uptake_source_data.csv",
+      "status": "PASS",
+      "suppression_rule": "No additional display suppression."
+    },
+    {
+      "after_rows": 5,
+      "aggregation_rule": "No row exclusion or aggregation.",
+      "before_rows": 5,
+      "column_exclusions": [],
+      "output": "figure_2_first_observed_source_data.csv",
+      "status": "PASS",
+      "suppression_rule": "No additional display suppression."
+    },
+    {
+      "after_rows": 445,
+      "aggregation_rule": "No row exclusion or aggregation.",
+      "before_rows": 445,
+      "column_exclusions": [],
+      "output": "figure_2_maintenance_source_data.csv",
+      "status": "PASS",
+      "suppression_rule": "No additional display suppression."
+    },
+    {
+      "after_rows": 10,
+      "aggregation_rule": "No row exclusion or aggregation.",
+      "before_rows": 10,
+      "column_exclusions": [],
+      "output": "figure_3_equity_source_data.csv",
+      "status": "PASS",
+      "suppression_rule": "No additional display suppression."
+    },
+    {
+      "after_rows": 42,
+      "aggregation_rule": "All route-level records are grouped into fixed 15-minute bins [0,15), …, [165,180), [180,+∞), plus NOT_ROUTED; n_aih is used only as an internal weight.",
+      "before_rows": 8958,
+      "column_exclusions": [
+        "res_municipio",
+        "treat_municipio",
+        "n_aih"
+      ],
+      "output": "figure_3_travel_source_data.csv",
+      "status": "PASS",
+      "suppression_rule": "weighted_n_aih_display replaces 1-4 with '<5'."
+    },
+    {
+      "after_rows": 27851,
+      "aggregation_rule": "No row exclusion or aggregation.",
+      "before_rows": 27851,
+      "column_exclusions": [],
+      "output": "figure_4_municipality_coverage_source_data.csv",
+      "status": "PASS",
+      "suppression_rule": "No additional display suppression."
+    },
+    {
+      "after_rows": 6,
+      "aggregation_rule": "No row exclusion or aggregation.",
+      "before_rows": 6,
+      "column_exclusions": [],
+      "output": "figure_4_national_regional_coverage_source_data.csv",
+      "status": "PASS",
+      "suppression_rule": "No additional display suppression."
+    },
+    {
+      "after_rows": 1,
+      "aggregation_rule": "No row exclusion or aggregation.",
+      "before_rows": 1,
+      "column_exclusions": [],
+      "output": "figure_4_vulnerability_gap_source_data.csv",
+      "status": "PASS",
+      "suppression_rule": "No additional display suppression."
+    },
+    {
+      "after_rows": 87177,
+      "aggregation_rule": "No row exclusion; frozen display-edge rows retained.",
+      "before_rows": 87177,
+      "column_exclusions": [
+        "n_aih"
+      ],
+      "output": "figure_5_suppressed_network_edges_source_data.csv",
+      "status": "PASS",
+      "suppression_rule": "n_aih_display is cross-checked against raw n_aih then raw n_aih is removed."
+    },
+    {
+      "after_rows": 63503,
+      "aggregation_rule": "No row exclusion or aggregation.",
+      "before_rows": 63503,
+      "column_exclusions": [],
+      "output": "figure_5_service_area_source_data.csv",
+      "status": "PASS",
+      "suppression_rule": "No additional display suppression."
+    },
+    {
+      "after_rows": 5321,
+      "aggregation_rule": "No row exclusion; frozen centrality rows retained.",
+      "before_rows": 5321,
+      "column_exclusions": [
+        "in_strength"
+      ],
+      "output": "figure_5_centrality_source_data.csv",
+      "status": "PASS",
+      "suppression_rule": "in_strength_display replaces 1-4 with '<5'; zero and counts >=5 remain explicit."
+    },
+    {
+      "after_rows": 8,
+      "aggregation_rule": "No row exclusion or aggregation.",
+      "before_rows": 8,
+      "column_exclusions": [],
+      "output": "figure_6_adjusted_point_estimates_source_data.csv",
+      "status": "PASS",
+      "suppression_rule": "No additional display suppression."
+    },
+    {
+      "after_rows": 3,
+      "aggregation_rule": "No row exclusion or aggregation.",
+      "before_rows": 3,
+      "column_exclusions": [],
+      "output": "figure_6_bootstrap_validity_source_data.csv",
+      "status": "PASS",
+      "suppression_rule": "No additional display suppression."
+    },
+    {
+      "after_rows": 3,
+      "aggregation_rule": "No row exclusion or aggregation.",
+      "before_rows": 3,
+      "column_exclusions": [],
+      "output": "figure_6_sensitivity_status_source_data.csv",
+      "status": "PASS",
+      "suppression_rule": "No additional display suppression."
+    },
+    {
+      "after_rows": 408,
+      "aggregation_rule": "No row exclusion or aggregation.",
+      "before_rows": 408,
+      "column_exclusions": [],
+      "output": "figure_7_targeted_removal_source_data.csv",
+      "status": "PASS",
+      "suppression_rule": "No additional display suppression."
+    },
+    {
+      "after_rows": 8,
+      "aggregation_rule": "No row exclusion or aggregation.",
+      "before_rows": 8,
+      "column_exclusions": [],
+      "output": "figure_7_random_benchmark_source_data.csv",
+      "status": "PASS",
+      "suppression_rule": "No additional display suppression."
+    },
+    {
+      "after_rows": 5,
+      "aggregation_rule": "No row exclusion or aggregation.",
+      "before_rows": 5,
+      "column_exclusions": [],
+      "output": "table_1_source_data.csv",
+      "status": "PASS",
+      "suppression_rule": "No additional display suppression."
+    },
+    {
+      "after_rows": 9,
+      "aggregation_rule": "No row exclusion or aggregation.",
+      "before_rows": 9,
+      "column_exclusions": [],
+      "output": "table_2_source_data.csv",
+      "status": "PASS",
+      "suppression_rule": "No additional display suppression."
+    },
+    {
+      "after_rows": 16,
+      "aggregation_rule": "No row exclusion or aggregation.",
+      "before_rows": 16,
+      "column_exclusions": [],
+      "output": "table_3_source_data.csv",
+      "status": "PASS",
+      "suppression_rule": "No additional display suppression."
+    },
+    {
+      "after_rows": 7,
+      "aggregation_rule": "No row exclusion or aggregation.",
+      "before_rows": 7,
+      "column_exclusions": [],
+      "output": "table_4_source_data.csv",
+      "status": "PASS",
+      "suppression_rule": "No additional display suppression."
+    }
+  ],
+  "registry_sha256": "f29e8a49d24cac473dd70727f22f323ff421e103b67b384eaf83e20221c66351",
+  "schema_version": "stage07_figure_table_source_data_audit_rc_v1_2"
+}

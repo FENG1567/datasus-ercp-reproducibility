@@ -1,0 +1,28 @@
+graphhopper:
+  datareader.file: SET_LOCAL_PATH_TO_BRAZIL_OSM_PBF
+  graph.location: SET_LOCAL_GRAPH_CACHE_OUTSIDE_GIT
+  graph.dataaccess: RAM_STORE
+  graph.bytes_for_flags: 4
+  graph.encoded_values: car_access, car_average_speed
+  import.osm.ignored_highways:
+    - bridge
+  custom_models.directory: SET_LOCAL_CUSTOM_MODEL_DIRECTORY
+  profiles:
+    - name: ercp_car
+      turn_costs:
+        vehicle_types: [motorcar, motor_vehicle]
+      custom_model_files:
+        - ercp_car.json
+  routing:
+    max_visited_nodes: 1000000
+    init_lat: -15.0
+    init_lon: -50.0
+server:
+  application_connectors:
+    - type: http
+      port: 19999
+      bind_host: 127.0.0.1
+  admin_connectors:
+    - type: http
+      port: 19998
+      bind_host: 127.0.0.1

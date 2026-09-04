@@ -1,0 +1,26 @@
+schema_version: "1.0-public"
+project_id: "datasus_ercp_access_2021_2025"
+title: "Observed uptake, geographic reach, and patient-flow structure of therapeutic ERCP in Brazil's Unified Health System, 2021–2025"
+study_design: "national repeated cross-sectional study plus longitudinal hospital-month panel"
+primary_window:
+  start: "2021-01"
+  end: "2025-12"
+historical_context_window:
+  start: "2016-01"
+  end: "2020-12"
+excluded_from_main:
+  - "2026 provisional data"
+  - "2016-2020 observations treated as the same ERCP coding series"
+  - "Stage 6 quasi-causal outputs"
+evidence_labels:
+  allowed: ["descriptive", "associational", "causal-eligible"]
+  default: "descriptive"
+compute:
+  total_thread_ceiling: 8
+  project_root: "."
+  raw_data_root: "SET_LOCALLY_AND_DO_NOT_COMMIT"
+immutability:
+  raw_is_read_only: true
+  figures_only_from_frozen_tables: true
+  manual_figure_editing_forbidden: true
+  cohort_logic_inside_plot_scripts_forbidden: true

@@ -1,0 +1,100 @@
+schema_version: "1.0"
+aims:
+  aim1_diffusion_maintenance:
+    evidence: "descriptive"
+    unit: "eligible hospital-month"
+    primary_adoption: "first month with >=1 unique cohort-A AIH"
+    adoption_sensitivities:
+      - "first month with >=3 unique AIHs"
+      - "first month with >=5 unique AIHs"
+      - "first of 3 consecutive months with >=1 unique AIH"
+    maintenance_primary: "at least 6 active months in each rolling 12-month window after adoption"
+    cessation_primary: "6 consecutive inactive months after adoption while the hospital remains eligible"
+    recovery: "first active month after a primary cessation"
+    estimands:
+      - "monthly cumulative proportion of eligible hospitals ever adopting"
+      - "12-month retention among adopters"
+      - "state- and region-standardized adoption and maintenance differences"
+  aim2_equity_access:
+    evidence: "descriptive and associational"
+    primary_population: "cohort B adult residents"
+    primary_contextual_exposure: "municipal IVS continuous rank and population-weighted quintile"
+    primary_endpoints:
+      - "age-sex standardized treated utilization per 100,000 adults"
+      - "observed road travel time from residence-municipality population-weighted centroid to treating facility"
+      - "municipal adult population within 120 minutes of an active provider"
+    secondary_endpoints:
+      - "180-minute potential coverage"
+      - "cross-municipality treatment"
+      - "cross-state treatment"
+      - "distance to nearest active provider"
+    inequality_measures:
+      - "absolute difference"
+      - "rate ratio"
+      - "slope index of inequality"
+      - "relative index of inequality"
+      - "concentration index when assumptions are met"
+    interpretation: "municipal attributes are contextual exposures, never individual socioeconomic status"
+  aim3_referral_network_resilience:
+    evidence: "descriptive"
+    primary_population: "cohort B; cohort A supportive"
+    edge: "residence municipality -> treating CNES, weighted by unique AIHs within calendar year"
+    metrics:
+      - "weighted in-strength and out-strength"
+      - "referral HHI"
+      - "weighted betweenness"
+      - "community structure with stability across seeds/resolutions"
+      - "share crossing municipality and state boundaries"
+    resilience_primary: "incremental adult population without an alternative active provider within 180 road-minutes after sequential removal of pre-specified high-in-strength hubs"
+    sensitivities:
+      - "120-minute threshold"
+      - "random-node removal benchmark"
+      - "provider-municipality rather than CNES nodes"
+      - "cohort A network"
+  aim4_outcomes:
+    evidence: "associational"
+    primary_population: "cohort B adults with matched RD record"
+    primary_outcome: "in-hospital death (MORTE == 1)"
+    secondary_outcomes:
+      - "any ICU use"
+      - "length of stay"
+      - "2025-BRL inflation-adjusted reimbursement"
+    exposures:
+      primary: "hospital trailing-12-month unique cohort-A ERCP volume, modeled continuously with restricted cubic splines"
+      secondary:
+        - "months since adoption"
+        - "maintenance status"
+        - "network in-strength and hub category"
+    model_primary: "population-averaged regression with hospital-clustered robust inference, state and calendar-month fixed effects, and pre-specified covariates"
+    effect_scale_primary: "standardized marginal risk difference with 95% CI"
+    effect_scale_supportive: ["marginal risk ratio", "conditional odds ratio labeled as conditional"]
+    covariates:
+      - "age restricted cubic spline"
+      - "sex"
+      - "race/color including explicit missing category in primary analysis"
+      - "emergency versus elective admission"
+      - "principal diagnostic stratum K803/K804/K805"
+      - "available pre-admission comorbidity burden from valid diagnosis fields"
+      - "hospital type, SUS beds, ICU capacity, relevant equipment/service/personnel"
+      - "municipal contextual vulnerability and SUS dependence"
+      - "state and calendar month"
+    prohibited_primary_adjustments:
+      - "ICU use when mortality is the outcome"
+      - "length of stay"
+      - "post-adoption mediator selected because it improves fit"
+      - "stepwise or univariable-p-value covariate selection"
+
+eligible_hospital_risk_sets:
+  ontology_dependency: "CNES semantic code map must pass official-table plus empirical-distribution review before use"
+  broad: "active SUS inpatient facility in the competence month"
+  primary: "broad plus active surgical/procedural capability and at least one relevant endoscopy, digestive surgery, anesthesia, imaging, or high-complexity service capability"
+  strict: "primary plus documented relevant equipment/service and qualified workforce in the same month"
+  risk_set_rule: "a hospital contributes person-time only in months it is eligible and has not yet adopted"
+  forbidden: "using all hospitals in Brazil as the adoption denominator"
+
+multiplicity:
+  aim2_primary_family: "Holm adjustment across the three primary equity endpoints"
+  aim4_primary_family: "in-hospital death only; secondary outcomes labeled secondary"
+  exploratory: "Benjamini-Hochberg FDR within explicitly labeled exploratory families"
+  interpretation: "effect sizes and 95% CIs are primary; isolated nominal p-values cannot upgrade evidence"
+

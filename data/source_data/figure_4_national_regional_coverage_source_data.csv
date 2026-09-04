@@ -1,0 +1,7 @@
+scope,year,status,adult_anchor_denominator,adult_population_share_120,adult_population_share_180,adult_population_anchor_coverage,reason,missing_frozen_input
+national,2021.0,EVALUATED,157421555.0,0.7188980822861266,0.812337878380124,1.0,NA,NA
+national,2022.0,EVALUATED,158744904.0,0.7417643214550056,0.826196216037272,1.0,NA,NA
+national,2023.0,EVALUATED,160178633.0,0.7864597396083409,0.8724846465633154,1.0,NA,NA
+national,2024.0,EVALUATED,161673118.0,0.8064446929266249,0.8931549956251849,1.0,NA,NA
+national,2025.0,EVALUATED,163078720.0,0.8210060822159997,0.9042038777346303,0.9999756381261131,NA,NA
+regional,NA,NOT_EVALUATED,NA,NA,NA,NA,Frozen contract supplies no municipality-to-region mapping.,municipality_region_mapping

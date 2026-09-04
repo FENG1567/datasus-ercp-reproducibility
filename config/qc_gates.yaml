@@ -1,0 +1,49 @@
+schema_version: "1.0"
+status_values: ["PASS", "FIX", "DOWNGRADE", "REMOVE", "BLOCKED"]
+raw_inputs:
+  require_read_only: true
+  require_manifest: true
+  require_size: true
+  require_sha256: true
+  complete_months_primary_window: 60
+schema:
+  required_key_fields_present: true
+  unexpected_type_change_action: "FIX_OR_QUARANTINE"
+  field_presence_matrix_required: true
+cohort:
+  unique_key_violation_rate_max: 0.0
+  linkage_overall_min: 0.98
+  linkage_each_state_month_min: 0.95
+  monthly_code_hit_zero_action: "investigate; never silently treat as true zero"
+  abrupt_month_change_flag_ratio: 3.0
+geography:
+  valid_ibge_join_min: 0.99
+  context_covariate_join_min: 0.95
+  active_provider_geocode_min: 0.99
+  route_success_primary_flows_min: 0.95
+  action_if_route_gate_fails: "DOWNGRADE from road-time equity to great-circle distance and remove road-coverage claims from title/abstract"
+privacy:
+  public_cell_suppression_threshold: 5
+  no_patient_level_release: true
+models:
+  convergence_required: true
+  reference_categories_explicit: true
+  separation_check_required: true
+  calibration_plot_required_for_binary_outcomes: true
+  cluster_robust_or_hierarchical_inference_required: true
+  complete_case_and_missingness_counts_required: true
+quasi_causal:
+  all_required:
+    - "eligible-hospital risk set frozen before model"
+    - "no outcome-informed adoption threshold"
+    - "adequate treated/control overlap by event time"
+    - "no material pre-trend"
+    - "coding stability by state-month"
+    - "COVID-pressure adjustment and exclusion sensitivity agree"
+    - "negative controls do not show analogous effect"
+  failure_action: "REMOVE from main text; retain only clearly labeled exploratory supplement if scientifically informative"
+claims:
+  world_first_language_forbidden: true
+  causal_language_requires_quasi_causal_pass: true
+  every_number_must_trace_to_frozen_table: true
+

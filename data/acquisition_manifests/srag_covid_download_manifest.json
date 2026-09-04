@@ -1,0 +1,32 @@
+[
+  {
+    "file": "INFLUD21-23-03-2026.parquet",
+    "size_bytes": 127023754,
+    "sha256": "ecad01062f23715551a1e5e82fa1d9b28f0ea25e2c486a49518a15bf489ee790"
+  },
+  {
+    "file": "INFLUD22-23-03-2026.parquet",
+    "size_bytes": 43750567,
+    "sha256": "93aab4d4ef3ad87250d0179935156329f02a3b6947341654c06c1be26e67b9f1"
+  },
+  {
+    "file": "INFLUD23-23-03-2026.parquet",
+    "size_bytes": 22121151,
+    "sha256": "3adfca92884f4b213caaf81b1adf83e18416b19842c273a7e20c4ba9c9440070"
+  },
+  {
+    "file": "INFLUD24-23-03-2026.parquet",
+    "size_bytes": 21222050,
+    "sha256": "015135a33779ce28e2a0c43a83c06b7e76c11144ec47463a54687f8ca5e23f5a"
+  },
+  {
+    "file": "INFLUD25-17-08-2026.parquet",
+    "size_bytes": 26785222,
+    "sha256": "da433e2947093075b2bafbea3b7fae1c4b5c599dc29f8230dc21245059bfb78a"
+  },
+  {
+    "file": "dicionario-de-dados-2019-a-2025.pdf",
+    "size_bytes": 1052922,
+    "sha256": "6b92d438cf1cab28cd3719a7bcc48df3c269cf271f7c8181e334db2e849a0e35"
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "file": "basecompletamunicipal.zip",
+    "size_bytes": 201366481,
+    "sha256": "56f8a133cb60dc97ff1efdfcaccbb433768cc44e3c2aad366917cf8782e1ebbe"
+  },
+  {
+    "file": "Dicionario-variaveis-ivs.xlsx",
+    "size_bytes": 13141,
+    "sha256": "a7d5a317dadf963ca251bc804c357100309146c64daad0d1ffdb09ed38ac24ab"
+  },
+  {
+    "file": "Municipios_BR_IBGE.zip",
+    "size_bytes": 89819951,
+    "sha256": "53e9af9f95539ceba1cfe9ca7c2c423a48dca622068d2ee4376a638f11c56da7"
+  }
+]

@@ -1,0 +1,48 @@
+# Local environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.Rhistory
+.RData
+renv/library/
+
+# Credentials and machine-local configuration
+.env
+.env.*
+!.env.example
+*credential*
+*secret*
+*password*
+*token*
+*.pem
+*.key
+
+# Raw/restricted data and intermediate records
+data_raw/
+data_stage/
+data_analytic/
+restricted/
+private/
+cache/
+logs/
+tmp/
+scratch/
+
+# Large routing assets and generated outputs
+*.osm.pbf
+graphhopper-web-*.jar
+gh_graph/
+reproduced/
+*.zip
+*.7z
+*.tar
+*.tar.gz
+
+# Office lock files
+~$*.docx
+~$*.xlsx
+desktop.ini

@@ -1,0 +1,21 @@
+# Compatibility specification, not an exact historical lock.
+# The original remote Python package versions were not preserved.
+PyYAML
+numpy
+pandas
+pyarrow
+scipy
+statsmodels
+patsy
+scikit-learn
+geopandas
+shapely
+networkx
+python-igraph
+leidenalg
+matplotlib
+python-docx
+openpyxl
+dbfread
+pyreaddbc
+pytest

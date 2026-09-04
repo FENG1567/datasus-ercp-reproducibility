@@ -1,0 +1,11 @@
+source_name,dataset_or_file,version_or_release,source_url,accessed_at,size_bytes,sha256,licence_or_terms,local_path_not_for_git,status,notes
+DATASUS_SIH,,,,,,,,,PENDING,
+DATASUS_CNES,,,,,,,,,PENDING,
+IBGE_population,,,,,,,,,PENDING,
+IBGE_municipalities,,,,,,,,,PENDING,
+Ipea_IVS,,,,,,,,,PENDING,
+ANS_beneficiaries,,,,,,,,,PENDING,
+OpenStreetMap_Geofabrik,brazil-260822.osm.pbf,2026-08-22,https://download.geofabrik.de/south-america/brazil-260822.osm.pbf,2026-08-22,2074198072,b3997da728ca224c6ed062e3adc203cd1e76be1afd02d017af12a075ee52f281,OpenStreetMap ODbL 1.0,,RECORDED,Dated Geofabrik snapshot
+SRAG_COVID_series,,,,,,,,,PENDING,
+CONITEC_policy,,,,,,,,,PENDING,
+SIGTAP_archives,,,,,,,,,PENDING,
